@@ -417,8 +417,6 @@ The correct option is B: Having.
   
 **Key Trap:** Confusing WHERE and HAVING. Remember the definitive order: WHERE filters rows (Pre-Group) $\rightarrow$ HAVING filters groups (Post-Group, allows aggregates).
 
-Please upload your next question or image, and I will parse it for you using this exact template!
-
 
 
 ## Q23
