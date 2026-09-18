@@ -20,13 +20,13 @@ const TESTS_MANIFEST = [
     questions: 25,
     minutes: 30
   },
-  {
-    title: "Mix — Test 1",
-    category: "Paper 1 — Mix",
-    path: "templates/test-template.html",
-    questions: 50,
-    minutes: 60
-  }
+  // {
+  //   title: "Mix — Test 1",
+  //   category: "Paper 1 — Mix",
+  //   path: "templates/test-template.html",
+  //   questions: 50,
+  //   minutes: 60
+  // }
   // Add new tests below, following the same shape:
   // {
   //   title: "OS — Test 2",

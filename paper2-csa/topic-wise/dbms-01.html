@@ -63,7 +63,7 @@
           <label class="option" data-letter="A"><input type="radio"> <span>Department address of every employee</span></label>
           <label class="option" data-letter="B"><input type="radio"> <span>Employees whose name is the same as their department name</span></label>
           <label class="option" data-letter="C" data-correct="true"><input type="radio"> <span>The sum of all employees’ salaries</span></label>
-          <label class="option" data-letter="D"><input type="radio"> <span>The sum of all employees’ salaries</span></label>
+          <label class="option" data-letter="D"><input type="radio"> <span>All employees of a given department</span></label>
         </div>
         <button class="hint-toggle" type="button">💡 Hint</button>
         <div class="hint-content">
@@ -312,13 +312,11 @@
       <div class="question" data-id="Q13" data-topic="SQL Correlated Subqueries and Rank Selection">
         <div class="q-text">
           <p>The relation book (title, price) contains the titles and prices of different books. Assuming that no two books have the same price, what does the following SQL query list?</p>
-          <pre><code>
-            <strong>SELECT</strong> title
-            <strong>FROM</strong> book <strong>AS</strong> B
-            <strong>WHERE</strong> (<strong>SELECT</strong> count(*)
-              <strong>FROM</strong> book <strong>AS</strong> T
-              <strong>WHERE</strong> T.price > B.price) < 5;
-          </code></pre>
+          <p><strong>SELECT</strong> title</p>
+          <p><strong>FROM</strong> book <strong>AS</strong> B</p>
+          <p><strong>WHERE</strong> (<strong>SELECT</strong> count(*)</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>FROM</strong> book <strong>AS</strong> T</p>
+          <p><&nbsp;&nbsp;&nbsp;&nbsp;strong>WHERE</strong> T.price > B.price) < 5;</p>
         </div>
         <div class="options">
           <label class="option" data-letter="A"><input type="radio"> <span>Titles of the four most expensive books</span></label>
@@ -545,9 +543,8 @@
       <div class="question" data-id="Q24" data-topic="Transaction Concurrency: Conflict Serializability and Precedence Graphs">
         <div class="q-text">
           <p>Consider following schedules involving two transactions:</p>
-          <pre><code><p>S1 : r1(X); r1(Y); r2(X); r2(Y); w2(Y); w1(X)</p>
-          <p>S2 : r1(X); r2(X); r2(Y); w2(Y); r1(Y); w1(X)</p></code>
-          </pre>
+          <p>S1 : r1(X); r1(Y); r2(X); r2(Y); w2(Y); w1(X)</p>
+          <p>S2 : r1(X); r2(X); r2(Y); w2(Y); r1(Y); w1(X)</p>
           <p>Which of the following statement is true?</p>
         </div>
         <div class="options">
