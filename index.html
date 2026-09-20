@@ -12,10 +12,10 @@
 
 <header>
   <div class="brand">NET Practice<small>Paper 1 &amp; Paper 2 test series</small></div>
-  <!-- <div class="who">
+  <div class="who">
     Browsing as
     <input id="whoInput" type="text" placeholder="your name" />
-  </div> -->
+  </div>
 </header>
 
 <main>
@@ -36,12 +36,12 @@
 
 <script src="assets/tests-manifest.js"></script>
 <script>
-  // const whoInput = document.getElementById('whoInput');
-  // whoInput.value = localStorage.getItem('net_practice_who') || '';
-  // whoInput.addEventListener('input', () => {
-  //   localStorage.setItem('net_practice_who', whoInput.value);
-  //   render();
-  // });
+  const whoInput = document.getElementById('whoInput');
+  whoInput.value = localStorage.getItem('net_practice_who') || '';
+  whoInput.addEventListener('input', () => {
+    localStorage.setItem('net_practice_who', whoInput.value);
+    render();
+  });
 
   const searchBox = document.getElementById('searchBox');
   const categoryFilter = document.getElementById('categoryFilter');
@@ -57,9 +57,8 @@
   });
 
   function attemptInfo(testTitle){
-    // const who = (whoInput.value || 'me').trim().toLowerCase();
-    // const history = JSON.parse(localStorage.getItem(`net_practice_history_${who}`) || '{}');
-    const history = JSON.parse(localStorage.getItem('net_practice_history') || '{}');
+    const who = (whoInput.value || 'me').trim().toLowerCase();
+    const history = JSON.parse(localStorage.getItem(`net_practice_history_${who}`) || '{}');
     const attempts = history[testTitle];
     if (!attempts || attempts.length === 0) return null;
     return attempts[attempts.length - 1];
@@ -94,7 +93,7 @@
         const info = attemptInfo(t.title);
         const a = document.createElement('a');
         a.className = 'test-link';
-        a.href = t.path;
+        a.href = `player.html?test=${encodeURIComponent(t.slug)}`;
         const badge = info
           ? `Last: ${info.correctCount}/${info.total} · tap to revise or retake`
           : 'Not attempted yet';

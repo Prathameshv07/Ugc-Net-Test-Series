@@ -1,19 +1,8 @@
-<!--
-HOW TO USE THIS TEMPLATE
-=========================
-- One "## Q<id>" heading per question. The id after "## " MUST exactly match
-  the data-id="..." you used on that question's block in the matching .html
-  file (e.g. "## Q1" here pairs with data-id="Q1" there).
-- Everything under a heading, up to the next "## " heading, is shown to the
-  test-taker as that question's explanation once they submit the test.
-- Full Markdown works here: tables, images (![alt](url)), bold/italic, links,
-  and you can also paste a raw <iframe> for a YouTube embed if you'd rather
-  put walkthrough videos in the explanation instead of the hint.
-- You do NOT need to restate which option is correct here — the app already
-  knows that from data-correct in the HTML file. Just explain the reasoning.
--->
-
 ## Q1
+
+**Answer:** C
+
+**Topic:** Algebra Operations
 
 The correct option is C: The sum of all employees' salaries.  
   
@@ -34,12 +23,16 @@ The correct option is C: The sum of all employees' salaries.
 | Projection | <center>π</center> | Select columns (attributes / fields) → horizontal |
 | Cartesian Product | <center>×</center> | Combine all tuples (1 on 1 map, → ↓) |
 | Union | <center>∪</center> | Merge relations (all values combine) |
-| Set Difference | <center>−</center> | Subtract tuples (the blue part of two sets) <div align="center"><img src="dbms-01-assets/q1-difference-of-sets-venn-diagram.png" width="250"></div> |
+| Set Difference | <center>−</center> | Subtract tuples (the blue part of two sets) <div align="center"><img src="paper2-csa/topic-wise/dbms-01-assets/q1-difference-of-sets-venn-diagram.png" width="250"></div> |
 | Rename | <center>ρ</center> | Rename relation / attributes |
 
-
+---
 
 ## Q2
+
+**Answer:** C
+
+**Topic:** SQL Commands
 
 The correct option is C:  
 After the execution of 'DELETE' operation, COMMIT and ROLLBACK statements can be performed to retrieve the lost data., while TRUNCATE do not allow it.
@@ -50,15 +43,19 @@ After the execution of 'DELETE' operation, COMMIT and ROLLBACK statements can be
 **Elimination of other options:** 
   - Options A, B, and D directly contradict this foundational distinction by either claiming TRUNCATE can be rolled back or that DELETE cannot be rolled back.
   
-* **Key Trap**: Confusing the two commands because they both remove data. Remember the rule: DELETE = DML (Logged/Rollback possible) $\rightarrow$ TRUNCATE = DDL (Auto-committed/No Rollback).
+**Key Trap**: Confusing the two commands because they both remove data. Remember the rule: DELETE = DML (Logged/Rollback possible) $\rightarrow$ TRUNCATE = DDL (Auto-committed/No Rollback).
 
 
 **Summary:**  
-**Delete** is a DML based command which is mainly used for **manipulation, Truncate** \& a **DDL** command is mainly used for definition of the database / table, So if we try to <mark>delete</mark> a <mark>table</mark> and suppose we do <mark>have</mark> a <mark>checkpoint saved</mark>, so then we can <mark>retrieve</mark> data <mark>in case of delete but not in case of truncate</mark> as the whole schema, table and checkpoints is also deleted with too.  
+**Delete** is a DML based command which is mainly used for **manipulation, Truncate** \& a **DDL** command is mainly used for definition of the database / table, So if we try to <mark>delete</mark> a <mark>table</mark> and suppose we do <mark>have</mark> a <mark>checkpoint saved</mark>, so then we can <mark>retrieve</mark> data <mark>in case of delete but not in case of truncate</mark> as the whole schema, table and checkpoints is also deleted with too.
 
-
+---
 
 ## Q3
+
+**Answer:** D
+
+**Topic:** SQL Subqueries and Conditional Filtering
 
 The correct option is D: NOT EXISTS.
 
@@ -72,9 +69,13 @@ The correct option is D: NOT EXISTS.
   
 **Key Trap:** Misreading the prompt and selecting EXISTS by ignoring the word NOT. Remember the mapping: No matching record exists $\rightarrow$ NOT EXISTS.
 
-
+---
 
 ## Q4
+
+**Answer:** A
+
+**Topic:** Functional Dependencies and Normalization
 
 The correct option is A: YZ -> X and Y -> Z.
 
@@ -89,9 +90,13 @@ Elimination of other options:
   
 **Key Trap:** Spending too much time testing every combination. Find the column with all unique values first (here, $Y$); any dependency starting with a unique determinant holds automatically, instantly narrowing down your choices.
 
-
+---
 
 ## Q5
+
+**Answer:** A
+
+**Topic:** File Organization and Indexing: Dense Index Blocks
 
 The correct option is A: 13n/30.
 
@@ -99,7 +104,7 @@ The correct option is A: 13n/30.
   1. Data file blocks: One block holds 3 records. For $n$ records, the number of data blocks needed is $\frac{n}{3}$.
   2. Dense index blocks: A dense index contains exactly one index entry (key pointer) for every record in the data file. Since one block holds 10 key pointers, we need $\frac{n}{10}$ index blocks.
   3. Total blocks: Summing both requirements gives:
-   $$\text{Total} = \frac{n}{3} + \frac{n}{10} = \frac{10n + 3n}{30} = \frac{13n}{30}$$ 
+   $\text{Total} = \frac{n}{3} + \frac{n}{10} = \frac{10n + 3n}{30} = \frac{13n}{30}$ 
   
 **Elimination of other options:**
   * B ($n/3$): Only accounts for the data file blocks.
@@ -108,9 +113,13 @@ The correct option is A: 13n/30.
   
 **Key Trap:** Confusing dense index with sparse index. A sparse index has entries only for each data block ($\frac{\text{data blocks}}{10}$), whereas a dense index requires an entry for every single record ($\frac{n}{10}$).
 
-
+---
 
 ## Q6
+
+**Answer:** D
+
+**Topic:** Data Modeling: Entity-Relationship Diagram (Weak Entity Sets)
 
 The correct option is D: Tuples in a weak entity set are not partitioned according to their relationship with tuples in a strong entity set.
 
@@ -121,11 +130,15 @@ The correct option is D: Tuples in a weak entity set are not partitioned accordi
   * A: Correct; cascades can be configured so that deleting a strong entity automatic-deletes corresponding weak entities.
   * B \& C: Correct; weak entity concepts prevent duplication of the owner’s primary key at the abstract ER level, and a weak entity lacks its own primary key until it incorporates the strong entity's attributes.  
   
-**Key Trap:** Misinterpreting structural dependency as complete randomness. A weak entity set is never an unorganized heap; it is always cleanly segmented/partitioned by the parent primary keys it depends on.  
-  
+**Key Trap:** Misinterpreting structural dependency as complete randomness. A weak entity set is never an unorganized heap; it is always cleanly segmented/partitioned by the parent primary keys it depends on.
 
+---
 
 ## Q7
+
+**Answer:** B
+
+**Topic:** Armstrong's Axioms and Inference Rules
 
 The correct option is B: If AB $\rightarrow$ C, then A $\rightarrow$ B and B $\rightarrow$ C.
   
@@ -139,9 +152,13 @@ The correct option is B: If AB $\rightarrow$ C, then A $\rightarrow$ B and B $\r
   
 **Key Trap:** Confusing the behavior of left-hand side attributes with right-hand side attributes. Remember the absolute shortcut: Split on the right is allowed $\rightarrow$ Split on the left is a trap.
 
-
+---
 
 ## Q8
+
+**Answer:** B
+
+**Topic:** Out of Syllabus
 
 The correct option is B: Draws on diverse yet predictable data resources to aggregate and summarize data.
   
@@ -154,9 +171,13 @@ The correct option is B: Draws on diverse yet predictable data resources to aggr
   
 **Key Trap:** Confusing MIS with DSS. Remember: MIS = Routine, structured summaries and predictable reports $\rightarrow$ DSS = Semi-structured/Unstructured decisions and interactive analysis.
 
-
+---
 
 ## Q9
+
+**Answer:** D
+
+**Topic:** SQL (Views and Language Characteristics) and Database Anomalies
 
 The correct option is B: III and IV only.
 
@@ -170,9 +191,13 @@ The correct option is B: III and IV only.
   
 **Key Trap:** Misreading procedural vs. declarative. Remember: SQL = Declarative (Non-Procedural). PL/SQL or T-SQL adds procedural extensions, but core SQL is purely non-procedural.
 
-
+---
 
 ## Q10
+
+**Answer:** A
+
+**Topic:** Functional Dependencies and Normalization (1NF vs 2NF)
 
 The correct option is A: First normal form but not in second normal form.
 
@@ -187,9 +212,13 @@ The correct option is A: First normal form but not in second normal form.
   
 **Key Trap:** Assuming a relation is automatically in 2NF if it does not have a single-attribute key. Always extract the candidate key, check if it's composite, and watch out for partial subsets on the left side: Proper subset of Candidate Key $\rightarrow$ Non-Prime Attribute = Violation of 2NF.
 
-
+---
 
 ## Q11
+
+**Answer:** C
+
+**Topic:** Lossless Join Decomposition
 
 The correct option is C: (a) and (c) happens.
 
@@ -203,9 +232,13 @@ Therefore, the decomposition is lossless if and only if either statement (a) or 
   
 **Key Trap:** Getting confused by the set-difference notation $(R_1 - R_2)$. Always remember that adding the common intersection attributes back to the right-hand side gives you the standard rule: Common attributes $\rightarrow$ Whole Table 1 OR Common attributes $\rightarrow$ Whole Table 2.
 
-
+---
 
 ## Q12
+
+**Answer:** D
+
+**Topic:** Normalization: 3NF vs BCNF Conditions
 
 The correct option is D: R has a nontrivial functional dependency X-->A, where X is not a superkey and A is a prime attribute.
 
@@ -220,9 +253,13 @@ The correct option is D: R has a nontrivial functional dependency X-->A, where X
   
 **Key Trap:** Getting confused by long option text. Remember the ultimate normal form filter rule: 3NF allows a non-superkey on the left ONLY IF the right side is a prime attribute.
 
-
+---
 
 ## Q13
+
+**Answer:** D
+
+**Topic:** SQL Correlated Subqueries and Rank Selection
 
 The correct option is D: Titles of the five most expensive books.
 
@@ -238,9 +275,13 @@ The query uses a correlated subquery that calculates the number of books ($T$) t
   
 **Key Trap:** Miscounting the boundary condition of the strict inequality (< 5). Since counting starts from 0 (for the maximum value element), the values allowed are $0, 1, 2, 3, 4$, which totals 5 rows.
 
-
+---
 
 ## Q14
+
+**Answer:** B
+
+**Topic:** Relational Database Design: Lossless Join and Dependency Preservation
 
 The correct option is B: gives a lossless join, but is not dependency preserving.
 
@@ -255,9 +296,13 @@ The correct option is B: gives a lossless join, but is not dependency preserving
   
 **Key Trap:** Assuming a dependency is preserved just because its attributes exist somewhere in the collection of schemas. The attributes must appear together in at least one schema, or the dependency must be derivable from the combination of local dependencies.
 
-
+---
 
 ## Q15
+
+**Answer:** C
+
+**Topic:** Database Normalization Definitions (3NF)
 
 The correct option is C: 3NF.
 
@@ -273,9 +318,13 @@ The correct option is C: 3NF.
   
 **Key Trap:** Jumping to higher normal forms like BCNF without matching the text precisely. Remember the classic hierarchy: No Partial Dependencies = 2NF $\rightarrow$ No Transitive Dependencies = 3NF.
 
-
+---
 
 ## Q16
+
+**Answer:** B
+
+**Topic:** Relational Database Design: Candidate Keys and Superkeys
 
 The correct option is B: {x} and {a,b}.
 
@@ -294,9 +343,13 @@ Filtering for minimality leaves exactly $\{x\}$ and $\{a,b\}$.
   
 **Key Trap:** Getting overwhelmed by the number of sets. Simply line them up by size and cross out any larger set that fully contains a smaller one: Contains a smaller superkey $\rightarrow$ Discard from candidate keys.
 
-
+---
 
 ## Q17
+
+**Answer:** A
+
+**Topic:** Minimal Cover (Canonical Cover) of Functional Dependencies
 
 The correct option is A: A $\rightarrow$ B, ACD $\rightarrow$ E, EF $\rightarrow$ G, and EF $\rightarrow$ H.
 
@@ -342,9 +395,13 @@ The correct option is A: A $\rightarrow$ B, ACD $\rightarrow$ E, EF $\rightarrow
   
 **Key Trap:** Not checking for extraneous left-hand side elements first. Finding that $A \rightarrow B$ instantly converts $ABCD \rightarrow E$ into a cleaner $ACD \rightarrow E$ is the key to unlocking this problem rapidly.
 
-
+---
 
 ## Q18
+
+**Answer:** D
+
+**Topic:** Database Triggers
 
 The correct option is D:  
 Statement that is executed automatically by the system as a side effect of a modification of the database.
@@ -359,9 +416,13 @@ Statement that is executed automatically by the system as a side effect of a mod
   
 **Key Trap:** Confusing automatic background processes with manual commands. Remember the simple rule: Trigger = Automatic side effect of data modification.
 
-
+---
 
 ## Q19
+
+**Answer:** C
+
+**Topic:** Data Modeling: E-R Diagram Keys (Weak Entity Sets)
 
 The correct option is C: Partial key.
   
@@ -374,9 +435,13 @@ The correct option is C: Partial key.
   
 **Key Trap:** Confusing conceptual E-R terminology with implementation terminology. At the high-level diagram design level, the key of a weak entity is always labeled a partial key, not a foreign key.
 
-
+---
 
 ## Q20
+
+**Answer:** C
+
+**Topic:** Database Recovery Techniques: Log-Based Recovery (Immediate/Deferred Update)
 
 The correct option is B:  
 We must undo log record 6 to set B to 10000 and then redo log records 2 and 3.
@@ -387,9 +452,13 @@ We must undo log record 6 to set B to 10000 and then redo log records 2 and 3.
 
 **Key Trap:** Thinking that since T1 committed, its updates are already permanent and don't need a redo pass. In standard log-based recovery setups without checkpoints, all committed transactions must be re-run from the log in chronological order, while incomplete ones are rolled back in reverse order.
 
-
+---
 
 ## Q21
+
+**Answer:** B
+
+**Topic:** Concurrency Control: Conflict Serializability and Deadlock Prevention
 
 The correct option is B: II only.
 
@@ -401,9 +470,13 @@ The correct option is B: II only.
   
 **Key Trap:** Selecting "Both I and II" because both protocols are highly popular. Remember: 2PL requires locks $\rightarrow$ Locks create wait cycles $\rightarrow$ Deadlocks possible. Therefore, 2PL alone cannot satisfy the deadlock-free requirement.
 
-
+---
 
 ## Q22
+
+**Answer:** B
+
+**Topic:** SQL Clauses: Filtering Grouped Data
 
 The correct option is B: Having.
   
@@ -417,9 +490,13 @@ The correct option is B: Having.
   
 **Key Trap:** Confusing WHERE and HAVING. Remember the definitive order: WHERE filters rows (Pre-Group) $\rightarrow$ HAVING filters groups (Post-Group, allows aggregates).
 
-
+---
 
 ## Q23
+
+**Answer:** D
+
+**Topic:** Database Environment Architecture: Catalog and Schema Hierarchy
 
 The correct option is D: Catalogs, Schemas.
   
@@ -432,9 +509,13 @@ The correct option is D: Catalogs, Schemas.
   
 **Key Trap:** Reversing the containment sequence. Remember the rule: Catalog = Major Database Folder $\rightarrow$ Schema = Sub-folder Namespace. Therefore, the structure requires "Catalogs" followed by "Schemas."
 
-
+---
 
 ## Q24
+
+**Answer:** C
+
+**Topic:** Transaction Concurrency: Conflict Serializability and Precedence Graphs
 
 The correct option is C: S1 is not conflict serializable and S2 is conflict serializable.
 
@@ -456,15 +537,19 @@ Analysis of <p style="word-break: break-word; font-family: sans-serif;"><strong>
 **Summary Diagram and explaination:**
 
 <div style="text-align: center;">
-  <img src="dbms-01-assets/q24-transactions-schedule-diagram.jpeg" alt="q24-transactions-schedule-diagram" width="85%">
+  <img src="paper2-csa/topic-wise/dbms-01-assets/q24-transactions-schedule-diagram.jpeg" alt="q24-transactions-schedule-diagram" width="85%">
 </div>
 
 * For Schedule $S_1$: We can clearly see a cycle in the diagram  ($T_1 \rightarrow T_2$ due to $r_1(Y) \rightarrow w_2(Y)$, and $T_2 \rightarrow T_1$ due to $r_2(X) \rightarrow w_1(X)$). This visual loop is the textbook proof that a schedule cannot be conflict serialized.
 * For Schedule $S_2$: There no cycle exists in the diagram. Both conflicting pairs ($r_2(X) \rightarrow w_1(X)$ and $w_2(Y) \rightarrow r_1(Y)$) form one-way dependencies that flow uniformly from $T_2 \rightarrow T_1$.
 
-
+---
 
 ## Q25
+
+**Answer:** C
+
+**Topic:** Normalization
 
 The correct option (the False statement) is B.  
   
@@ -474,4 +559,6 @@ The correct option (the False statement) is B.
 **Why the other options are true:**  
   * A is True: It is a proven property that any relational schema can be decomposed into 3NF while being both lossless and dependency-preserving at the same time.  
   * C is True: A relation with exactly two attributes (e.g., $R(A, B)$) has only trivial functional dependencies ($A \rightarrow B$ or $B \rightarrow A$). Since the left-hand side of any non-trivial dependency will always be a superkey, it automatically satisfies the strict condition for BCNF.  
-  * D is True: BCNF removes anomalies that 3NF allows (specifically when a non-prime attribute determines part of a candidate key). Therefore, BCNF is a stricter/stronger normal form than 3NF.  
+  * D is True: BCNF removes anomalies that 3NF allows (specifically when a non-prime attribute determines part of a candidate key). Therefore, BCNF is a stricter/stronger normal form than 3NF.
+
+---

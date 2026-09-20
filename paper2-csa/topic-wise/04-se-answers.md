@@ -1,0 +1,512 @@
+## Q1
+
+**Answer:** B
+
+### 1. Topic
+Software Quality (Unit 6: Software Engineering)
+
+### 2. Hint / Brain Trigger
+When a question asks to distinguish between **external** and **internal** software qualities, immediately recall: External qualities are directly observed by the user (behavioral), whereas internal qualities are hidden inside the code structure for developers.
+
+### 3. Solution
+- **Correct Option:** (B) Correctness, reliability, robustness, efficiency, usability.
+- **Why it is correct:** These five traits define how a software product behaves from an end-user or operational perspective during execution.
+- **Why others are wrong:** Options containing maintainability, reusability, portability, or interoperability (such as A, C, and D) mix in **internal qualities**, which relate to code maintenance, structure, and adaptability rather than runtime behavior.
+- **Key Trap:** Confusing code-centric attributes (like how easy code is to change or reuse) with user-facing operational attributes (like how correctly or efficiently the software runs).
+- **Rule of Thumb:** If the user experiences it directly (speed, correctness, crash-free execution, ease of use), it is **External**. If only the developer or maintainer cares about it (modularity, portability, reusability), it is **Internal**.
+
+---
+
+## Q2
+
+**Answer:** C
+
+### 1. Topic
+- **Unit – 6: Software Engineering** (specifically under *Software Testing: Verification and Validation; Error, Fault, Bug and Failure...*)
+
+### 2. Hint / Brain Trigger
+- **When I see** *"software developers do not do exhaustive testing"* **in a question, I should immediately think of** the combinatorial explosion of input domains making exhaustive testing practically impossible due to time and resource constraints.
+
+### 3. Solution
+- **Correct Option:** (C) Both A and R are true and R is the correct explanation of A.
+- **Explanation:** 
+  - **Assertion (A)** is true because testing every possible input and execution path (exhaustive testing) is infeasible in real-world software development. 
+  - **Reason (R)** correctly explains *why* by stating that even for programs with small inputs, the number of test cases grows exponentially, making it computationally too intensive and time-consuming to execute all of them.
+- **Key Trap:** Confusing the theoretical possibility of testing with practical constraints; while we *can* define exhaustive testing conceptually, resource limits prevent its application.
+
+---
+
+## Q3
+
+**Answer:** B
+
+### 1. Topic
+Distributed Systems (Unit 5 / Unit 9 - Distributed Systems & Cloud Computing context)
+
+### 2. Hint / Brain Trigger
+When I see **"capacity of a system to adapt the increased service load"**, I should immediately think of **Scalability**.
+
+### 3. Solution
+- **Correct Option:** **(B) Scalability**
+- **Why it is correct:** Scalability is the exact architectural attribute of a distributed system that defines its ability to handle a growing amount of work (increased service load) by adding resources (horizontal/vertical scaling).
+- **Why other options are wrong:** 
+  - **Tolerance** (Fault Tolerance) refers to a system's ability to continue functioning properly in the event of component failures.
+  - **Capability** and **Loading** are generic terms, not specific system metrics for workload adaptation.
+- **Key Trap:** Confusing *Fault Tolerance* (handling failures) with *Scalability* (handling load).
+
+---
+
+## Q4
+
+**Answer:** A
+
+### 1. Topic
+Software Testing (Unit 6: Software Engineering)
+
+### 2. Hint / Brain Trigger
+> **“When I see White-box vs. Black-box testing definitions swapped, I should immediately recognize them as false.”**
+
+### 3. Solution
+- **Correct Option:** (A)
+- **Why it is correct:** 
+  - **Statement S1 is FALSE:** White-box tests are based on the **code/internal structure**, not specifications. Black-box tests are based on specifications.
+  - **Statement S2 is FALSE:** Black-box tests are based on specifications and are generally used to test functional requirements. Code-level bugs like out-of-bounds errors, crashes, and file-handling issues are typically better found using **white-box** testing and code analysis.
+  - **Statement S3 is TRUE:** Alpha testing is indeed conducted at the developer’s site by a team of skilled/independent testers for off-the-shelf product software.
+- **Key Trap:** The question swaps the fundamental definitions of White-box (code-based) and Black-box (specification-based) testing, making S1 and S2 incorrect.
+
+---
+
+## Q5
+
+**Answer:** A
+
+### 1. Topic
+Software Process Models (Unit – 6 : Software Engineering)
+
+### 2. Hint / Brain Trigger
+> **“When I see generic software development phases mapped to 'what', 'how', and 'change', I should immediately think of Definition (what) → Development (how) → Support (change).”**
+
+### 3. Solution
+- **Correct Option:** (A) iii, ii, i
+- **Explanation:** Regardless of project size or complexity, software engineering breaks down work into three foundational phases:
+  - **Definition phase (iii):** Focuses on **what** is required (requirements gathering and analysis).
+  - **Development phase (ii):** Focuses on **how** it will be built (design and implementation).
+  - **Support phase (i):** Focuses on **change** (maintenance, error correction, and adaptation over time).
+- **Key Trap / Confusion:** Mixing up the chronological order or confusing the primary objective of the definition phase with the development phase (e.g., confusing requirements *what* with design *how*). 
+- **Rule to Remember:** **Definition = What**, **Development = How**, **Support = Change**.
+
+---
+
+## Q6
+
+**Answer:** D
+
+### 1. Topic
+Software Quality (Unit - 6: Software Engineering)
+
+### 2. Hint / Brain Trigger
+When I see **"tolerates unexpected problems"**, I should immediately think of **Robustness**.
+
+### 3. Solution
+- **Correct Option:** (D) Robustness
+- **Explanation:** Robustness refers to the degree to which a system or software can function correctly and handle abnormal inputs, stressful environments, or unexpected problems without crashing.
+- **Distinguishing Wrong Options:**
+  - **Accuracy** measures how closely computation results conform to the correct standard value.
+  - **Reliability** measures the probability of failure-free operation over time under stated conditions.
+  - **Correctness** refers to the absolute lack of errors when operating according to specifications.
+- **Key Trap:** Confusing *robustness* (handling unexpected runtime/environmental shocks) with *reliability* (consistency over time) or *correctness* (meeting explicit specifications under normal conditions).
+
+---
+
+## Q7
+
+**Answer:** D
+
+### 1. Topic
+Software Testing, Verification, and Validation (Unit - 6: Software Engineering)
+
+### 2. Hint / Brain Trigger
+When I see **"built the right system" vs "built the system right"**, I should immediately think of **Validation vs Verification**.
+
+### 3. Solution
+- **Correct Option:** (D) D B A C
+- **Explanation:** 
+  - **Validation (A):** Determining whether you have built the *right system* (meeting user needs and requirements).
+  - **Verification (B):** Determining whether you have built the *system right* (conforming to specifications).
+  - **Software Testing (C):** The process of demonstrating the existence of defects or providing confidence that they do not appear to be present.
+  - **Debugging (D):** The process of discovering the cause of a defect and fixing it.
+- **Key Trap:** Confusing *Verification* (building it right / specifications) with *Validation* (building the right system / user expectations). 
+- **Rule of Thumb:** "Verification = Are we building the product right? Validation = Are we building the right product?"
+
+---
+
+## Q8
+
+**Answer:** B
+
+### 1. Topic
+Software Design (Cohesion and Coupling)
+
+### 2. Hint / Brain Trigger
+When I see **levels of cohesion** compared against **Procedural Cohesion**, I should immediately recall the standard **Cohesion Strength Hierarchy** from worst to best and select those ranked higher than procedural.
+
+### 3. Solution
+- **Correct Option:** (B) A, B and D Only (Functional, Sequential, and Communicational Cohesions are better than Procedural Cohesion).
+- **Explanation:** In software engineering, cohesion measures the strength of relationship between module elements. The standard hierarchy from highest (best) to lowest (worst) is: *Functional > Sequential > Communicational > Procedural > Temporal > Logical > Coincidental*. 
+- **Why others are wrong:** **Temporal Cohesion** (grouping by execution time) and **Logical Cohesion** (grouping by similar control logic) rank lower than Procedural Cohesion. 
+- **Key Trap:** Confusing the relative ranking of Procedural Cohesion with lower forms (Temporal/Logical) versus higher forms (Communicational/Sequential/Functional). Memorize the hierarchy sequence to quickly eliminate lower-ranked cohesions.
+
+---
+
+## Q9
+
+**Answer:** B
+
+### 1. Topic
+**Software Quality / Software Maintenance** (Unit – 6: Software Engineering)
+
+### 2. Hint / Brain Trigger
+> **“When I see maintenance types (Corrective, Adaptive, Perfective, Preventive), I should immediately map *bugs to corrective*, *environment to adaptive*, *user features to perfective*, and *complexity reduction to preventive*.”**
+
+### 3. Solution
+- **Correct Option:** **(B) I-b, II-c, III-d, IV-a**
+
+- **Explanation:**
+  - **I. Corrective (b):** Fixing errors, bugs, or defects discovered *after* the software is deployed and in use.
+  - **II. Adaptive (c):** Modifying software so it can run in a *new environment* (e.g., OS upgrades, new hardware).
+  - **III. Perfective (d):** Enhancing or adding new features to satisfy *changing user requirements*.
+  - **IV. Preventive (a):** Restructuring or refactoring code to *reduce complexity* and improve maintainability for the future.
+
+- **Key Trap / Confusion:** 
+  - Students often confuse **Perfective** maintenance (changing features for users) with **Preventive** maintenance (changing code structure internally for developers). Look for keywords like "complexity reduction" or "understandability" for Preventive.
+
+---
+
+## Q10
+
+**Answer:** B
+
+### 1. Topic
+Software Engineering – Software Design (Cohesion and Coupling)
+
+### 2. Hint / Brain Trigger
+When I see **"low coupling"** and **"high cohesion"**, I should immediately think of **independent, maintainable modules that easily allow changes without affecting others**.
+
+### 3. Solution
+- **Correct Option:** (B) Only S3
+- **Why S1 is wrong:** S1 incorrectly defines *Coupling*. Coupling measures the degree of interdependence between software modules, whereas the definition provided ("how well things grouped together belong logically") describes **Cohesion**.
+- **Why S2 is wrong:** S2 incorrectly defines *Cohesion*. Cohesion measures the internal strength and logical belonging of elements within a single module, whereas the definition provided ("degree of interaction between software modules") describes **Coupling**.
+- **Why S3 is correct:** Low coupling (modules are independent) and high cohesion (modules have a clear, single purpose) are ideal software design goals that make it easy to modify one module without breaking others.
+- **Key Trap:** The question swaps the standard definitions of Cohesion and Coupling in statements S1 and S2 to test precise conceptual clarity. 
+- **Rule of Thumb:** **Cohesion** = Internal strength (high is good); **Coupling** = External dependency (low is good).
+
+---
+
+## Q11
+
+**Answer:** C
+
+### 1. Topic
+Software Reliability (Unit 6: Software Engineering)
+
+### 2. Hint / Brain Trigger
+> **When I see code tested percentage and probability of success, I should immediately multiply them to find the upper bound (at most) of software reliability.**
+
+### 3. Solution
+- **Correct Option:** (C) At most 0.81
+- **Explanation:** 
+  - Software reliability is defined as the probability of failure-free operation of software for a specified time in a specified environment. 
+  - Given that at most **90% (0.9)** of the code is tested and the probability of success for the tested code is **0.9**, the overall reliability of the module is bounded by the product of these values: $0.9 \times 0.9 = 0.81$. 
+  - Because only up to 90% of the code is verified, the reliability can be **at most** 0.81.
+- **Key Trap:** Confusing "at most" upper-bound calculations with exact probabilities or assuming untested code has a success probability of 1.0.
+
+---
+
+## Q12
+
+**Answer:** B
+
+### 1. Topic
+Constructive Cost Model (COCOMO)
+
+### 2. Hint / Brain Trigger
+When I see **Function Points, LOC per FP, and Basic COCOMO formulas**, I should immediately calculate **KLOC = (FP × LOC/FP) / 1000**, apply $E = a(\text{KLOC})^b$ for Effort, and then $T = c(E)^d$ for Development Time.
+
+### 3. Solution
+- **Correct Option:** (B) 12.2 months
+- **Explanation:** 
+  1. Calculate total Lines of Code (LOC): $1000 \text{ FP} \times 50 \text{ LOC/FP} = 50,000 \text{ LOC} = 50 \text{ KLOC}$.
+  2. Compute Effort ($E$) using the basic COCOMO formula: $E = a(\text{KLOC})^b = 1.4 \times (50)^1 = 70$ person-months.
+  3. Compute Development Time ($T$) using the duration formula: $T = c(E)^d = 3 \times (70)^{0.33} \approx 12.18 \text{ months}$ (approx. 12.2 months).
+- **Key Trap:** Forgetting to convert total LOC into **KLOC** (divide by 1000) before plugging it into the effort equation, or confusing the effort formula parameters ($a, b$) with the duration parameters ($c, d$).
+- **Technical Term:** **KLOC** stands for Kilo Lines of Code (thousands of lines of code), which is the standard size metric used in COCOMO equations.
+
+---
+
+## Q13
+
+**Answer:** C
+
+### 1. Topic
+Software Requirements (Unit - 6: Software Engineering)
+
+### 2. Hint / Brain Trigger
+> **“When I see functional specifications and design approaches in software requirements, I should immediately remember that 'modelling-oriented approach' is used for software design or analysis, not as a primary method for specifying functional specifications.”**
+
+### 3. Solution
+- **Correct Option:** (C)
+- **Explanation:** 
+  - **Requirement validation** (Option A) is a core activity ensuring the SRS meets customer needs.
+  - **Prototyping** (Option B) is a standard method used during requirement analysis to clarify user needs.
+  - **Function points** (Option D) is a widely used size metric based on functionality for requirements estimation (alongside LOC).
+  - Option (C) is **incorrect** because a "modelling-oriented approach" generally refers to design or structured analysis methodologies (like object-oriented modeling or data-flow modeling), rather than being a direct method for specifying standalone functional specifications.
+- **Key Trap:** The question tests your ability to distinguish standard terminology in the requirements phase from design-phase concepts.
+
+---
+
+## Q14
+
+**Answer:** B
+
+### 1. Topic
+Software Requirements / Software Design (UML Diagrams) - Unit 6
+
+### 2. Hint / Brain Trigger
+When I see **"static view"** in a UML diagram question, I should immediately think of **Use-Case diagrams** (structural diagrams), whereas collaboration, state chart, and activity diagrams represent dynamic behavior.
+
+### 3. Solution
+- **Correct Option:** **(B) Use-Case diagram**
+- **Explanation:** UML diagrams are broadly classified into structural (static view) and behavioral (dynamic view) categories. A **Use-Case diagram** models the functionality of a system using actors and use cases, providing a **structural (static) view**. 
+- **Why others are wrong:** 
+  - Collaboration, State chart, and Activity diagrams all model interactions, state transitions, or workflows over time, making them **behavioral (dynamic) diagrams**.
+- **Key Trap:** Students often confuse Use-Case diagrams as behavioral because they involve actors "doing" things, but they actually define the static blueprint/context of system features.
+
+---
+
+## Q15
+
+**Answer:** A
+
+### 1. Topic
+Software Quality (Unit - 6: Software Engineering)
+
+### 2. Hint / Brain Trigger
+When I see **"Statistical software quality assurance"** in a question, I should immediately think of **tracing each defect to its underlying cause and isolating the vital few causes**.
+
+### 3. Solution
+- **Correct Option:** (A)
+- **Why it is correct:** Statistical Software Quality Assurance (SSQA) involves tracking defects, tracing them to their root causes, identifying the "vital few" causes (typically using Pareto analysis principles), and taking corrective actions to prevent recurrence.
+- **Why other options are wrong:** Option (D) incorrectly restricts SSQA solely to correcting *each* problem found rather than prioritizing the vital few. Options (B) and (C) relate to software testing and customer surveys, not statistical defect tracking and analysis.
+- **Key Trap:** Confusing general quality control/customer feedback mechanisms with the specific engineering definition of *Statistical Quality Assurance* (focusing on defect tracking and root-cause analysis).
+
+---
+
+## Q16
+
+**Answer:** D
+
+### 1. Topic
+Software Quality: McCall’s Quality Factors (from Unit 6: Software Engineering)
+
+### 2. Hint / Brain Trigger
+When I see **"McCall's quality factors"**, I should immediately check for the classic 11 attributes categorized under product operation, revision, and transition (such as Maintainability, Usability, Integrity, Reliability, and Efficiency).
+
+### 3. Solution
+- **Correct Option:** (D) A, B and C Only
+- **Explanation:** McCall's quality model defines specific software quality factors categorized into product operation, revision, and transition. **Maintainability** (Product Revision), **Usability** (Product Operation), and **Integrity** (Product Operation) are all officially recognized quality factors in McCall's model. 
+- **Why others are wrong / Trap:** **Functionality** is *not* one of McCall's factors (it is often associated with modern standards like ISO 9126). The trap is mixing up terms from different software quality frameworks (like McCall's vs. ISO 9126). Since option D includes A, B, and C while omitting D, it is the correct choice.
+- **Rule:** Memorize the core McCall factors: Correctness, Reliability, Efficiency, Integrity, Usability (Product Operation); Maintainability, Flexibility, Testability (Product Revision); Portability, Reusability, Interoperability (Product Transition).
+
+---
+
+## Q17
+
+**Answer:** D
+
+### 1. Topic
+Software Process Models (Capability Maturity Model - CMM levels)
+
+### 2. Hint / Brain Trigger
+When I see **"Capability Maturity Model levels from lower to higher"**, I should immediately recall the mnemonic **I-R-M-D-O** (**Initial, Repeatable, Managed, Defined, Optimizing**).
+
+### 3. Solution
+- **Correct Option:** D (C, E, A, D, B)
+- **Explanation:** The Capability Maturity Model (CMM) consists of five levels that measure software process maturity:
+  1. **Initial (C):** Chaotic, ad-hoc processes.
+  2. **Repeatable (E):** Basic project management processes are established.
+  3. **Defined (A):** Processes are standardized, documented, and integrated.
+  4. **Managed (D):** Detailed metrics for process and product quality are collected and controlled.
+  5. **Optimizing (B):** Continuous process improvement is enabled by quantitative feedback.
+- **Key Trap:** Confusing the order of **Managed** and **Defined**. Remember that *Defined* (process standardization) comes before *Managed* (quantitative control/metrics) in traditional CMM.
+
+---
+
+## Q18
+
+**Answer:** C
+
+### 1. Topic
+Software Engineering – Unit 6: Estimation and Scheduling of Software Projects (Software Sizing / Software Maturity Index).
+
+### 2. Hint / Brain Trigger
+When I see **legacy software modules**, **changed**, **added**, and **removed** modules to compute **maturity index**, I should immediately use the **Software Maturity Index (SMI)** formula: $\text{SMI} = \frac{M_t - (F_a + F_c + F_d)}{M_t}$.
+
+### 3. Solution
+- **Correct Option:** (C) 0.849
+- **Explanation:** 
+  - The Software Maturity Index (SMI) provides an indication of the stability of a software product based on changes made to current, new, and removed modules.
+  - Formula: $\text{SMI} = \frac{M_t - (F_a + F_c + F_d)}{M_t}$
+    - $M_t$ = Number of modules in the current release ($940$)
+    - $F_c$ = Number of modules changed ($90$)
+    - $F_a$ = Number of modules added ($40$)
+    - $F_d$ = Number of modules removed ($12$)
+  - Calculation: 
+    $\text{SMI} = \frac{940 - (40 + 90 + 12)}{940} = \frac{940 - 142}{940} = \frac{798}{940} \approx 0.8489 \rightarrow 0.849$
+- **Key Trap:** Confusing the numerator subtraction terms or misinterpreting whether removed modules should be added or subtracted in the formula. Remember that additions, changes, and deletions all reduce the overall stability index relative to the total current modules.
+
+---
+
+## Q19
+
+**Answer:** D
+
+### 1. Topic
+Estimation and Scheduling of Software Projects: FP-based Estimation and Project Cost Calculation (Unit 6: Software Engineering).
+
+### 2. Hint / Brain Trigger
+> **When I see Function Points (FP), team size, and monthly salaries, I should immediately divide Total FP by (Productivity × Team Size) to get the duration, then multiply the monthly payroll by that duration.**
+
+### 3. Solution
+- **Correct Option:** (D) ₹ 27,50,000.
+- **Explanation:** 
+  1. **Calculate Project Duration (in months):** 
+     $\text{Duration} = \frac{\text{Total FP}}{\text{Productivity} \times \text{Team Size}} = \frac{352}{8 \times 4} = \frac{352}{32} = 11 \text{ months}$
+  2. **Calculate Total Monthly Payroll:** 
+     $\text{Architect} (1 \times ₹80,000) + \text{Programmers} (2 \times ₹60,000) + \text{Tester} (1 \times ₹50,000) = ₹80,000 + ₹1,20,000 + ₹50,000 = ₹2,50,000 \text{ per month}$
+  3. **Calculate Projected Cost:** 
+     $\text{Total Cost} = \text{Monthly Payroll} \times \text{Duration} = ₹2,50,000 \times 11 = ₹27,50,000$
+- **Key Trap:** Forgetting to multiply the productivity by the total number of team members (4) when finding the overall monthly output, or miscalculating individual salaries (especially the two programmers).
+
+---
+
+## Q20
+
+**Answer:** C
+
+### 1. Topic
+Software Quality / Software Evolution and Reliability (Unit - 6 : Software Engineering)
+
+### 2. Hint / Brain Trigger
+> **“When I see software not wearing out but deteriorating as it evolves, I should immediately think of multiple change requests and side effects.”**
+
+### 3. Solution
+- **Correct Option:** **(C)**
+- **Explanation:** Unlike hardware which suffers physical wear and tear, software does not degrade physically. However, as software evolves through maintenance, bug fixes, and feature additions, **multiple change requests** alter the code structure and introduce unintended errors in component interactions. This phenomenon is often studied under software maintenance and evolution (or the "bathtub curve" for software failures caused by side effects of changes).
+- **Why others are wrong:** 
+  - (A) and (B) apply to physical hardware (wear-out, exposure, fatigue). 
+  - (D) is nonsensical since software doesn't have physical spare parts.
+- **Key Trap:** Confusing hardware aging (physical wear) with software aging (structural deterioration caused by continuous modifications and updates).
+
+---
+
+## Q21
+
+**Answer:** D
+
+### 1. Topic
+Software Process Models (Unit – 6: Software Engineering)
+
+### 2. Hint / Brain Trigger
+When I see **"requirements are not fully clear"** and the management expects **"working model... as soon as possible for feedback"**, I should immediately think of the **Agile Model**.
+
+### 3. Solution
+- **Correct Option:** (D) Agile Model
+- **Why it is correct:** The Agile Model is designed for projects where requirements are volatile, unclear, or evolving. It emphasizes rapid delivery of small, working increments of software to gather continuous feedback from stakeholders.
+- **Why other options are wrong:** 
+  - *Waterfall Model* requires fully defined, stable requirements upfront and does not accommodate changes easily.
+  - *Spiral Model* focuses heavily on risk analysis and iterative development, but it is typically used for large, complex, high-risk mission-critical systems rather than rapid incremental delivery of uncertain requirements.
+  - *V-Model* is an extension of the Waterfall model emphasizing a strict corresponding testing phase for each development stage.
+- **Key Trap:** Confusing the iterative nature of the *Spiral Model* (risk-driven) with the feedback-driven, rapid incremental nature of the *Agile Model*.
+
+---
+
+## Q22
+
+**Answer:** D
+
+### 1. Topic
+Software Configuration Management (Software Engineering - Unit 6)
+
+### 2. Hint / Brain Trigger
+When I see **"version"** in a question, I should immediately think of **functionally distinct system instances**, and when I see **"release"**, I should think of **distribution to users outside the development team**.
+
+### 3. Solution
+- **Correct Option:** (D) II and III
+- **Why it is correct:** 
+  - A **version** represents an instance of a system that is *functionally distinct* in some way from other instances (Statement II is correct).
+  - A **release** is an operational instance of a system that is made available/distributed to users *outside of the development team* (Statement III is correct).
+- **Why other options are wrong:** 
+  - Statements I and IV incorrectly claim that a version or release is "functionally identical but non-functionally distinct"—this definition actually describes system *variants* (or configurations), not versions.
+- **Key Trap:** Confusing **versions** (functional changes over time) with **variants** (concurrent parallel instances that are functionally identical but non-functionally distinct, e.g., for different hardware).
+
+---
+
+## Q23
+
+**Answer:** A
+
+### 1. Topic
+Software Process Models (Spiral Model) — Unit 6: Software Engineering
+
+### 2. Hint / Brain Trigger
+When I see **"spiral model"** and **"when will it stop"**, I should immediately think of **software retirement**, because unlike traditional models that end at delivery, the spiral model continues to evolve throughout the software's operational life.
+
+### 3. Solution
+- **Correct Option:** **A**
+- **Explanation:** Unlike linear models (like Waterfall) that conclude upon software delivery, the **Spiral Model** incorporates risk-driven iterative loops that can remain operative throughout the entire lifecycle of the computer software, effectively ending only when the software product is **retired**.
+- **Trap/Confusion:** Candidates often confuse the spiral model with standard release cycles (like Beta testing or a fixed number of loops), assuming development stops once a version is shipped. However, subsequent loops continue for maintenance, upgrades, and continuous risk management until retirement.
+
+---
+
+## Q24
+
+**Answer:** C
+
+### 1. Topic
+Software Process Models (Unit 6: Software Engineering)
+
+### 2. Hint / Brain Trigger
+> **“When I see **less experience on similar projects** and the need for **risk assessment**, I should immediately think of the **Spiral Model**.”**
+
+### 3. Solution
+- **Correct Option:** **(C) Spiral**
+- **Why it is correct:** The **Spiral Model** explicitly includes risk analysis and management as a key framework activity in every loop (iteration). When development teams lack experience with similar projects, the risk of failure is high, making an iterative model driven by continuous risk assessment ideal.
+- **Why others are wrong:** 
+  - **Waterfall** requires well-understood requirements and assumes low risk; it fails when developers lack experience.
+  - **RAD (Rapid Application Development)** relies on heavily reused components and fast prototyping, unsuitable for high-risk or inexperienced teams.
+  - **Iterative Enhancement** focuses on incremental delivery but lacks the rigorous, explicit risk-driven framework of the Spiral model.
+- **Key Trap:** Confusing general iterative models with the specific risk-driven nature of the **Spiral Model**, which is uniquely tailored to handle high project risks and unfamiliar domains.
+
+---
+
+## Q25
+
+**Answer:** C
+
+### 1. Topic
+Software Maintenance (Unit 6: Software Engineering)
+
+### 2. Hint / Brain Trigger
+When I see **changes in the hardware or software environment** in a software maintenance question, I should immediately think of **Adaptive maintenance**.
+
+### 3. Solution
+- **Correct Option:** (C) Adaptive maintenance
+- **Why it is correct:** Adaptive maintenance involves modifying the software *after delivery* to keep it usable when the external environment changes (such as operating system upgrades, new hardware, or database updates).
+- **Eliminating wrong options:** 
+  - **Corrective maintenance** fixes bugs/defects reported by users.
+  - **Perfective maintenance** enhances performance, adds new features, or improves maintainability.
+  - **Preventive maintenance** anticipates future problems and restructures code to prevent failures.
+- **Key Trap:** Confusing *environmental changes* (Adaptive) with *adding features/optimizing* (Perfective) or *fixing bugs* (Corrective). Always map "environment changes" directly to **Adaptive**.
+
+---
+

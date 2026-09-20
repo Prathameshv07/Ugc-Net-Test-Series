@@ -1,67 +1,76 @@
-# NET Practice — static test series (no CSV, no backend)
+# NET Practice
 
-Everything runs as plain static files — works on GitHub Pages with zero
-build step. Each test is a pair of files (`.html` + `.md`); one shared
-engine and stylesheet power every test page; one manifest file drives the
-picker on the home page.
+A lightweight, self-hosted mock-test player for UGC NET exam prep — timed tests, an untimed revision mode, hints, and per-topic weak-area analytics. No backend, no database, no build step: it's static files on GitHub Pages, and every test is just two Markdown files.
 
-## File structure
+> ⚠️ **Before making this repo public:** if your `questions.md`/`answers.md` files contain content extracted from a paid test-series provider, keep the repo **private** (GitHub's free tier supports private repos). Making it public would redistribute that provider's copyrighted material. This README and the code are fine to share either way — it's the actual question content that needs to stay private.
+
+## What it does
+
+- **Timed mock tests** with an OMR-style question palette (answered / visited / not-visited), a countdown timer, and per-question hints you can reveal without spoiling the answer.
+- **Untimed revision mode** — browse every question with the answer and full explanation shown inline, any time, no need to retake a test just to reread it.
+- **Results screen** with a correct/wrong/skipped breakdown and a weakest-topic-first accuracy chart, so you know exactly what to restudy.
+- **Markdown-native content** — questions, options, hints, and explanations all support tables, images, and LaTeX math (`$...$`, rendered via KaTeX), so writing content is just... writing.
+- **Two people, independent progress** — since it's just static files with no backend, everyone's attempt history lives in their own browser only.
+
+## Live setup
+
+1. Fork or clone this repo.
+2. Enable GitHub Pages (Settings → Pages → deploy from the `main` branch).
+3. Open the Pages URL — that's it, no build step, no server to run.
+
+## Folder structure
 
 ```
-index.html                     ← the picker (reads assets/tests-manifest.js)
+index.html                     — the test picker (reads assets/tests-manifest.js)
+player.html                    — the universal test player (?test=<slug> picks the test)
 assets/
-  quiz-style.css                ← shared look, used by every page
-  quiz-engine.js                 ← shared logic, used by every test page
-  tests-manifest.js              ← the ONE file you edit to register a test
+  quiz-style.css                 — shared visual design
+  player-engine.js                — all quiz logic: fetch, parse, render, score
+  tests-manifest.js               — the ONE file you edit to register a new test
 templates/
-  test-template.html             ← duplicate this per new test
-  answers-template.md            ← duplicate this per new test
+  questions-template.md           — duplicate this per new test
+  answers-template.md             — duplicate this per new test
+tools/
+  extract_html.py                  — turns a saved test-site report into questions.md + a ground-truth JSON
+  generate_answers.py              — calls the Gemini API to write explanations, grounded on that ground truth
+  migrate_old_test.py              — one-off converter for older-format tests
+<category>/<subcategory>/        — your actual test content lives here, e.g. paper2-csa/topic-wise/
 ```
 
-## Adding a new test — the full workflow
+## Adding a new test
 
-1. Copy `templates/test-template.html` and `templates/answers-template.md`
-   into wherever you're organizing tests (e.g. `tests/paper2-csa/dbms-01.html`
-   and `tests/paper2-csa/dbms-01.md`) — keep the same base filename for both.
-2. In the `.html` file:
-   - Fill in `TEST_CONFIG` (name, timeMinutes, marksPerQuestion, and
-     `answerKey` pointing at the matching `.md` file).
-   - Fix the `../assets/...` paths if you've placed the file in a
-     different folder depth than the template.
-   - Duplicate a `.question` block per question. For each:
-     - `data-id="Qn"` — must match a `## Qn` heading in the `.md` file.
-     - `data-topic="..."` — optional, powers the weak-topic chart on Mix/PYP
-       tests. Skip it on single-topic tests.
-     - Mark the correct option with `data-correct="true"`.
-     - Optionally fill the `.hint-content` block (text, tips, or a YouTube
-       `<iframe>` embed) — shown on demand during the attempt, doesn't give
-       the answer away.
-3. In the `.md` file: one `## Qn` heading per question, with the explanation
-   underneath (full Markdown — tables, images, embeds all work).
-4. Add one entry to `assets/tests-manifest.js` pointing at the new `.html`
-   file. This is what makes it show up on the home page picker.
+**By hand:** duplicate `templates/questions-template.md` and `templates/answers-template.md`, follow the format notes at the top of each, then add one entry to `assets/tests-manifest.js`.
 
-## How taking a test works
+**From a saved test-site report:**
+```bash
+python3 tools/extract_html.py report.html paper2-csa/topic-wise os-03
+python3 tools/generate_answers.py paper2-csa/topic-wise/os-03-questions.md \
+  paper2-csa/topic-wise/os-03-source.json paper2-csa/topic-wise/os-03-answers.md \
+  tools/prompt-net-practice.txt tools/CSA_Syllabus.pdf paper2-csa/topic-wise/os-03-assets
+```
+Then add the manifest entry. `extract_html.py` pulls the correct answer straight from the source site's own markup rather than guessing, and `generate_answers.py` calls the Gemini API once per question (free tier) to write a topic/hint/explanation, using the site's official solution as grounding when one exists.
 
-- First time (per name, per test): only **Start test (timed)** is offered —
-  a genuine cold attempt, which is what actually builds exam recall.
-- After finishing once: the same page always offers **Retake (timed)** for
-  another real attempt, and **Revise (view Q&A, no timer)** to browse freely
-  — you never need to redo a timed test just to reread it.
-- Results show a correct/wrong/skipped donut and, if you used `data-topic`,
-  a weakest-topic-first accuracy bar list.
-- Everything (who's taking it, attempt history, last scores) is stored in
-  that browser's `localStorage` — it's per-device, not synced between you
-  and your friend. Each of you sees your own history on your own device.
+### The `answers.md` contract
 
-## Two things to remember
+Every `## Qn` section must start with exactly:
+```
+**Answer:** B
+**Topic:** Some Topic
+```
+The player reads these two lines directly for scoring and the weak-topic chart. Get the format wrong and that question silently scores as unanswered — no error is thrown, so double-check this if a score looks off.
 
-- **Test locally with a server, not by double-clicking the file.** Opening
-  an `.html` file directly (`file://`) blocks the fetch of its `.md` answer
-  key — that's a browser security restriction, not a bug. Run
-  `python3 -m http.server` in the project folder and open
-  `http://localhost:8000` to test before pushing. It works normally once
-  hosted on GitHub Pages (that's real `http`).
-- **The manifest is the only place a test "exists" for the picker.** Creating
-  the `.html`/`.md` pair alone won't make it show up on the home page —
-  add its entry to `tests-manifest.js` too.
+## Local development
+
+Don't test by double-clicking the HTML files — browsers block `fetch()` of local `.md` files over `file://`. Instead:
+```bash
+python3 -m http.server
+```
+then open `http://localhost:8000`.
+
+## Tech
+
+Vanilla HTML/CSS/JS, [marked.js](https://marked.js.org/) for Markdown, [KaTeX](https://katex.org/) for math, [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) for extraction, the [Gemini API](https://ai.google.dev/) for explanation generation. No frameworks, no build step, no dependencies to install for the site itself.
+
+## License
+
+Personal project — add a license of your choice if you make the code (not the question content) public. [MIT](https://choosealicense.com/licenses/mit/) is a reasonable default if you're unsure.

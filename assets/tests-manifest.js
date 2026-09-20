@@ -1,38 +1,65 @@
 /* ==========================================================================
    THE ONE FILE YOU EDIT TO REGISTER A NEW TEST.
-   Add one object per test. The index page reads this array to build the
-   picker — you never need to hand-edit index.html itself.
-
-   Fields:
-     title      - shown on the picker card
-     category   - tests are grouped under this heading
-     path       - relative path (from index.html) to the test's .html file
-     questions  - question count (shown on the card; purely informational)
-     minutes    - time limit (shown on the card; purely informational —
-                  the REAL timer value lives in that test's own TEST_CONFIG)
+   Each entry needs a unique "slug" -- that's what player.html?test=<slug>
+   looks up. minutes/marksPerQuestion/negativeMarking drive the actual timer
+   and scoring (set them explicitly per test; no auto-calculation anymore).
    ========================================================================== */
 
-const TESTS_MANIFEST = [
+var TESTS_MANIFEST = [
   {
+    slug: "01-dbms",
     title: "DBMS — Test 1",
     category: "Paper 2 (CSA) — Topic-wise",
-    path: "paper2-csa/topic-wise/dbms-01.html",
+    questionsFile: "paper2-csa/topic-wise/01-dbms-questions.md",
+    answersFile: "paper2-csa/topic-wise/01-dbms-answers.md",
     questions: 25,
-    minutes: 30
+    minutes: 30,
+    marksPerQuestion: 2,
+    negativeMarking: 0
   },
-  // {
-  //   title: "Mix — Test 1",
-  //   category: "Paper 1 — Mix",
-  //   path: "templates/test-template.html",
-  //   questions: 50,
-  //   minutes: 60
-  // }
-  // Add new tests below, following the same shape:
-  // {
-  //   title: "OS — Test 2",
-  //   category: "Paper 2 (CSA) — Topic-wise",
-  //   path: "tests/paper2-csa/os-02.html",
-  //   questions: 25,
-  //   minutes: 30
-  // },
+  {
+    slug: "02-os",
+    title: "OS — Test 2",
+    category: "Paper 2 (CSA) — Topic-wise",
+    questionsFile: "paper2-csa/topic-wise/02-os-questions.md",
+    answersFile: "paper2-csa/topic-wise/02-os-answers.md",
+    questions: 24,
+    minutes: 30,
+    marksPerQuestion: 2,
+    negativeMarking: 0
+  },
+  {
+    slug: "03-toc",
+    title: "TOC — Test 3",
+    category: "Paper 2 (CSA) — Topic-wise",
+    questionsFile: "paper2-csa/topic-wise/03-toc-questions.md",
+    answersFile: "paper2-csa/topic-wise/03-toc-answers.md",
+    questions: 25,
+    minutes: 30,
+    marksPerQuestion: 2,
+    negativeMarking: 0
+  },
+  {
+    slug: "04-se",
+    title: "SE — Test 4",
+    category: "Paper 2 (CSA) — Topic-wise",
+    questionsFile: "paper2-csa/topic-wise/04-se-questions.md",
+    answersFile: "paper2-csa/topic-wise/04-se-answers.md",
+    questions: 25,
+    minutes: 30,
+    marksPerQuestion: 2,
+    negativeMarking: 0
+  },
+  {
+    slug: "05-coa",
+    title: "COA — Test 5",
+    category: "Paper 2 (CSA) — Topic-wise",
+    questionsFile: "paper2-csa/topic-wise/05-coa-questions.md",
+    answersFile: "paper2-csa/topic-wise/05-coa-answers.md",
+    questions: 25,
+    minutes: 30,
+    marksPerQuestion: 2,
+    negativeMarking: 0
+  }
+  // Add new tests below, following the same shape.
 ];

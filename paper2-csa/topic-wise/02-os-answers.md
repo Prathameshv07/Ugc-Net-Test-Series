@@ -1,0 +1,580 @@
+## Q1
+
+**Answer:** D
+
+### 1. Topic
+**Unit – 5: System Software and Operating System** → *Storage Management: Mass-Storage Structure, Disk Structure, Scheduling and Management*
+
+### 2. Hint / Brain Trigger
+When you see **"steps the OS takes to use a disk to hold its files"**, immediately think of **Partitioning** (dividing the physical drive into sections) followed by **Logical Formatting** (installing the file system data structures).
+
+### 3. Solution
+Before a disk can store files, it must undergo three levels of preparation, the latter two of which are performed by the Operating System:
+
+1. **Partitioning:** The OS divides the disk into one or more groups of cylinders (partitions) so that each partition can be treated as a separate logical volume.
+2. **Logical Formatting (creating a file system):** The OS writes initial file-system structures onto each partition (such as root directories, inode tables, free-space allocation tables like FAT/bitmaps).
+
+* **Why other options are incorrect:**
+  * **Low-level (physical) formatting** is typically done at the factory to create sectors.
+  * **Caching** and **swap space creation** are operational optimizations/virtual memory management mechanisms, not mandatory prerequisites for placing a general file system on a drive.
+
+---
+
+## Q2
+
+**Answer:** A
+
+### 1. Topic
+**Unit – 5: System Software and Operating System** → *Memory Management: Contiguous Memory Allocation*
+
+### 2. Hint / Brain Trigger
+When comparing dynamic memory allocation strategies across an arrival/finish sequence, trace the exact layout of free holes: **Best-fit can leave tiny unusable fragments**, causing subsequent allocations to fail where **First-fit** succeeds.
+
+### 3. Solution
+**Correct Option: (A) First fit**
+
+**Initial Setup:**
+- Total memory = $1000\text{ K}$.
+- Jobs 1 ($200\text{ K}$), 2 ($350\text{ K}$), and 3 ($300\text{ K}$) arrive sequentially:
+  - Layout: `[Job 1: 200K] [Job 2: 350K] [Job 3: 300K] [Free: 150K]`.
+- Job 1 finishes:
+  - Free holes available: **Hole A = $200\text{ K}$** (at start), **Hole B = $150\text{ K}$** (at end).
+
+**1. First-Fit Allocation:**
+- **Job 4 ($120\text{ K}$):** Takes Hole A ($200\text{ K}$). Remaining free: $80\text{ K}$ and $150\text{ K}$.
+- **Job 5 ($150\text{ K}$):** Takes Hole B ($150\text{ K}$). Remaining free: $80\text{ K}$.
+- **Job 6 ($80\text{ K}$):** Takes the remaining $80\text{ K}$ hole.
+- **Result:** All jobs allocated successfully.
+
+**2. Best-Fit Allocation:**
+- **Job 4 ($120\text{ K}$):** Chooses closest fit $\ge 120\text{ K}$, which is Hole B ($150\text{ K}$). Remaining: $30\text{ K}$.
+- **Job 5 ($150\text{ K}$):** Takes Hole A ($200\text{ K}$). Remaining: $50\text{ K}$.
+- **Job 6 ($80\text{ K}$):** Available contiguous holes are $50\text{ K}$ and $30\text{ K}$. Neither can fit $80\text{ K}$ (external fragmentation).
+- **Result:** Allocation fails.
+
+**Key Trap:** Intuition suggests "Best Fit" is always better, but it often fragments memory into holes too small to satisfy future requests.
+
+---
+
+## Q3
+
+**Answer:** D
+
+### 1. Topic
+**Unit – 5: System Software and Operating System** → *Memory Management: Demand Paging* (also relates to **Unit – 2: Computer System Architecture** → *Memory Hierarchy: Virtual Memory*).
+
+### 2. Hint / Brain Trigger
+> **“When I see page fault service time, memory access time, and hit ratio, immediately think of Effective Memory Access Time formula and unify all time units to microseconds ($\mu\text{s}$).”**
+
+### 3. Solution
+**Correct Option: (D)**
+
+**Formula:**
+$\text{Average Memory Access Time (AMAT)} = (p \times t_1) + ((1 - p) \times t_2)$
+
+Where:
+- Hit ratio ($p$) = $99.99\% = 0.9999$
+- Memory access time ($t_1$) = $1\ \mu\text{s}$
+- Page fault rate ($1 - p$) = $0.01\% = 0.0001$
+- Page fault service time ($t_2$) = $10\text{ ms} + 1\ \mu\text{s} = 10,000\ \mu\text{s} + 1\ \mu\text{s} = 10,001\ \mu\text{s}$
+
+**Calculation:**
+$\text{AMAT} = (0.9999 \times 1) + (0.0001 \times 10001) \approx 0.9999 + 1.0001 = 2.0000\ \mu\text{s} \approx 1.9999\ \mu\text{s}$
+
+*(Using $t_2 \approx 10,000\ \mu\text{s}$ yields $0.9999 + 1.0000 = 1.9999\ \mu\text{s}$).*
+
+- **The Key Trap:** Mixing units ($\text{ms}$ vs $\mu\text{s}$). Option (A) gives the exact numerical value ($1.9999$) but in **milliseconds**, which is off by a factor of $10^3$. Always verify the final unit.
+
+---
+
+## Q4
+
+**Answer:** B
+
+### 1. Topic
+**Unit – 5 : System Software and Operating System** → CPU Scheduling: Scheduling Criteria and Algorithms.
+
+### 2. Hint / Brain Trigger
+When priority is **strictly proportional to waiting time** and re-evaluated every fixed interval $T$, think **Round Robin** with time quantum equal to $T$.
+
+### 3. Solution
+**Correct Option: (B) Round Robin Scheduling**
+
+**Why it is correct:** 
+  - All processes arrive simultaneously at $t = 0$ with equal priority. 
+  - When one process is selected and executes for $T$ time units, all other processes wait. 
+  - Since priority increases with waiting time, the waiting processes now have higher priorities than the one currently executing.
+  - Therefore, every $T$ time units, the scheduler preempts the current job and picks the job that has waited the longest.
+  - A process gets another turn only after every other process has executed for $T$ units. This cyclically serves each process for a slice of $T$, which is the exact definition of **Round Robin scheduling** with time quantum $T$.
+
+**Key Trap:** 
+  - Do not choose **(A) Priority scheduling**; while dynamic priorities are used as an implementation mechanism, the resulting *scheduling behavior/criteria* is pure Round Robin. 
+  - **(D) FCFS** is ruled out because processes do not run to completion; they are preempted after $T$ units.
+
+---
+
+## Q5
+
+**Answer:** A
+
+### 1. Topic
+**Unit – 5: System Software and Operating System** → CPU Scheduling: Scheduling Criteria and Algorithms
+
+### 2. Hint / Brain Trigger
+When a question asks for preemptive SJF (Shortest Remaining Time First), evaluate the remaining burst times at every single process arrival instance ($t=1, 2, 3$) to check if the running process needs to be preempted.
+
+## 3. Solution
+**Correct Option: (A) 6.5**
+
+**Step-by-Step Scheduling Execution:**
+* At $t = 0$: Only $P_1$ arrives (Burst = 8). It runs for 1 ms (Remaining = 7).
+* At $t = 1$: $P_2$ arrives (Burst = 4). Since 4 < 7, $P_1$ is preempted. $P_2$ runs to completion at $t = 5$ since no shorter jobs arrive.
+* At $t = 5$: Ready pool has $P_1$ (7), $P_3$ (9, arrived at $t=2$), and $P_4$ (5, arrived at $t=3$). $P_4$ has the shortest burst, so it runs to completion at $t = 10$.
+* At $t = 10$: Between $P_1$ (7) and $P_3$ (9), $P_1$ runs and finishes at $t = 17$.
+* At $t = 17$: Finally, $P_3$ runs and finishes at $t = 26$.
+
+**Metrics Calculation:**
+$\text{Waiting Time (WT)} = \text{Completion Time (CT)} - \text{Arrival Time (AT)} - \text{Burst Time (BT)}$ 
+
+* $P_1$: $17 - 0 - 8 = 9\text{ ms}$
+* $P_2$: $5 - 1 - 4 = 0\text{ ms}$
+* $P_3$: $26 - 2 - 9 = 15\text{ ms}$
+* $P_4$: $10 - 3 - 5 = 2\text{ ms}$
+
+$\text{Average WT} = \frac{9 + 0 + 15 + 2}{4} = \frac{26}{4} = \mathbf{6.5\text{ ms}}$ 
+
+* **Key Trap:** Forgetting that $P_1$ already executed for $1\text{ ms}$ when evaluating remaining times at $t=1$. Always write down the remaining times, not the initial burst times, during preemption checks.## Q6
+
+**Answer:** A
+
+### 1. Topic
+Windows Operating Systems / Process Management (Unit 5)
+
+### 2. Hint / Brain Trigger
+When I see **Windows API vs UNIX system calls**, I should immediately map Windows process/file handles (`Create-process`, `CreateFile`, `CloseHandle`) to their UNIX equivalents (`fork`, `open`, `close`).
+
+### 3. Solution
+**Correct Option:** A ((iii) (iv) (i) (ii))  
+
+**Explanation:** 
+  - `Create-process()` in Windows maps to `fork()` in UNIX for creating a new process.
+  - `WaitForSingleObject()` in Windows corresponds to `wait()` in UNIX for a parent process to wait for a child process completion.
+  - `CreateFile()` in Windows is used to create or open a file, mapping to `open()` in UNIX.
+  - `CloseHandle()` in Windows closes an open object handle, corresponding to `close()` in UNIX.  
+
+**Key Trap:** Confusing Windows object-handle management functions (`CreateFile`, `CloseHandle`) with traditional UNIX file descriptors, or mixing up process creation (`Create-process` vs `fork`).
+
+---
+
+## Q7
+
+**Answer:** C
+
+### 1. Topic
+Linux Operating Systems: Process Management / Unix Kernel Data Structures (Process Table and User Structure)
+
+### 2. Hint / Brain Trigger
+When I see **Unix process table vs user structure memory residency**, I should immediately think: **Process table stays resident always, while user structure gets swapped out with its process.**
+
+### 3. Solution
+**Correct Option:** (C) Both (I) and (II) are correct.  
+
+**Explanation:** 
+  - **Statement I is correct** because the **process table** contains essential core information required by the kernel for *all* processes in the system at all times, regardless of whether a process is currently in main memory or swapped out. Thus, it remains permanently resident in kernel memory.
+  - **Statement II is correct** because the **user structure** contains process-specific data (like file descriptors, environment variables, and kernel stack) needed only when the process executes. To save valuable main memory, it is swapped or paged out along with the process image when the process is not in memory.  
+
+**Key Trap:** Confusing the lifelong residency of the global process table with the process-specific, swappable nature of the user structure.
+
+---
+
+## Q8
+
+**Answer:** D
+
+### 1. Topic
+Functions of OSI and TCP/IP Layers (Unit - 9: Data Communication and Computer Networks)
+
+### 2. Hint / Brain Trigger
+When I see **"recover from failures"** and **"network operations"** requiring memory of past connections, I should immediately think of **state** information (connection state like TCP handshakes).
+
+### 3. Solution
+**Correct Option:** (D) state  
+
+**Explanation:** Protocols like TCP are connection-oriented and maintain **state** information (such as sequence numbers, acknowledgment numbers, and window sizes) to reliably manage data transfer and recover from packet loss or network failures.   
+
+**Why others are wrong:** *Stateless* protocols (like UDP) do not maintain session context, making them unsuitable for reliable recovery without higher-layer assistance. *Operating system* and *IP address* are structural or addressing components, not the specific transactional data needed to recover ongoing connection failures.  
+
+**Key Trap:** Confusing general networking components (like IP addresses) with the specific session memory required for reliable error recovery and flow control.
+
+---
+
+## Q9
+
+**Answer:** C
+
+### 1. Topic
+Memory Management (Virtual Memory / Dynamic Loading)
+
+### 2. Hint / Brain Trigger
+When I see **dynamic loading** in a question, I should immediately think: **no special hardware or OS support is required** (it is entirely handled by user programs and libraries).
+
+### 3. Solution
+**Correct Option:** **(C)**  
+
+**Explanation:** Dynamic loading is a program design technique where a routine is not loaded into main memory until it is called during program execution. This is typically managed via library routines written by the programmer (user programs), meaning it does not necessitate built-in hardware mechanisms (like a Memory Management Unit) or special kernel/OS interventions.
+
+**Trap / Confusion:** Students often confuse *dynamic loading* with *dynamic linking* or *virtual memory (paging/segmentation)*, both of which heavily rely on specialized hardware (like an MMU) and operating system support. 
+
+**Rule to Remember:** 
+  - **Dynamic Loading** $\rightarrow$ User-program driven (No special OS/hardware required).
+  - **Virtual Memory / Paging** $\rightarrow$ OS and Hardware (MMU) dependent.
+
+---
+
+## Q10
+
+**Answer:** B
+
+### 1. Topic
+Process Synchronization / Critical-Section Problem (Unit 5: System Software and Operating System)
+
+### 2. Hint / Brain Trigger
+When I see **"hardware implementation for mutual exclusion"**, I should immediately think of **Test and Set Instruction (TSL)** or atomic hardware instructions.
+
+### 3. Solution
+**Correct Option:** (B) Test and set instruction  
+
+**Why it is correct:** The Test-and-Set instruction is an atomic hardware-level instruction executed by the CPU that allows checking and modifying the content of a word in a single, uninterrupted cycle, providing a direct hardware solution for mutual exclusion.  
+
+**Why others are wrong:** Semaphores are synchronization tools implemented via software operating system primitives (relying on kernel support for blocking/unblocking processes via P and V operations), making them software-based solutions rather than strict hardware implementations.  
+
+**Key Trap:** Confusing software synchronization mechanisms (like Semaphores and Mutexes) with hardware-level instructions (like Test-and-Set or Swap) used to build them.  
+
+**Rule:** If the question asks for a *hardware* solution → think **Test-and-Set (TSL)** or **Compare-and-Swap (CAS)**. If it asks for *OS synchronization tools* → think **Semaphores**.
+
+---
+
+## Q11
+
+**Answer:** B
+
+### 1. Topic
+Storage Management: Mass-Storage Structure, Disk Structure, Scheduling and Management (Unit - 5: System Software and Operating System)
+
+### 2. Hint / Brain Trigger
+When I see **disk block read time** (with seek time, rotation time, and block size), I should immediately calculate: $\text{Total Time} = \text{Seek Time} + \text{Rotational Latency} (\frac{\text{Rotation Time}}{2}) + \text{Transfer Time} (\frac{\text{Block Size}}{\text{Bytes per Track}} \times \text{Rotation Time})$.
+
+### 3. Solution
+**Correct Option:** (B) 49 sec (Note: unit in options is conventionally ms).  
+
+**Explanation:** 
+  - **Seek Time:** Given directly as $40\text{ msec}$.
+  - **Rotational Latency:** Average time for the desired sector to reach the read/write head is half of the rotation time: $\frac{16\text{ msec}}{2} = 8\text{ msec}$.
+  - **Transfer Time:** Time to read the $1024\text{ bytes}$ block is proportional to its fraction of the total track capacity ($16384\text{ bytes}$): $\frac{1024}{16384} \times 16\text{ msec} = 1\text{ msec}$.
+  - **Total Time:** $\text{Seek Time} + \text{Rotational Latency} + \text{Transfer Time} = 40 + 8 + 1 = 49\text{ msec}$.  
+
+**Key Trap:** Forgetting to divide the rotation time by 2 when calculating average rotational latency, or confusing track capacity with sector size.
+
+---
+
+## Q12
+
+**Answer:** A
+
+### 1. Topic
+Memory Management (Unit - 5: System Software and Operating System)
+
+### 2. Hint / Brain Trigger
+When I see **process protection from modification**, I should immediately think of **hardware-enforced bounds checking using relocation and limit registers**.
+
+### 3. Solution
+**Correct Option:** (A)  
+
+**Why it is correct:** Hardware registers—specifically the **relocation register** (holding the smallest physical address) and the **limit register** (holding the range of logical addresses)—ensure that every CPU-generated address falls within the legal boundaries of the executing process. If an address is out of bounds, hardware traps it, preventing a process from corrupting the OS or other processes.  
+
+**Why others are wrong:** 
+  - (B) Protection is a hardware-enforced mechanism, not a software "algorithm" running continuously.
+  - (C) & (D) Simply being in different memory spaces or logical addresses does not physically prevent an errant or malicious pointer from writing outside its space without active bounds checking.  
+
+**Key Trap:** Confusing logical separation with active hardware enforcement; logical spaces alone cannot stop wild pointers without hardware register validation.
+
+---
+
+## Q13
+
+**Answer:** C
+
+### 1. Topic
+Operating Systems - CPU Scheduling, Disk Scheduling, and Input-Output Organization (Unit - 5)
+
+### 2. Hint / Brain Trigger
+When I see **process execution, disk movement, and interrupt handling**, I should immediately match **Time-sharing with Round Robin**, **Disk Scheduling with SCAN**, and **Interrupt Processing with LIFO**.
+
+### 3. Solution
+**Correct Option:** (C) A-II, B-IV, C-I and D-III
+
+**Explanation:**
+  - **Disk Scheduling (A):** Matches with **SCAN (II)** because SCAN is a disk arm movement algorithm used to reduce total seek time.
+  - **Batch Processing (B):** Matches with **FIFO (IV)** as jobs are executed sequentially in the order they arrive.
+  - **Time Sharing (C):** Matches with **Round Robin (I)** since Round Robin CPU scheduling allocates fixed time slices to processes, implementing time-sharing.
+  - **Interrupt Processing (D):** Matches with **LIFO (III)** because a higher-priority incoming interrupt preempts the currently running lower-priority interrupt, behaving like a stack (Last-In, First-Out).
+
+**Key Trap:** Confusing batch processing (FIFO) with interrupt handling (LIFO). Always remember that interrupts use a stack structure, favoring the most recent emergency first.
+
+---
+
+## Q14
+
+**Answer:** A
+
+### 1. Topic
+Threads (Multithreading Models) — Unit 5: System Software and Operating System
+
+### 2. Hint / Brain Trigger
+When I see **mapping models between user threads and kernel threads**, I should immediately check if the descriptions match standard definitions: Many-to-One ($N:1$), One-to-One ($1:1$), and Many-to-Many ($N:M$ where user threads map to $\le$ kernel threads).
+
+### 3. Solution
+**Correct Option:** **A** ((a) is true; (b) is false)  
+
+**Explanation:** 
+  - Statement (a) correctly defines the three multithreading models:
+    1. **Many-to-One:** Maps many user-level threads to a single kernel thread.
+    2. **One-to-One:** Maps each user thread to a dedicated kernel thread.
+    3. **Many-to-Many:** Multiplexes many user threads onto a smaller or equal number of kernel threads.
+  - Statement (b) reverses these relationships (e.g., claiming many kernel threads map to one user thread), which is invalid.  
+
+**Key Trap:** Reversing the direction of mapping between user threads and kernel threads. Remember: **User threads are always on the left/input side**, and **kernel threads are on the right/output side**.
+
+---
+
+## Q15
+
+**Answer:** B
+
+### 1. Topic
+Process Management: Semaphores (Unit 5)
+
+### 2. Hint / Brain Trigger
+> **“When I see P and V operations modifying a semaphore's initial value, I should immediately set up a linear equation: Initial - (Number of P ops) + (Number of V ops) = Final Value.”**
+
+### 3. Solution
+**Correct Option:** (B) 9  
+
+**Explanation:** 
+  - A **semaphore** is an integer variable used for process synchronization.
+  - The **P operation** (wait/down) decrements the semaphore value by 1.
+  - The **V operation** (signal/up) increments the semaphore value by 1.
+  - Given: Initial value = 10, 12 P operations, $x$ V operations, and Final value = 7.
+  - Set up the equation: $\text{Initial Value} - (12 \times 1) + (x \times 1) = \text{Final Value}$
+  - $10 - 12 + x = 7$
+  - $-2 + x = 7 \implies x = 9$.  
+
+**Key Trap:** Confusing the effects of P and V operations—remember **P** means **P**ull/decrement ($-\text{count}$), while **V** means **V**erhoog/increment ($+\text{count}$).
+
+---
+
+## Q16
+
+**Answer:** C
+
+### 1. Topic
+Process Management (Unit – 5: System Software and Operating System)
+
+### 2. Hint / Brain Trigger
+When I see **time slot completed (time quantum/slice expired)** in a time-sharing system, I should immediately think of the **Ready state** because the process is preempted and sent back to wait for its next turn.
+
+### 3. Solution
+**Correct Option:** **(C)**
+**Why it is correct:** In a time-sharing operating system, CPU time is divided into units called time slices or time quanta. When a running process exhausts its assigned **time slot**, its execution is interrupted, and it is preempted back into the **Ready state** to await its next turn on the CPU.
+- **Eliminating wrong options / Traps:** 
+  - **Blocked (or Waiting) state:** Occurs when a process is waiting for an I/O operation or resource, not when a time slot expires.
+  - **Suspended state:** Occurs when a process is swapped out of main memory to secondary storage (disk) due to heavy memory load.
+  - **Terminated state:** Occurs only when the process finishes execution completely.
+- **Key Rule:** Expiry of *time quantum* $\rightarrow$ **Running to Ready**. I/O request $\rightarrow$ **Running to Blocked**.
+
+---
+
+## Q17
+
+**Answer:** C
+
+### 1. Topic
+Process Management (Unit 5: System Software and Operating System)
+
+### 2. Hint / Brain Trigger
+When I see **`fork()` system call** and ask about **shared memory segments**, I should immediately think of **shared memory segments** being shared while stack and heap are duplicated (not shared).
+
+### 3. Solution
+**Correct Option:** **(C)**  
+
+**Explanation:** When a Unix process executes the `fork()` system call to create a child process, the operating system duplicates the parent's address space (including the **stack** and **heap**) for the child using Copy-On-Write. However, explicitly created **shared memory segments** are mapped into the address spaces of both processes, allowing them to directly share that specific region of memory.  
+
+**Key Trap:** A common confusion is assuming that because parent and child share code and certain resources, their local variables (stack) or dynamic allocations (heap) are shared. In reality, stack and heap are initially exact copies but reside in separate memory spaces so that modifications by one process do not affect the other.
+
+---
+
+## Q18
+
+**Answer:** C
+
+### 1. Topic
+File and Input/Output Systems: File-System Structure and Implementation (Inode, Direct and Indirect Blocks)
+
+### 2. Hint / Brain Trigger
+When I see **i-node with direct, single, double, and triple indirect entries**, I should immediately calculate the number of block addresses per block as **Block Size / Address Size** and scale up using powers ($N^1, N^2, N^3$).
+
+### 3. Solution
+**Correct Option:** (C) 16 GB  
+
+**Explanation:** 
+  - Block size = $1\text{ KB} = 1024\text{ bytes}$. Disk address size = $4\text{ bytes}$.
+  - Number of block addresses per indirect block ($N$) = $\frac{1\text{ KB}}{4\text{ bytes}} = \frac{1024}{4} = 256$.
+  - Maximum file size is contributed by:
+    - **10 Direct blocks:** $10 \times 1\text{ KB} = 10\text{ KB}$ (negligible).
+    - **Single Indirect block:** $256 \times 1\text{ KB} = 256\text{ KB}$.
+    - **Double Indirect block:** $256^2 \times 1\text{ KB} = 65,536\text{ KB} = 64\text{ MB}$.
+    - **Triple Indirect block:** $256^3 \times 1\text{ KB} = 16,777,216\text{ KB} = 16\text{ GB}$.  
+
+**Key Trap:** Confusing byte sizes with block counts. Always divide block size by address size first to find the branching factor ($N = 256$), then raise it to powers for single ($N$), double ($N^2$), and triple ($N^3$) indirect blocks.
+
+---
+
+## Q19
+
+**Answer:** A
+
+### 1. Topic
+Memory Management: Contiguous Memory Allocation (Best Fit Algorithm) — *Unit 5: System Software and Operating System*
+
+### 2. Hint / Brain Trigger
+When I see **"best fit algorithm"** and **"partitions NOT allotted"**, I should immediately **allocate each process sequentially to the smallest available partition that is $\ge$ process size, and check which leftover partitions remain untouched.**
+
+### 3. Solution
+**Correct Option:** (A) 200 KB and 300 KB  
+
+**Explanation:** 
+  - Given Partitions: 200 KB, 400 KB, 600 KB, 500 KB, 300 KB, 250 KB.
+  - Processes in order: 
+    1. **357 KB** → Best fit is **400 KB** (leftover: 43 KB).
+    2. **210 KB** → Best fit is **250 KB** (leftover: 40 KB).
+    3. **468 KB** → Best fit is **500 KB** (leftover: 32 KB).
+    4. **491 KB** → Best fit is **600 KB** (leftover: 109 KB).
+  - Unused (NOT allotted) partitions: **200 KB** and **300 KB**.  
+
+**Key Trap / Confusion:** Do not sort partitions permanently in ascending order; instead, check the current available partitions dynamically for each incoming process in the given order.  
+
+**Rule:** **Best Fit** scans the entire list of available partitions to find the smallest partition large enough to satisfy the request, minimizing internal fragmentation.
+
+---
+
+## Q20
+
+**Answer:** A
+
+### 1. Topic
+Unit - 5: System Software and Operating System (Process Synchronization / CPU Scheduling - **Priority Inversion Problem**)
+
+### 2. Hint / Brain Trigger
+When I see **priority inversion problem** in a question, I should immediately think of **temporarily raising the priority of the lower priority process (Priority Inheritance Protocol)**.
+
+### 3. Solution
+**Correct Option:** (A)
+**Why it is correct:** Priority inversion occurs when a high-priority process is indirectly preempted (blocked) by a lower-priority process because the lower-priority process holds a shared resource that the high-priority process needs. To solve this, operating systems use the **Priority Inheritance Protocol**, which temporarily raises the priority of the lower-priority process holding the resource to match the high-priority process, preventing intermediate medium-priority processes from preempting it and ensuring it finishes quickly to release the resource.
+- **Why other options are wrong:** 
+  - Having a fixed priority scheme (B) or allowing a lower-priority process to complete normally (D) actually aggravates or fails to solve priority inversion.
+  - Kernel pre-emption schemes (C) handle responsiveness, not specifically the locking dependency of priority inversion.
+**Key Trap:** Confusing priority inversion with standard priority scheduling starvation; remember priority inversion specifically involves resource sharing and is solved by *temporarily elevating* the blocking process's priority.
+
+---
+
+## Q21
+
+**Answer:** B
+
+### 1. Topic
+Memory Management: Paging / Virtual Memory (Unit – 5: System Software and Operating System)
+
+### 2. Hint / Brain Trigger
+When I see **TLB search time**, **main memory access time**, and **hit ratio** in a paging question, I should immediately use the Effective Memory Access Time (EMAT) weighted average formula incorporating TLB lookup for both hits and misses.
+
+### 3. Solution
+**Correct Option:** (B) 147 ns
+
+**Explanation:** 
+  - **Effective Memory Access Time (EMAT):** The average time required to access memory in a paging system with a Translation Lookaside Buffer (**TLB**, a special fast-lookup hardware cache for page table entries).
+  - **Formula:** 
+    $\text{EMAT} = (\text{Hit Ratio} \times \text{Time during Hit}) + (\text{Miss Ratio} \times \text{Time during Miss})$
+  - **Hit Case (70% or 0.7):** TLB search ($30\text{ ns}$) + Main memory access ($90\text{ ns}$) = $120\text{ ns}$.
+  - **Miss Case (30% or 0.3):** TLB search ($30\text{ ns}$) + Page table access in main memory ($90\text{ ns}$) + Actual data access in main memory ($90\text{ ns}$) = $210\text{ ns}$.
+  - **Calculation:** 
+    $\text{EMAT} = (0.7 \times 120) + (0.3 \times 210) = 84 + 63 = 147\text{ ns}$
+
+**Key Trap:** Forgetting that on a TLB *miss*, you must access the page table in main memory *first* to get the frame number, and then access main memory *again* for the actual data.
+
+---
+
+## Q22
+
+**Answer:** D
+
+### 1. Topic
+Unit - 5 : System Software and Operating System (Memory Management - Page Replacement)
+
+### 2. Hint / Brain Trigger
+When I see **"minimum number of page faults"** for a given reference string, I should immediately think of the **Optimal page replacement algorithm** (Belady’s Optimal Algorithm).
+
+### 3. Solution
+**Correct Option:** (D)  
+
+**Explanation:** The **Optimal page replacement algorithm** replaces the page that will not be used for the longest period of time in the future. By definition, it yields the theoretical **minimum number of page faults** for any given reference string and fixed number of frames.  
+
+**Why others are wrong:** 
+  - **FIFO (First-In, First-Out)** replaces the oldest page and suffers from performance anomalies (like Belady's Anomaly).
+  - **LRU (Least Recently Used)** looks backward in time at past usage, which is an approximation of optimal behavior but does not guarantee the absolute minimum page faults.
+  - **LIFO (Last-In, First-Out)** is rarely used in practice as it performs poorly.  
+
+**Key Trap:** Do not waste time manually tracing the reference string to count page faults for all options; whenever the question asks for the absolute *minimum* page faults possible, **Optimal** is always the correct choice by definition.
+
+---
+
+## Q23
+
+**Answer:** D
+
+### 1. Topic
+Storage Management: Mass-Storage Structure, Disk Structure, Scheduling and Management
+
+### 2. Hint / Brain Trigger
+When I see **"disk head moves from one end to the other"** and **"immediately returns to the beginning without serving requests on the return trip,"** I should immediately think of **C-SCAN (Circular SCAN)**.
+
+### 3. Solution
+**Correct Option:** (D)  
+
+**Explanation:** In the **C-SCAN (Circular SCAN)** disk scheduling algorithm, the disk head sweeps in one direction servicing requests along the way. Once it hits the extreme end, it makes a fast return trip (flyback) to the opposite end of the disk **without servicing any requests** on the return path, ensuring more uniform waiting times than standard SCAN.  
+
+**Why others are wrong:** 
+  - **SCAN** services requests in both directions (bidirectional).
+  - **LOOK** and **C-LOOK** reverse direction or jump as soon as the last request in that direction is reached, rather than going all the way to the physical end of the disk.  
+
+**Key Trap:** Confusing C-SCAN with SCAN (which reverses direction and serves requests on the way back) or C-LOOK (which stops at the last request instead of the disk end).
+
+---
+
+## Q24
+
+**Answer:** B
+
+### 1. Topic
+Linux Operating Systems: Kernel Modules
+
+### 2. Hint / Brain Trigger
+When I see **kernel modules** in a question, I should immediately think: **They can be loaded and unloaded dynamically at run-time (while the OS is running).**
+
+### 3. Solution
+**Correct Option:** **(B)**
+**Why it is correct:** Option (B) states that kernel modules *cannot* be loaded in a running operating system, which is **false**. In modern operating systems like Linux, the kernel is modular, meaning kernel modules (such as device drivers or file system drivers) can be dynamically loaded and unloaded at run-time without needing to reboot the system.
+- **Why other options are wrong:** Options (A), (C), and (D) are all true statements about the kernel: it forms the central core of the OS, is the first program loaded into memory during booting, and remains resident in memory throughout the entire computer session.
+**Key Trap:** The trap is confusing static kernel architecture with dynamic **kernel modules**, which are specifically designed for hot-plugging and run-time flexibility.
+
+---
+

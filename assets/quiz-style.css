@@ -42,11 +42,12 @@ header{
 }
 .brand{ font-weight:600; }
 .brand small{ display:block; font-weight:400; color:var(--muted); font-size:12.5px; margin-top:2px; }
-/* .who{ display:flex; align-items:center; gap:8px; font-size:14px; color:var(--muted); }
-.who input{
-  border:1px solid var(--line); border-radius:6px; padding:6px 10px;
-  background:var(--paper); color:var(--ink); font-size:14px; width:110px;
-} */
+/* .who was for the removed name field; no longer used */
+.option.is-correct{ border-color:var(--correct); background:var(--correct-bg); }
+.option.is-wrong-pick{ border-color:var(--wrong); background:var(--wrong-bg); }
+.option input:disabled{ cursor:default; }
+.option:has(input:disabled){ cursor:default; }
+.opt-text p, .option span p{ display:inline; margin:0; }
 main{ max-width:900px; margin:0 auto; padding:28px 20px 80px; }
 h1{ font-family:'Lora', serif; font-weight:600; font-size:26px; margin:0 0 6px; }
 h2{ font-family:'Lora', serif; font-weight:600; font-size:20px; margin:0 0 4px; }
