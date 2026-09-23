@@ -1,5 +1,6 @@
 ## Q1
-Given items as {value,weight} pairs {% raw %}{{40,20},{30,10},{20,5}}{% endraw %}. The capacity of knapsack=20. Find the maximum value output assuming items to be divisible.
+Given items as $\{value,weight\}$ pairs $\ expedition \{ \{40,20\}, \{30,10\}, \{20,5\} \}$.
+<!-- Given items as {value,weight} pairs {% raw %}{{40,20},{30,10},{20,5}}{% endraw %}. --> The capacity of knapsack=20. Find the maximum value output assuming items to be divisible.
 
 ## Q1 - Options
 (A) 60
