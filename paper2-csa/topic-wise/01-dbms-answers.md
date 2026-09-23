@@ -23,7 +23,7 @@ The correct option is C: The sum of all employees' salaries.
 | Projection | <center>π</center> | Select columns (attributes / fields) → horizontal |
 | Cartesian Product | <center>×</center> | Combine all tuples (1 on 1 map, → ↓) |
 | Union | <center>∪</center> | Merge relations (all values combine) |
-| Set Difference | <center>−</center> | Subtract tuples (the blue part of two sets) <div align="center"><img src="paper2-csa/topic-wise/dbms-01-assets/q1-difference-of-sets-venn-diagram.png" width="250"></div> |
+| Set Difference | <center>−</center> | Subtract tuples (the blue part of two sets) <div align="center"><img width="65%" src="paper2-csa/topic-wise/dbms-01-assets/q1-difference-of-sets-venn-diagram.png"></div> |
 | Rename | <center>ρ</center> | Rename relation / attributes |
 
 ---
@@ -537,7 +537,7 @@ Analysis of <p style="word-break: break-word; font-family: sans-serif;"><strong>
 **Summary Diagram and explaination:**
 
 <div style="text-align: center;">
-  <img src="paper2-csa/topic-wise/dbms-01-assets/q24-transactions-schedule-diagram.jpeg" alt="q24-transactions-schedule-diagram" width="85%">
+  <img width="65%" src="paper2-csa/topic-wise/dbms-01-assets/q24-transactions-schedule-diagram.jpeg">
 </div>
 
 * For Schedule $S_1$: We can clearly see a cycle in the diagram  ($T_1 \rightarrow T_2$ due to $r_1(Y) \rightarrow w_2(Y)$, and $T_2 \rightarrow T_1$ due to $r_2(X) \rightarrow w_1(X)$). This visual loop is the textbook proof that a schedule cannot be conflict serialized.

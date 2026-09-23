@@ -60,6 +60,72 @@ var TESTS_MANIFEST = [
     minutes: 30,
     marksPerQuestion: 2,
     negativeMarking: 0
+  },
+  {
+    slug: "06-dl",
+    title: "DL — Test 6",
+    category: "Paper 2 (CSA) — Topic-wise",
+    questionsFile: "paper2-csa/topic-wise/06-dl-questions.md",
+    answersFile: "paper2-csa/topic-wise/06-dl-answers.md",
+    questions: 25,
+    minutes: 30,
+    marksPerQuestion: 2,
+    negativeMarking: 0
+  },
+  {
+    slug: "07-cn",
+    title: "CN — Test 7",
+    category: "Paper 2 (CSA) — Topic-wise",
+    questionsFile: "paper2-csa/topic-wise/07-cn-questions.md",
+    answersFile: "paper2-csa/topic-wise/07-cn-answers.md",
+    questions: 25,
+    minutes: 30,
+    marksPerQuestion: 2,
+    negativeMarking: 0
+  },
+  {
+    slug: "08-dda",
+    title: "DDA — Test 8",
+    category: "Paper 2 (CSA) — Topic-wise",
+    questionsFile: "paper2-csa/topic-wise/08-dda-questions.md",
+    answersFile: "paper2-csa/topic-wise/08-dda-answers.md",
+    questions: 25,
+    minutes: 30,
+    marksPerQuestion: 2,
+    negativeMarking: 0
+  },
+  {
+    slug: "09-dm",
+    title: "DM — Test 9",
+    category: "Paper 2 (CSA) — Topic-wise",
+    questionsFile: "paper2-csa/topic-wise/09-dm-questions.md",
+    answersFile: "paper2-csa/topic-wise/09-dm-answers.md",
+    questions: 25,
+    minutes: 30,
+    marksPerQuestion: 2,
+    negativeMarking: 0
+  },
+  {
+    slug: "10-ai",
+    title: "AI — Test 10",
+    category: "Paper 2 (CSA) — Topic-wise",
+    questionsFile: "paper2-csa/topic-wise/10-ai-questions.md",
+    answersFile: "paper2-csa/topic-wise/10-ai-answers.md",
+    questions: 25,
+    minutes: 30,
+    marksPerQuestion: 2,
+    negativeMarking: 0
+  },
+  {
+    slug: "11-mix",
+    title: "Mix Topics - Test 11",
+    category: "Paper 2 (CSA) — Topic-wise",
+    questionsFile: "paper2-csa/topic-wise/11-mix-questions.md",
+    answersFile: "paper2-csa/topic-wise/11-mix-answers.md",
+    questions: 25,
+    minutes: 30,
+    marksPerQuestion: 2,
+    negativeMarking: 0
   }
   // Add new tests below, following the same shape.
 ];

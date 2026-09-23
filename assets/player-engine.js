@@ -63,7 +63,8 @@
   function renderMath(el) {
     if (window.renderMathInElement) {
       renderMathInElement(el, {
-        delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }],
+        // delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }],
+        delimiters: [{ left: '$$', right: '$$', display: false }, { left: '$', right: '$', display: false }],
         throwOnError: false
       });
     }
@@ -85,7 +86,7 @@
     root.innerHTML = `<div class="notice">No test with slug "${escapeHtml(slug)}" found in tests-manifest.js.</div>`;
     return;
   }
-  document.title = cfg.title + ' — NET Practice';
+  document.title = cfg.title + ' — UGC NET Practice Test Series';
 
   let questions = {};   // {qid: {stem, options, hint}}
   let qids = [];         // ordered list

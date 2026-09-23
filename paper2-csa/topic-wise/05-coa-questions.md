@@ -45,7 +45,12 @@ In a k-way set associative cache, the cache is divided into v sets, each of whic
 ## Q5
 Consider the following circuit. The function by the network above is
 
-<img height="263px;" src="paper2-csa/topic-wise/coa-05-assets/q5-5ea7bb.png" width="575px;"/>
+<svg width="75%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" role="img" aria-label="Logic circuit with NAND, three AND gates, NOR, and NOR output" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Logic circuit with NAND, three AND gates, NOR, and NOR output</title>
+<defs><marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1e2a44"></path></marker></defs>
+<rect width="860" height="400" fill="#fff"></rect>
+<polyline points="60,32 152,32" fill="none" stroke="#1e2a44" stroke-width="2" stroke-linejoin="round"></polyline><polyline points="60,72 152,72" fill="none" stroke="#1e2a44" stroke-width="2" stroke-linejoin="round"></polyline><polyline points="254,52 318,52 318,58 402,58" fill="none" stroke="#1e2a44" stroke-width="2" stroke-linejoin="round"></polyline><polyline points="350,98 402,98" fill="none" stroke="#1e2a44" stroke-width="2" stroke-linejoin="round"></polyline><polyline points="350,98 350,295 402,295" fill="none" stroke="#1e2a44" stroke-width="2" stroke-linejoin="round"></polyline><path d="M285 177H402" stroke="#1e2a44" stroke-width="2" fill="none"></path><path d="M285 217H342a8 8 0 0 1 16 0H402" stroke="#1e2a44" stroke-width="2" fill="none"></path><circle cx="350" cy="177" r="4.5" fill="#1e2a44"></circle><polyline points="60,322 140,322" fill="none" stroke="#1e2a44" stroke-width="2" stroke-linejoin="round"></polyline><polyline points="60,362 140,362" fill="none" stroke="#1e2a44" stroke-width="2" stroke-linejoin="round"></polyline><polyline points="230,342 388,335 402,335" fill="none" stroke="#1e2a44" stroke-width="2" stroke-linejoin="round"></polyline><polyline points="482,78 562,78 562,177 660,177" fill="none" stroke="#1e2a44" stroke-width="2" stroke-linejoin="round"></polyline><polyline points="482,197 660,196" fill="none" stroke="#1e2a44" stroke-width="2" stroke-linejoin="round"></polyline><polyline points="482,315 562,315 562,217 660,217" fill="none" stroke="#1e2a44" stroke-width="2" stroke-linejoin="round"></polyline><polyline points="744,196 826,196" fill="none" stroke="#1e2a44" stroke-width="2" stroke-linejoin="round"></polyline><path d="M152 12H192A40 40 0 0 1 192 92H152Z" fill="#fff" stroke="#1e2a44" stroke-width="2"></path><circle cx="242" cy="52" r="12" fill="#fff" stroke="#1e2a44" stroke-width="2"></circle><path d="M402 38H442A40 40 0 0 1 442 118H402Z" fill="#fff" stroke="#1e2a44" stroke-width="2"></path><path d="M402 157H442A40 40 0 0 1 442 237H402Z" fill="#fff" stroke="#1e2a44" stroke-width="2"></path><path d="M402 275H442A40 40 0 0 1 442 355H402Z" fill="#fff" stroke="#1e2a44" stroke-width="2"></path><path d="M120 302H148C175 302 198 320 206 342C198 364 175 382 148 382H120C138 352 138 332 120 302Z" fill="#fff" stroke="#1e2a44" stroke-width="2"></path><circle cx="218" cy="342" r="12" fill="#fff" stroke="#1e2a44" stroke-width="2"></circle><path d="M636 156H664C691 156 714 174 722 196C714 218 691 236 664 236H636C654 206 654 186 636 156Z" fill="#fff" stroke="#1e2a44" stroke-width="2"></path><circle cx="732" cy="196" r="12" fill="#fff" stroke="#1e2a44" stroke-width="2"></circle><text x="38" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#1f7a3d">A</text><text x="38" y="78" text-anchor="middle" font-size="20" font-weight="700" fill="#1f7a3d">B</text><text x="38" y="328" text-anchor="middle" font-size="20" font-weight="700" fill="#1f7a3d">C</text><text x="38" y="368" text-anchor="middle" font-size="20" font-weight="700" fill="#1f7a3d">D</text><text x="262" y="183" text-anchor="middle" font-size="20" font-weight="700" fill="#1f7a3d">E</text><text x="262" y="223" text-anchor="middle" font-size="20" font-weight="700" fill="#1f7a3d">F</text>
+</svg>
 
 ## Q5 - Options
 (A) (AB)'E + EF + (CD)'F
@@ -76,7 +81,43 @@ Name of the bit   PurposeI. Dirty  a. Page initializationII. R/W  b. Write-back 
 ## Q8
 The Boolean function with the Karnaugh map is:
 
-<img src="paper2-csa/topic-wise/coa-05-assets/q8-d27167.png"/>
+<table class="kmap">
+  <tr>
+    <th>CD \ AB</th>
+    <th>00</th>
+    <th>01</th>
+    <th>11</th>
+    <th>10</th>
+  </tr>
+  <tr>
+    <th>00</th>
+    <td>0</td>
+    <td class="one">1</td>
+    <td class="one">1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <th>01</th>
+    <td>0</td>
+    <td class="one">1</td>
+    <td class="one">1</td>
+    <td class="one">1</td>
+  </tr>
+  <tr>
+    <th>11</th>
+    <td class="one">1</td>
+    <td class="one">1</td>
+    <td class="one">1</td>
+    <td class="one">1</td>
+  </tr>
+  <tr>
+    <th>10</th>
+    <td>0</td>
+    <td class="one">1</td>
+    <td class="one">1</td>
+    <td>0</td>
+  </tr>
+</table>
 
 ## Q8 - Options
 (A) (A+C).D+B

@@ -447,6 +447,15 @@ Turing Machines (TM)
   - Combining these parts gives the accepted language: $\text{aba}^*b$.
 - **Key Trap:** Confusing the Kleene star placement ($a^*$) or missing that the final transition to the accepting state $q_3$ consumes a trailing 'b'.
 
+**Summary Diagram:**
+
+<svg width="75%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 200" role="img" aria-label="Automaton q0 to q3: a, b, loop a on q2, b" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Automaton q0 to q3: a, b, loop a on q2, b</title>
+<defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1e2a44"></path></marker></defs>
+<rect width="760" height="200" fill="#fff"></rect>
+<path d="M30 120H72" fill="none" stroke="#1e2a44" stroke-width="2" marker-end="url(#ah2)"></path><path d="M128 120H272" fill="none" stroke="#1e2a44" stroke-width="2" marker-end="url(#ah2)"></path><text x="200" y="108" text-anchor="middle" font-size="17" font-weight="600" fill="#1e2a44">a</text><path d="M328 120H472" fill="none" stroke="#1e2a44" stroke-width="2" marker-end="url(#ah2)"></path><text x="400" y="108" text-anchor="middle" font-size="17" font-weight="600" fill="#1e2a44">b</text><path d="M528 120H672" fill="none" stroke="#1e2a44" stroke-width="2" marker-end="url(#ah2)"></path><text x="600" y="108" text-anchor="middle" font-size="17" font-weight="600" fill="#1e2a44">b</text><path d="M486 94C470 30 530 30 514 94" fill="none" stroke="#1e2a44" stroke-width="2" marker-end="url(#ah2)"></path><text x="500" y="40" text-anchor="middle" font-size="17" font-weight="600" fill="#1e2a44">a</text><circle cx="100" cy="120" r="28" fill="#eaf0ff" stroke="#1e2a44" stroke-width="2"></circle><text x="100" y="126" text-anchor="middle" font-size="18" font-weight="600" fill="#1e2a44">q0</text><circle cx="300" cy="120" r="28" fill="#eaf0ff" stroke="#1e2a44" stroke-width="2"></circle><text x="300" y="126" text-anchor="middle" font-size="18" font-weight="600" fill="#1e2a44">q1</text><circle cx="500" cy="120" r="28" fill="#eaf0ff" stroke="#1e2a44" stroke-width="2"></circle><text x="500" y="126" text-anchor="middle" font-size="18" font-weight="600" fill="#1e2a44">q2</text><circle cx="700" cy="120" r="28" fill="#eaf0ff" stroke="#1e2a44" stroke-width="2"></circle><text x="700" y="126" text-anchor="middle" font-size="18" font-weight="600" fill="#1e2a44">q3</text>
+</svg>
+
 ---
 
 ## Q23

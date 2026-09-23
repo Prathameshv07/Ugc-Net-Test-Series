@@ -1,4 +1,4 @@
-# NET Practice
+# UGC NET Practice Test Series
 
 A lightweight, self-hosted mock-test player for UGC NET exam prep — timed tests, an untimed revision mode, hints, and per-topic weak-area analytics. No backend, no database, no build step: it's static files on GitHub Pages, and every test is just two Markdown files.
 

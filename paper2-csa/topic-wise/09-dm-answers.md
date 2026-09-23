@@ -1,0 +1,937 @@
+## Q1
+
+**Answer:** B
+**Confidence:** High
+**Question check:** TYPO/GARBLED - The text in formula I is garbled by OCR artifacts ($\neg\forallݑ弯m:r>(\dots)$), but based on standard predicate logic questions of this type, standard equivalents are $\neg\forall x P(x) \equiv \exists x \neg P(x)$. I assume formula I is $\neg\forall x P(x)$ and formula IV is $\exists x \negP(x)$.
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Mathematical Logic: Predicates and Quantifiers, Propositional Equivalences.
+
+### 2. Hint / Brain Trigger
+When I see $\neg\forall x P(x)$ -> think De Morgan's laws for quantifiers, which states that negating a universal quantifier yields an existential quantifier over the negated predicate.
+
+### 3. Solution
+- Rule: $\neg\forall x P(x) \equiv \exists x \neg P(x)$ and $\neg\exists x P(x) \equiv \forall x \neg P(x)$.
+- Let us evaluate each well-formed formula:
+  - I: $\neg\forall x P(x)$ (Assuming the garbled text represents standard negation of universal quantification). By quantifier negation rules, $\neg\forall x P(x) \equiv \exists x \neg P(x)$.
+  - II: $\neg\exists x(P(x))$, which means "there is no $x$ such that $P(x)$ holds" ($\forall x \neg P(x)$).
+  - III: $\neg\exists x(\neg P(x))$, which means "there is no $x$ such that $P(x)$ is false" ($\forall x P(x)$).
+  - IV: $\exists x(\negP(x))$, which means "there exists an $x$ for which $P(x)$ is false".
+- Comparing I ($\exists x \neg P(x)$) and IV ($\exists x \neg P(x)$), they are syntactically and semantically identical.
+- Options:
+  * (A) I and III: Incorrect, as I is $\exists x \neg P(x)$ and III is $\forall x P(x)$.
+  * (B) I and IV: Correct, both evaluate to $\exists x \neg P(x)$.
+  * (C) II and III: Incorrect, as II is $\forall x \neg P(x)$ and III is $\forall x P(x)$.
+  * (D) II and IV: Incorrect, as II is $\forall x \neg P(x)$ and IV is $\exists x \neg P(x)$.
+- **Rule to memorise:** Push a negation past a quantifier by flipping the quantifier ($\forall \leftrightarrow \exists$) and negating the inner predicate.
+
+### 4. Concept Refresher
+Quantifier negation laws are extensions of De Morgan's laws in predicate logic. Negating a universal statement ("all are true") gives an existential statement ("at least one is false"), written as $\neg\forall x P(x) \equiv \exists x \neg P(x)$. Similarly, $\neg\exists x P(x) \equiv \forall x \neg P(x)$.
+
+### 5. Flashcard
+Q: $\neg\forall x P(x)$ -> A: $\exists x \neg P(x)$
+
+---
+
+## Q2
+
+**Answer:** A
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Counting, Mathematical Induction and Discrete Probability: Probability
+
+### 2. Hint / Brain Trigger
+When I see "choose all your answers randomly with uniform probability" and "expected mark" -> think $E[X] = \sum x_i P(x_i)$ where each question contributes an expected value based on its scoring rule.
+
+### 3. Solution
+- Expected value formula: $E[X] = n \cdot E[q_i]$, where $n$ is the total number of questions and $E[q_i]$ is the expected score from a single question chosen uniformly at random.
+- Total number of questions $n = 100$.
+- For a single question with 4 choices, selecting an answer uniformly at random gives:
+  * Probability of a correct answer = $\frac{1}{4}$ (Awards $+1$ mark)
+  * Probability of an incorrect answer = $\frac{3}{4}$ (Penalizes $-0.25$ mark)
+- Compute the expected mark for one question:
+  $$E[q_i] = \left(\frac{1}{4} \times 1\right) + \left(\frac{3}{4} \times -0.25\right) = 0.25 - 0.1875 = 0.0625$$
+- Multiply by the total number of questions:
+  $$E[X] = 100 \times 0.0625 = 6.25$$
+- Options:
+  * (A) 6.25: Correct, matches the calculated expected score.
+  * (B) 3.95: Incorrect distractor.
+  * (C) 37.5: Incorrect distractor (results from ignoring negative marking or miscalculating probabilities).
+  * (D) 17.5: Incorrect distractor.
+- **Rule to memorise:** The expected value of a sum of random variables is the sum of their individual expected values (linearity of expectation).
+
+### 4. Concept Refresher
+Expectation (or expected value) is the weighted average of all possible values that a random variable can take, where the weights are their respective probabilities. Linearity of expectation allows us to sum the expected values of individual trials even if they are not independent. For instance, guessing randomly on multiple-choice tests yields a positive expected score if the reward for a correct answer outweighs the penalty for a wrong answer scaled by the guessing odds.
+
+### 5. Flashcard
+Q: Expected score for $n$ random guesses on a 4-choice test with $+1/-0.25$ marking -> A: $n \times (0.25 \times 1 + 0.75 \times -0.25) = n \times 0.0625$
+
+---
+
+## Q3
+
+**Answer:** D
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Mathematical Logic: Propositional Equivalences
+
+### 2. Hint / Brain Trigger
+When I see <a conditional expression given as a contradiction> -> think <break down the truth values of the sub-propositions using implication properties ($A \to B$ is false only when $A = T$ and $B = F$)$> and quote keywords from the question `(p → q) → r be a contradiction`.
+
+### 3. Solution
+- Rule for implication: $X \to Y$ evaluates to False ($F$) if and only if $X = T$ and $Y = F$. Otherwise, it evaluates to True ($T$).
+- Given expression: $(p \to q) \to r$ is a contradiction (always False).
+  - Let $X = (p \to q)$ and $Y = r$. For $X \to r$ to be False, we must have:
+    1. $X = (p \to q) = T$
+    2. $r = F$
+- Now we evaluate the target expression: $(r \to p) \to q$.
+  - Substitute $r = F$:
+    - Consider the sub-expression $(F \to p)$. By definition of implication, $F \to anything$ is always True ($T$).
+    - Therefore, $(r \to p)$ simplifies to $T$.
+  - Substitute this back into the target expression:
+    - $(T \to q)$.
+  - By definition of implication, $T \to q$ is True if and only if $q = T$. If $q = F$, then $T \to F$ is $F$. 
+  - Thus, the expression $(r \to p) \to q$ depends entirely on $q$, and it is always TRUE when $q$ is TRUE.
+- Options verdict:
+  * (A) Incorrect, it is not a tautology because it evaluates to False when $q$ is False.
+  * (B) Incorrect, it is not a contradiction because it evaluates to True when $q$ is True.
+  * (C) Incorrect, the truth value depends strictly on $q$, independent of $p$.
+  * (D) Correct, since the expression simplifies to $T \to q$, it is always True when $q$ is True.
+- **Rule to memorise:** An implication $A \to B$ is False only when $A = T$ and $B = F$; and $F \to B$ is always True regardless of $B$.
+
+### 4. Concept Refresher
+Propositional logic uses logical connectives like implication ($\to$), where $p \to q$ means "if $p$, then $q$". It is logically equivalent to $\neg p \lor q$. A tautology is a formula that evaluates to True for all assignments, a contradiction evaluates to False for all assignments, and contingency can be both.
+
+### 5. Flashcard
+Q: If $(p \to q) \to r$ is a contradiction, what are the truth values of $r$ and $(p \to q)$? -> A: $r = F$ and $(p \to q) = T$
+
+---
+
+## Q4
+
+**Answer:** A
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Mathematical Logic
+
+### 2. Hint / Brain Trigger
+When I see $\neg(P \lor Q)$ -> think De Morgan's Law: $\neg P \land \neg Q$, where inequalities flip direction and "and/or" operators interchange.
+
+### 3. Solution
+- Deciding rule/formula: De Morgan's Law for propositions, $\neg(A \lor B) \equiv \neg A \land \neg B$, and the logical negation of a compound interval.
+- Let the given statement be represented as $P \lor Q$, where:
+  - $P: -2 \le x \le -1$ (which means $x \ge -2$ **and** $x \le -1$)
+  - $Q: 1 \le x \le 2$ (which means $x \ge 1$ **and** $x \le 2$)
+- The original statement is: $(-2 \le x \le -1) \lor (1 \le x \le 2)$.
+- To negate this entire statement, apply the negation operator:
+  $\neg [(-2 \le x \le -1) \lor (1 \le x \le 2)]$
+- By De Morgan's Law ($\neg(A \lor B) = \neg A \land \neg B$), this becomes:
+  $\neg(-2 \le x \le -1) \land \neg(1 \le x \le 2)$
+- Now, negate each interval component individually:
+  - The negation of $P$ (i.e., $-2 \le x \le -1$, meaning $x \ge -2$ and $x \le -1$) is:
+    $x < -2$ **or** $x > -1$
+  - The negation of $Q$ (i.e., $1 \le x \le 2$, meaning $x \ge 1$ and $x \le 2$) is:
+    $x < 1$ **or** $x > 2$
+- Combining both negated parts with **AND** ($\land$):
+  $(x < -2 \lor x > -1) \land (x < 1 \lor x > 2)$
+- Analyzing the combined numeric ranges on the real number line where both conditions hold:
+  - $x < -2$ satisfies the first parenthesis.
+  - $x > 2$ satisfies the second parenthesis.
+  - For the range between $-1$ and $1$, we need $x > -1$ (from the first part) and $x < 1$ (from the second part), which gives the intersection $-1 < x < 1$.
+- Thus, the union of valid values where the negation holds true is:
+  $x < -2$ **or** $2 < x$ **or** $-1 < x < 1$.
+- Options:
+  * (A) Matches our derived expression exactly.
+  * (B) Misses the middle gap $-1 < x < 1$.
+  * (C) Only accounts for the middle interval, ignoring values outside $[-2, 2]$.
+  * (D) Contains incorrect inequality symbols ($\le$ instead of $<$ for $-2$).
+- **Rule to memorise:** Negating a closed interval $[a, b] \lor [c, d]$ yields everything outside those intervals: $(-\infty, a) \cup (b, c) \cup (d, \infty)$.
+
+### 4. Concept Refresher
+De Morgan's laws state that the negation of a disjunction is the conjunction of the negations ($\neg(P \lor Q) \equiv \neg P \land \neg Q$). When applied to inequalities, strict inequalities ($\langle, \rangle$) replace non-strict ones ($\le, \ge$), and "between" intervals transform into "outside" intervals.
+
+### 5. Flashcard
+Q: What is the negation of the compound inequality statement $a \le x \le b \lor c \le x \le d$? -> A: $x < a \lor x > d \lor b < x < c$
+
+---
+
+## Q5
+
+**Answer:** A
+**Confidence:** High
+**Question check:** OK - Note that option (c) lists "o" as a typo for "F" (False) in reductio ad absurdum, but the match is unambiguously identified by the other three standard identities.
+
+### 1. Topic
+Unit - 1 -> Mathematical Logic: Propositional Equivalences
+
+### 2. Hint / Brain Trigger
+When I see standard propositional logic equivalences like implication, contraposition, and exportation -> think basic laws of logic.
+
+### 3. Solution
+- Match each propositional law in List I with its recognized name in List II by recalling standard logical equivalences.
+- **(a) $(p \to q) \equiv (\neg q \to \neg p)$**: This is the definition of the **Contrapositive**, matching **(i)**.
+- **(b) $[(p \land q) \to r] \equiv [p \to (q \to r)]$**: This is the definition of the **Exportation law**, matching **(ii)**.
+- **(c) $(p \to q) \equiv [(p \land \neg q) \to F]$**: This represents **Reductio ad absurdum** (proof by contradiction, where assuming $p$ and $\neg q$ leads to a contradiction/False), matching **(iii)**.
+- **(d) $(p \leftrightarrow q) \equiv [(p \to q) \land (q \to p)]$**: This is the definition of **Equivalence** (biconditional in terms of conditionals), matching **(iv)**.
+- Options verdict:
+  * (A) $a-(i), b-(ii), c-(iii), d-(iv)$ matches our step-by-step pairing.
+  * (B), (C), (D) misalign at least one of the fundamental laws.
+- **Rule to memorise:** Memorise standard propositional equivalences: Contrapositive interchanges and negates both variables; Exportation moves a conjunction from the premise to a nested implication.
+
+### 4. Concept Refresher
+Propositional equivalences are statements that have the same truth value under all possible interpretations. For example, the contrapositive law states that a conditional statement is logically equivalent to its contrapositive, which is often useful in proofs.
+
+### 5. Flashcard
+Q: $(p \to q) \equiv (\neg q \to \neg p)$ -> A: Contrapositive law
+
+---
+
+## Q6
+
+**Answer:** D
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1 : Discrete Structures and Optimization -> Mathematical Logic: Propositional and Predicate Logic
+
+### 2. Hint / Brain Trigger
+When I see <horn clause> -> think <at most one positive literal>.
+
+### 3. Solution
+- A Horn clause is defined strictly as a clause (a disjunction of literals) containing **at most one positive literal**.
+- Options:
+  * (A) Incorrect: Variables *can* occur in Horn clauses (e.g., in logic programming like Prolog).
+  * (B) Incorrect: A Horn clause can have zero negative literals (all positive).
+  * (C) Incorrect: Every clause in CNF is a disjunction of literals, but being a Horn clause imposes a strict count on the positive literals.
+  * (D) Correct: It matches the exact definition of a Horn clause ($\le 1$ positive literal).
+- **Rule to memorise:** Horn clause $\equiv \neg p_1 \lor \neg p_2 \lor \dots \lor q$ (at most one unnegated literal $q$).
+- *Horn clause*: A disjunction of literals with a maximum of one positive (unnegated) literal.
+
+### 4. Concept Refresher
+Logic clauses can be classified by their positive literals. A Horn clause has at most one positive literal. If it has exactly one positive literal, it is a *definite clause* (useful for implications like $A \land B \implies C$). If it has zero positive literals, it is a *goal clause* or *query*.
+
+### 5. Flashcard
+Q: What is a Horn clause? -> A: A clause that has at most one positive literal.
+
+---
+
+## Q7
+
+**Answer:** D
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Mathematical Logic: Predicates and Quantifiers
+
+### 2. Hint / Brain Trigger
+When I see $\forall x [F(x) \implies \forall y (E(y, x) \implies B(y))]$ -> think "translate universal quantifiers with implication: $F(x) \implies (\text{condition})$, and note the position of 'only'."
+
+### 3. Solution
+- Rule: $\forall x (P(x) \implies Q(x))$ means "All $P$ are $Q$". The connective inside translates $E(y, x)$ (y eats x) to imply $B(y)$ (y is a bear).
+- WORK IT OUT:
+  1. Break down the formula inside out:
+     - $F(x)$: $x$ is a fish.
+     - $E(y, x)$: $y$ eats $x$.
+     - $B(y)$: $y$ is a bear.
+  2. The inner part $\forall y [E(y, x) \implies B(y)]$ states: "For all $y$, if $y$ eats $x$ (the fish), then $y$ is a bear." In plain English: "Anything that eats $x$ is a bear" or "Only bears eat $x$."
+  3. The outer quantifier $\forall x [F(x) \implies \dots]$ applies this to all $x$ that are fish. 
+  4. Combining them: "For every fish $x$, if anything $y$ eats $x$, then $y$ is a bear." This means that the set of creatures eating fish is a subset of bears, which is precisely "Only bears eat fish."
+- Options:
+  * (A) "Every fish is eaten by some bear" translates to $\forall x [F(x) \implies \exists y (B(y) \land E(y, x))]$, which is incorrect.
+  * (B) "Bears eat only fish" translates to $\forall y [B(y) \implies \forall x (E(y, x) \implies F(x))]$, which is incorrect.
+  * (C) "Every bear eats fish" translates to $\forall y [B(y) \implies \exists x (F(x) \land E(y, x))]$, which is incorrect.
+  * (D) "Only bears eat fish" correctly captures that if someone eats a fish, that someone must be a bear ($\forall x, y [F(x) \land E(y, x) \implies B(y)]$).
+- **Trap:** Option (C) tempts because of the presence of "bear", "eat", and "fish", but it incorrectly asserts that all bears must eat fish rather than restricting the eaters of fish to bears.
+- **Rule to memorise:** The statement "Only $P$ are $Q$" is logically translated as $\forall x [Q(x) \implies P(x)]$.
+- *Non-trivial term:* First-order logic is a formal system using predicates, functions, and quantifiers to make statements about objects in a domain.
+
+### 4. Concept Refresher
+First-order logic uses quantifiers ($\forall$ for universal, $\exists$ for existential) over predicate functions. Translating "Only A are B" requires caution: it means if something is B, it must be A ($B(x) \implies A(x)$), because non-A's cannot be B. For instance, "Only adults can vote" translates to $\forall x [\text{Vote}(x) \implies \text{Adult}(x)]$.
+
+### 5. Flashcard
+Q: Translate "Only bears eat fish" using $B(x)$, $F(x)$, $E(y,x)$ -> A: $\forall x [F(x) \implies \forall y (E(y, x) \implies B(y))]$
+
+---
+
+## Q8
+
+**Answer:** D
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Transportation and Assignment Models
+
+### 2. Hint / Brain Trigger
+When I see "Assignment problem" -> think "a special case of transportation problem where supply and demand equal $1$, used to minimize cost/time with a one-to-one resource-to-activity matching."
+
+### 3. Solution
+- The deciding rule/formula: An assignment problem is a linear programming problem where $m$ resources are assigned to $m$ activities on a one-to-one basis to minimize total cost or time.
+- Statement (a): "Assignment problem can be used to minimize the cost." -> True. Its objective function is typically to minimize total cost or total time of performing a set of jobs.
+- Statement (b): "Assignment problem is a special case of transportation problem." -> True. It is a transportation problem where the number of sources equals the number of destinations ($m = n$), and all supply and demand parameters are strictly equal to $1$.
+- Statement (c): "Assignment problem requires that only one activity be assigned to each resource." -> True. The decision variables $x_{ij}$ can only take values $0$ or $1$, ensuring a strict one-to-one matching constraint.
+- Options verdict: Since all three statements accurately describe the characteristics and formulation of the assignment problem, option (D) containing all three is correct.
+
+- **Rule to memorise:** The assignment problem is a transportation model where availability at each origin and requirement at each destination are both equal to one.
+- **Assignment problem:** A specialized combinatorial optimization problem focused on finding the optimal pairing between two sets of equal size based on a cost matrix.
+
+### 4. Concept Refresher
+The assignment problem is a subset of the transportation problem, which itself is a special type of linear programming problem. Its matrix is always square ($n \times n$), and constraints enforce that each row and column sums to exactly one. It is efficiently solved using the Hungarian Method rather than the general Simplex method.
+
+### 5. Flashcard
+Q: What is the relationship between an assignment problem and a transportation problem? -> A: An assignment problem is a special case of a transportation problem where supply and demand are all equal to 1 and the cost matrix is square.
+
+---
+
+## Q9
+
+**Answer:** A
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1 : Discrete Structures and Optimization -> Optimization
+
+### 2. Hint / Brain Trigger
+When I see "Hungarian method for solving assignment problem" and "maximum number of lines that can be drawn through squares with zero opportunity cost" -> think optimality condition where line count equals matrix dimension ($n = \text{rows} = \text{columns}$).
+
+### 3. Solution
+- The Hungarian method uses line-drawing on the reduced cost matrix to test for optimality.
+- The rule for an optimal assignment is that the minimum number of horizontal and vertical lines needed to cover all zeros in the reduced matrix must equal the order of the matrix ($n$), which is the number of rows (or equivalently, columns, since the cost matrix is square). 
+- Options:
+  * (A) rows or columns: Correct, because for an $n \times n$ square cost matrix, the optimal condition is when the minimum number of covering lines equals $n$ (number of rows or columns).
+  * (B) rows + columns: Incorrect, this would double count the dimension.
+  * (C) rows + columns - 1: Incorrect, this has no basis in the Hungarian algorithm termination criterion.
+  * (D) rows + columns + 1: Incorrect, overestimates the required lines.
+- **Rule to memorise:** An assignment problem of size $n \times n$ is optimal when the minimum lines covering all zeros equals $n$ (rows or columns).
+
+### 4. Concept Refresher
+The Hungarian method is a combinatorial optimization algorithm that solves the assignment problem in polynomial time. It operates on a square cost matrix by performing row and column reductions to create opportunity costs (zeros), then tests if an independent set of $n$ assignments can be made by checking if the minimum covering lines equal the matrix dimension $n$.
+
+### 5. Flashcard
+Q: Hungarian method optimal assignment condition -> A: Minimum covering lines equals the number of rows or columns ($n$).
+
+---
+
+## Q10
+
+**Answer:** A
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1 : Discrete Structures and Optimization -> Mathematical Logic: Propositional Equivalences, Rules of Inference.
+
+### 2. Hint / Brain Trigger
+When I see "logically implied by" -> think of checking if $\text{Premise} \implies \text{Expression}$ is a tautology (always True).
+
+### 3. Solution
+- Rule: Proposition $X$ logically implies $Y$ if and only if $X \implies Y$ is a tautology.
+- Simplify the given premise: $P \land (P \implies Q) \equiv P \land (\neg P \lor Q) \equiv (P \land \neg P) \lor (P \land Q) \equiv \text{False} \lor (P \land Q) \equiv P \land Q$.
+- Now test each expression $X \implies \text{Expression}$ where $X = P \land Q$:
+  * (i) $(P \land Q) \implies \text{False}$: Equivalent to $\neg(P \land Q) \lor \text{False} \equiv \neg P \lor \neg Q$, which is a contingency (not a tautology). **(Not implied)**
+  * (ii) $(P \land Q) \implies Q$: Equivalent to $\neg(P \land Q) \lor Q \equiv \neg P \lor \neg Q \lor Q \equiv \neg P \lor \text{True} \equiv \text{True}$. **(Implied)**
+  * (iii) $(P \land Q) \implies \text{True}$: Anything implying True is always True. **(Implied)**
+  * (iv) $(P \land Q) \implies (P \lor Q)$: Equivalent to $\neg(P \land Q) \lor P \lor Q \equiv \neg P \lor \neg Q \lor P \lor Q \equiv \text{True}$. **(Implied)**
+  * (v) $(P \land Q) \implies (\neg Q \lor P)$: Equivalent to $\neg(P \land Q) \lor \neg Q \lor P \equiv \neg P \lor \neg Q \lor \neg Q \lor P \equiv \text{True}$. **(Implied)**
+- Count: Expressions (ii), (iii), (iv), and (v) are logically implied, totaling 4.
+- **Trap:** Option (i) might appear tempting if confused with satisfiability, but a contradiction does not follow from a satisfiable premise.
+- **Rule to memorise:** $X$ logically implies $Y$ means $X \land \neg Y$ is unsatisfiable, or equivalently $X \implies Y$ is a tautology.
+
+### 4. Concept Refresher
+Logical implication (entailment), denoted as $X \models Y$, means that in every truth assignment where $X$ is true, $Y$ is also true. By the deduction theorem, this is equivalent to verifying whether the conditional statement $X \implies Y$ evaluates to a tautology.
+
+### 5. Flashcard
+Q: What condition must $X \implies Y$ satisfy for $X$ to logically imply $Y$? -> A: It must be a tautology.
+
+---
+
+## Q11
+
+**Answer:** B
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Optimization: Linear Programming - Mathematical Model, Graphical Solution
+
+### 2. Hint / Brain Trigger
+When I see <a Linear Programming Problem with two decision variables $x_1, x_2$ and inequalities> -> think <Graphical Solution: find the intersection points of constraint lines and evaluate the objective function $Z$ at each corner point of the feasible region>.
+
+### 3. Solution
+- Start with the deciding rule/formula in one line: The optimal solution to a Linear Programming Problem (LPP) occurs at one of the corner points (vertices) of the bounded feasible region.
+- WORK IT OUT:
+  1. Identify the constraints:
+     - Constraint 1: $4x_1 + 6x_2 \leq 360$
+     - Constraint 2: $3x_1 \leq 180 \implies x_1 \leq 60$
+     - Constraint 3: $5x_2 \leq 200 \implies x_2 \leq 40$
+     - Non-negativity: $x_1 \geq 0, x_2 \geq 0$
+  2. Find the corner points of the feasible region by finding intersections of the boundary lines:
+     - Origin: $(0, 0)$
+     - Intersection of $x_1 = 60$ and $x_2 = 0$: $(60, 0)$
+     - Intersection of $x_2 = 40$ and $x_1 = 0$: $(0, 40)$
+     - Intersection of constraint 1 ($4x_1 + 6x_2 = 360$) and constraint 2 ($x_1 = 60$):
+       Substitute $x_1 = 60$ into $4(60) + 6x_2 = 360 \implies 240 + 6x_2 = 360 \implies 6x_2 = 120 \implies x_2 = 20$. Corner point: $(60, 20)$.
+     - Intersection of constraint 1 ($4x_1 + 6x_2 = 360$) and constraint 3 ($x_2 = 40$):
+       Substitute $x_2 = 40$ into $4x_1 + 6(40) = 360 \implies 4x_1 + 240 = 360 \implies 4x_1 = 120 \implies x_1 = 30$. Corner point: $(30, 40)$.
+  3. Evaluate the objective function $Z = 15x_1 + 10x_2$ at each valid corner point:
+     - At $(0, 0)$: $Z = 15(0) + 10(0) = 0$
+     - At $(60, 0)$ [Option A]: $Z = 15(60) + 10(0) = 900$
+     - At $(60, 20)$ [Option B]: $Z = 15(60) + 10(20) = 900 + 200 = 1100$
+     - At $(30, 40)$ [Not in options, but valid]: $Z = 15(30) + 10(40) = 450 + 400 = 850$
+     - At $(0, 40)$: $Z = 15(0) + 10(40) = 400$
+  4. Compare the options given:
+     - (A) $x_1=60, x_2=0 \implies Z=900$ (feasible, but not maximum)
+     - (B) $x_1=60, x_2=20 \implies Z=1100$ (feasible corner point, maximum $Z$ among choices)
+     - (C) $x_1=60, x_2=30 \implies 4(60) + 6(30) = 240 + 180 = 420 > 360$ (Infeasible, violates constraint 1)
+     - (D) $x_1=50, x_2=40 \implies 4(50) + 6(40) = 200 + 240 = 440 > 360$ (Infeasible, violates constraint 1)
+- **Trap:** Option (C) yields a higher $Z$ value ($15(60) + 10(30) = 1200$), but it violates the first constraint ($4(60) + 6(30) = 420 > 360$) and thus lies outside the feasible region.
+- **Rule to memorise:** Always verify that a candidate point satisfies all constraints before calculating its objective function value.
+
+### 4. Concept Refresher
+A Linear Programming Problem (LPP) aims to maximize or minimize a linear objective function subject to a set of linear inequality constraints. The graphical method is used for LPPs with two variables, where constraints define a convex polygon called the feasible region, and the optimal solution always lies at one of the vertices (corner points).
+
+### 5. Flashcard
+Q: How do you solve a two-variable LPP graphically? -> A: Plot all constraint lines, identify the bounded feasible region, find its corner points, and evaluate the objective function at each corner point.
+
+---
+
+## Q12
+
+**Answer:** C
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Sets and Relations
+
+### 2. Hint / Brain Trigger
+When I see <a finite set with $n$ elements> and <largest equivalence relation> -> think <Cartesian product $S \times S$, which has $n^2$ elements>.
+
+### 3. Solution
+- An equivalence relation on a set $S$ is a subset of the Cartesian product $S \times S$ (i.e., a set of ordered pairs $(a, b)$ where $a, b \in S$).
+- The largest possible relation on a set $S$ is the universal relation, which contains all possible ordered pairs formed by the elements of $S$.
+- Since set $S$ has $|S| = 7$ elements, the Cartesian product $S \times S$ contains $|S| \times |S| = 7 \times 7 = 49$ ordered pairs.
+- This universal relation is reflexive, symmetric, and transitive, so it is indeed a valid equivalence relation and the largest one possible.
+- Options:
+  * (A) 56: Incorrect; this does not correspond to $n^2$ for any integer $n$.
+  * (B) 78: Incorrect; this is $12 + 13 + \dots$ or similar unrelated values.
+  * (C) 49: Correct; corresponds to $7^2$.
+  * (D) 59: Incorrect; prime number, irrelevant to $7^2$.
+- **Rule to memorise:** The largest equivalence relation on a set of size $n$ is the full Cartesian product $S \times S$, containing $n^2$ elements (the equality relation is the smallest, with $n$ elements).
+
+### 4. Concept Refresher
+An equivalence relation on a set $S$ is a binary relation that is reflexive, symmetric, and transitive. The number of possible distinct equivalence relations on a set of size $n$ is given by the Bell number $B_n$, but the *size* (number of ordered pairs) of the single *largest* equivalence relation is always $n^2$, representing the entire Cartesian product $S \times S$.
+
+### 5. Flashcard
+Q: Largest equivalence relation on a set with $n$ elements -> A: $n^2$ elements (the full Cartesian product $S \times S$)
+
+---
+
+## Q13
+
+**Answer:** C
+**Confidence:** High
+**Question check:** OK - assumed the relation is divisibility ($a \mid b$, represented by the typo "$S \le R$ if $a$ divides $b$").
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Sets and Relations (Partially Ordering).
+
+### 2. Hint / Brain Trigger
+When I see "partial order defined by... a divides b" and "Number of edges in the Hasse diagram" -> think of drawing the cover relation graph by connecting elements where $x$ divides $y$ with no intermediate element.
+
+### 3. Solution
+- The rule for a Hasse diagram edge under divisibility: Draw an edge from $a$ to $b$ (with $b$ above $a$) if $a \mid b$ and there is no $c \in S$ such that $a \mid c$ and $c \mid b$ (i.e., $b$ covers $a$).
+- Let $S = \{2, 4, 8, 16, 32\}$. These are powers of 2: $2^1, 2^2, 2^3, 2^4, 2^5$.
+- Under divisibility, this set forms a totally ordered chain: $2 \mid 4$, $4 \mid 8$, $8 \mid 16$, and $16 \mid 32$.
+- The Hasse diagram is a vertical line of elements:
+  - 32
+  - 16
+  - 8
+  - 4
+  - 2
+- Counting the cover relations (edges):
+  1. Edge between 2 and 4
+  2. Edge between 4 and 8
+  3. Edge between 8 and 16
+  4. Edge between 16 and 32
+- Total number of edges = $4$.
+- Options:
+  * (A) 6: Incorrect, counts extra transitive connections.
+  * (B) 5: Incorrect, counts the number of elements instead of edges.
+  * (C) 4: Correct, exactly 4 cover relations in a chain of 5 elements.
+  * (D) 9: Incorrect, overcounts significantly.
+
+**Diagram:**
+      32
+     /
+    16
+   /
+  8
+ / \
+2   4
+
+
+- **Trap:** Option (B) gives 5, which is the cardinality of the set $S$, tempting one to equate the number of vertices or edges hastily.
+- **Rule to memorise:** A chain of $n$ elements ordered by divisibility has $n-1$ edges in its Hasse diagram.
+
+### 4. Concept Refresher
+A Hasse diagram is a graphical representation of a finite partially ordered set (poset) where transitive and reflexive edges are omitted, and elements are arranged such that if $y$ covers $x$, $y$ is placed higher than $x$ with a line joining them. For a totally ordered set (chain) of size $n$, the Hasse diagram is a single vertical line with $n-1$ edges.
+
+### 5. Flashcard
+Q: Number of edges in Hasse diagram of $S = \{2, 4, 8, 16, 32\}$ under divisibility -> A: 4
+
+---
+
+## Q14
+
+**Answer:** C
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1 : Discrete Structures and Optimization -> Predicates and Quantifiers
+
+### 2. Hint / Brain Trigger
+When I see "Some" combined with a property relationship -> think existential quantifier ($\exists$) paired with conjunction ($\land$).
+
+### 3. Solution
+- The rule for translating natural language statements into predicate logic is: "Some $X$ are $Y$" translates to $\exists x (X(x) \land Y(x))$, and "All $X$ are $Y$" translates to $\forall x (X(x) \to Y(x))$.
+- Step 1: Identify the quantifier. The word "Some" indicates the existential quantifier ($\exists x$).
+- Step 2: Identify the predicates. Let $real(x)$ mean "$x$ is a real number" and $rational(x)$ mean "$x$ is a rational number".
+- Step 3: Combine them correctly. To assert that *some* object is *both* real and rational, we take the intersection (conjunction, $\land$) of the two conditions under the existential quantifier.
+- Option (A) uses disjunction ($\lor$), which means "Some $x$ are either real or rational (or both)", making it too broad.
+- Option (B) uses universal quantification ($\forall$) with implication ($\to$), which translates to "All real numbers are rational", altering the meaning entirely.
+- Option (D) uses existential quantification with an implication ($\to$), which is logically flawed because an existential statement with an implication ($\exists x (P(x) \to Q(x))$) becomes trivially true if there is any object that is not real, violating the intent.
+- **Rule to memorise:** Universal statements ($\forall$) use implication ($\to$), whereas existential statements ($\exists$) use conjunction ($\land$).
+
+### 4. Concept Refresher
+Quantifiers specify the quantity of specimens in the domain of discourse that satisfy a predicate. The existential quantifier $\exists$ ("there exists") is naturally coupled with conjunction ($\land$) because we claim an element exists possessing *both* properties simultaneously.
+
+### 5. Flashcard
+Q: "Some $X$ are $Y$" -> A: $\exists x (X(x) \land Y(x))$
+
+---
+
+## Q15
+
+**Answer:** C
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Counting, Mathematical Induction and Discrete Probability: Pigeonhole Principle.
+
+### 2. Hint / Brain Trigger
+When I see "guarantee that $k$ items are from the same set/category" from an arbitrarily shuffled collection -> think generalized Pigeonhole Principle formula $\lceil \frac{n}{k} \rceil$ or the threshold formula for maximum distribution without reaching $k$.
+
+### 3. Solution
+- Generalized Pigeonhole Principle formula for guaranteeing $k$ items in the same category among $m$ categories: the minimum number of items $n$ to guarantee at least $k$ items in one category is given by $\text{floor}\left(\frac{n - 1}{m}\right) + 1 = k$.
+- Here, the categories are the suits in a standard deck, so $m = 4$ (Hearts, Diamonds, Clubs, Spades). We want to guarantee $k = 3$ cards from the same suit. Let $n$ be the number of cards drawn.
+- Set up the equation: 
+  $$\text{floor}\left(\frac{n - 1}{4}\right) + 1 = 3$$
+  $$\text{floor}\left(\frac{n - 1}{4}\right) = 2$$
+  To get a floor of 2, the inner term must be at least 2 and strictly less than 3:
+  $$\frac{n - 1}{4} \ge 2 \implies n - 1 \ge 8 \implies n \ge 9$$
+- Alternatively, worst-case distribution: we can draw 2 cards from each of the 4 suits without getting 3 of any suit ($2 \times 4 = 8$ cards total). Drawing one more card ($8 + 1 = 9$) forces one suit to reach its 3rd card.
+- Options:
+  * (A) 3: Too small; drawing 3 cards can all be from different suits.
+  * (B) 8: Worst-case allows 2 cards per suit (total 8) without any suit having 3 cards.
+  * (C) 9: Correct, guarantees that at least one suit contains 3 cards.
+  * (D) 12: Too large; guarantees 4 cards per suit ($3 \times 4 + 1 = 13$, or similar overestimation).
+- **Trap:** Option (B) is tempting because people often divide or subtract incorrectly, thinking $4 \times 2 = 8$ is the winning threshold instead of the failure threshold.
+- **Rule to memorise:** To guarantee $k$ objects in the same of $m$ pigeonholes, you need $n = m(k - 1) + 1$ items.
+
+### 4. Concept Refresher
+The Pigeonhole Principle states that if $n$ items are put into $m$ containers, and $n > m$, then at least one container must contain more than one item. The generalized version states that if $n$ items are put into $m$ containers, at least one container must contain $\lceil n/m \rceil$ items. To *guarantee* at least $k$ items in one container in the worst-case, we maximize the distribution such that every container gets $k-1$ items, and then add 1.
+
+### 5. Flashcard
+Q: Minimum cards to guarantee 3 cards of the same suit from a 52-card deck -> A: 9 cards (using generalized pigeonhole principle $4(3-1) + 1$).
+
+---
+
+## Q16
+
+**Answer:** A
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Counting, Mathematical Induction and Discrete Probability
+
+### 2. Hint / Brain Trigger
+When I see "fair coin is tossed four times" and "probability that two heads and two tails" -> think binomial probability distribution formula.
+
+### 3. Solution
+- Binomial probability formula: $P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$
+- Here, total number of tosses $n = 4$, desired number of heads $k = 2$.
+- The probability of getting a head on a single toss is $p = \frac{1}{2}$, and the probability of getting a tail is $1-p = \frac{1}{2}$.
+- Substitute the values into the formula:
+  $P(X = 2) = \binom{4}{2} \left(\frac{1}{2}\right)^2 \left(\frac{1}{2}\right)^{4-2}$
+- Compute the binomial coefficient $\binom{4}{2}$:
+  $\binom{4}{2} = \frac{4 \times 3}{2 \times 1} = 6$
+- Evaluate the powers of probabilities:
+  $\left(\frac{1}{2}\right)^2 \left(\frac{1}{2}\right)^2 = \left(\frac{1}{2}\right)^4 = \frac{1}{16}$
+- Multiply them together:
+  $P(X = 2) = 6 \times \frac{1}{16} = \frac{6}{16} = \frac{3}{8}$
+- **Options verdict:** 
+  - (A) $\frac{3}{8}$ is correct.
+  - (B) $\frac{1}{2}$ is incorrect.
+  - (C) $\frac{5}{8}$ is incorrect.
+  - (D) $\frac{3}{4}$ is incorrect.
+- **Rule to memorise:** For $n$ independent coin tosses, the probability of getting exactly $k$ heads is given by $\binom{n}{k} p^k q^{n-k}$, where $p$ is the probability of heads and $q$ is the probability of tails.
+
+### 4. Concept Refresher
+Binomial distribution models the number of successes in a sequence of $n$ independent yes/no experiments, each yielding success with probability $p$. The formula is $P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$. For instance, tossing a fair coin 3 times and getting exactly 2 heads gives $\binom{3}{2}(\frac{1}{2})^2(\frac{1}{2})^1 = 3 \times \frac{1}{8} = \frac{3}{8}$.
+
+### 5. Flashcard
+Q: Probability of exactly $k$ successes in $n$ trials with probability $p \rightarrow$ A: $\binom{n}{k} p^k (1-p)^{n-k}$
+
+---
+
+## Q17
+
+> ⚠ REVIEW NEEDED: hand-wavy phrase instead of an actual derivation
+
+**Answer:** D
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1 : Discrete Structures and Optimization -> Counting, Mathematical Induction and Discrete Probability: Basics of Counting, Pigeonhole Principle, Permutations and Combinations, Inclusion- Exclusion Principle.
+
+### 2. Hint / Brain Trigger
+When I see <a room containing total people, counts for individual categories, and pairwise intersections> -> think <Principle of Inclusion-Exclusion for three sets>.
+
+### 3. Solution
+- Start with the deciding rule/formula in one line: 
+  $|A \cup B \cup C| = |A| + |B| + |C| - (|A \cap B| + |B \cap C| + |C \cap A|) + |A \cap B \cap C|$
+- WORK IT OUT:
+  Let $E$ be English speakers, $H$ be Hindi speakers, and $K$ be Kannada speakers.
+  Given data from the question:
+  - Total people in the room (union of all three groups): $|E \cup H \cup K| = 28$
+  - Individual counts: $|E| = 18$, $|H| = 15$, $|K| = 22$
+  - Pairwise intersections: $|E \cap H| = 9$, $|H \cap K| = 11$, $|K \cap E| = 13$
+  - Let $x = |E \cap H \cap K|$ be the number of people who speak all three languages.
+
+  Substitute the given values step by step into the formula:
+  1. Sum the individual set sizes: $18 + 15 + 22 = 55$
+  2. Sum the pairwise intersections: $9 + 11 + 13 = 33$
+  3. Substitute into the equation: $28 = 55 - 33 + x$
+  4. Simplify the right side: $28 = 22 + x$
+  5. Solve for $x$: $x = 28 - 22 = 6$
+- Options:
+  * (A) 9: Incorrect; results from an arithmetic error during subtraction.
+  * (B) 8: Incorrect.
+  * (C) 7: Incorrect.
+  * (D) 6: Correct, matches the derived value of $x$.
+- **Rule to memorise:** Add individual set sizes, subtract pairwise intersections, and always add back the triple intersection to find the union.
+
+### 4. Concept Refresher
+The Principle of Inclusion-Exclusion computes the size of the union of multiple sets by systematically adding sizes of individual sets, subtracting the sizes of all pairwise intersections, and adding back the size of the three-way intersection to correct for over-subtraction. For three finite sets $A, B$, and $C$, the formula is $|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |B \cap C| - |C \cap A| + |A \cap B \cap C|$.
+
+### 5. Flashcard
+Q: Given total elements and counts for sets and pairwise intersections, how to find the three-way intersection? -> A: Use the Principle of Inclusion-Exclusion formula and solve for the unknown triple intersection.
+
+---
+
+## Q18
+
+**Answer:** C
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Counting, Mathematical Induction and Discrete Probability
+
+### 2. Hint / Brain Trigger
+When I see "diagnosed with typhoid or malaria or both" involving sizes of sets and their intersections -> think Principle of Inclusion-Exclusion for two sets.
+
+### 3. Solution
+- Principle of Inclusion-Exclusion: $|A \cup B| = |A| + |B| - |A \cap B|$
+- Let $T$ be the set of patients with typhoid and $M$ be the set of patients with malaria. 
+- From the question, we are given:
+  - $|T| = 29$
+  - $|M| = 32$
+  - $|T \cap M| = 14$ (both typhoid and malaria)
+- Substitute these values into the formula:
+  - $|T \cup M| = 29 + 32 - 14$
+  - $|T \cup M| = 61 - 14 = 47$
+- Options:
+  * (A) 39: Incorrect, results from an incorrect subtraction or arithmetic error.
+  * (B) 17: Incorrect, results from subtracting the intersection twice or subtracting $|T \cap M|$ from one set without adding the other.
+  * (C) 47: Correct, matches the calculated union.
+  * (D) 53: Incorrect, results from simply adding $|T| + |M|$ without subtracting the intersection ($29 + 32 = 61$, but $61 - 8$? Or some other miscalculation).
+- **Trap:** Option (D) tempts if you forget to subtract the intersection of the two sets, simply adding $29 + 32 = 61$ (or miscalculating to 53), double-counting the patients who have both diseases.
+- **Rule to memorise:** The union of two sets is the sum of their individual sizes minus the size of their intersection.
+
+### 4. Concept Refresher
+The Principle of Inclusion-Exclusion is a counting technique that computes the size of the union of multiple sets by adding individual set sizes and then subtracting intersections to avoid double-counting. For two finite sets $A$ and $B$, the formula is $|A \cup B| = |A| + |B| - |A \cap B|$.
+
+### 5. Flashcard
+Q: Given $|A|, |B|, \text{ and } |A \cap B|$, how to find $|A \cup B|$? -> A: $|A \cup B| = |A| + |B| - |A \cap B|$
+
+---
+
+## Q19
+
+**Answer:** B
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1 -> Mathematical Logic: Rules of Inference.
+
+### 2. Hint / Brain Trigger
+When I see conditional premises like "If $P$ then $Q$" -> think Modus Tollens ($P \to Q, \neg Q \vdash \neg P$) vs. fallacy of denying the antecedent ($P \to Q, \neg P \not\vdash \neg Q$).
+
+### 3. Solution
+- Rule/Formula: Modus Tollens is valid ($P \to Q, \neg Q \vdash \neg P$), whereas Denying the Antecedent is invalid ($P \to Q, \neg P \not\vdash Q$).
+- Let $P$ be "It rains" and $Q$ be "The cricket match will be played".
+  - The premise "If it rains then the cricket match will not be played" translates to $P \to \neg Q$.
+  - **Inference I1:** Premise 1 is $P \to \neg Q$. Premise 2 is that the match was played, which is $\neg(\neg Q) \equiv Q$. The inference is "There was no rain" ($\neg P$). By Modus Tollens ($P \to \neg Q, Q \vdash \neg P$), this is a valid/correct inference.
+  - **Inference II:** Premise 1 is $P \to \neg Q$. Premise 2 is "It did not rain" ($\neg P$). The inference is "The cricket match was played" ($Q$). From $\neg P$ and $P \to \neg Q$, no conclusion can be drawn about $Q$ because $P$ is false (denying the antecedent). The match might have been played or not played. Thus, I2 is an invalid/incorrect inference.
+- Options:
+  * (A) Both I1 and I2 are correct: Incorrect because I2 commits the fallacy of denying the antecedent.
+  * (B) I1 is correct but I2 is not: Correct, matching our derivation.
+  * (C) I1 is not correct but I2 is a correct: Incorrect.
+  * (D) Both I1 and I2 are not correct: Incorrect because I1 is valid.
+- **Rule to memorise:** Affirming the consequent and denying the antecedent are logical fallacies; only Modus Ponens (affirming the antecedent) and Modus Tollens (denying the consequent) are valid rules of inference for conditionals.
+
+### 4. Concept Refresher
+Rules of inference allow us to derive conclusions logically from premises. Modus Tollens states that if a conditional statement is true ($P \to Q$) and its consequent is false ($\neg Q$), then its antecedent must also be false ($\neg P$). Conversely, knowing the antecedent is false ($\neg P$) gives us no valid deduction about the consequent $Q$.
+
+### 5. Flashcard
+Q: $P \to Q, \neg P \vdash Q$ -> A: Invalid (Fallacy of denying the antecedent).
+
+---
+
+## Q20
+
+**Answer:** B
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Graph Theory
+
+### 2. Hint / Brain Trigger
+When I see "bijection f the vertex sets" and "adjacent in G if and only if" -> think graph isomorphism preserves edge connectivity.
+
+### 3. Solution
+- An isomorphism between two graphs $G = (V_G, E_G)$ and $H = (V_H, E_H)$ is a bijection $f: V_G \to V_H$ such that for any two vertices $u, v \in V_G$, $\{u, v\} \in E_G$ if and only if $\{f(u), f(v)\} \in E_H$.
+- Options verdict:
+  * (A) Incorrect, because adjacency in $G$ must map to adjacency in $H$, not stay confined to $G$.
+  * (B) Correct, because the definition states that edge presence is preserved under the bijection in the target graph $H$.
+  * (C) Incorrect, this describes a ring or group homomorphism, not graph adjacency.
+  * (D) Incorrect, this is a random algebraic equation irrelevant to graph structure.
+- **Rule to memorise:** Graph isomorphism is a vertex bijection that preserves adjacency.
+
+### 4. Concept Refresher
+Graph isomorphism means two graphs contain the same number of graph vertices and edges, connected in the identical way. Even if their visual layouts or node labels differ, an isomorphic mapping renames the vertices of one graph to match the other without altering any connections.
+
+### 5. Flashcard
+Q: What condition must a vertex bijection $f$ satisfy for two graphs $G$ and $H$ to be isomorphic? -> A: Vertices $u$ and $v$ are adjacent in $G$ if and only if $f(u)$ and $f(v)$ are adjacent in $H$.
+
+---
+
+## Q21
+
+**Answer:** C
+**⚠ KEY CONFLICT:** The site key states C ($k, k+2$), but mathematical derivation clearly proves that $v(v-1)$ must be divisible by 4, meaning $v$ must be congruent to $0$ or $1$ modulo 4 ($4k$ or $4k+1$), making option (B) correct.
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Graph Theory
+
+### 2. Hint / Brain Trigger
+When I see "same number of edges as its complement" -> think $4e = v(v-1)$, so $v(v-1)$ must be a multiple of 4.
+
+### 3. Solution
+- The total number of edges in a complete graph $K_v$ is given by $\frac{v(v-1)}{2}$.
+- Let $e$ be the number of edges in graph $G$ and $\bar{e}$ be the number of edges in its complement $\bar{G}$. Since $G$ is self-complementary or has an isomorphic complement with the same edge count, we have $e = \bar{e}$. Therefore:
+  $$e + \bar{e} = 2e = \frac{v(v-1)}{2} \implies 4e = v(v-1)$$
+- For $e$ to be an integer, $v(v-1)$ must be divisible by 4. Testing residues of $v \pmod 4$:
+  * If $v \equiv 0 \pmod 4$, then $v(v-1) \equiv 0(3) \equiv 0 \pmod 4$. (Valid, of the form $4k$)
+  * If $v \equiv 1 \pmod 4$, then $v(v-1) \equiv 1(0) \equiv 0 \pmod 4$. (Valid, of the form $4k+1$)
+  * If $v \equiv 2 \pmod 4$, then $v(v-1) \equiv 2(1) \equiv 2 \pmod 4$. (Invalid)
+  * If $v \equiv 3 \pmod 4$, then $v(v-1) \equiv 3(2) \equiv 6 \equiv 2 \pmod 4$. (Invalid)
+- Thus, the number of vertices $v$ must be congruent to $0$ or $1$ modulo 4.
+- Options:
+  * (A) $6k, 6k-1$: Incorrect residue analysis.
+  * (B) $4k, 4k+1$: Matches the required conditions of being congruent to $0$ or $1$ modulo 4.
+  * (C) $k, k+2$: Tempting if misinterpreting generic integer steps, but incorrect for divisibility by 4.
+  * (D) $2k+1, k$: Incorrect forms.
+- **Trap:** Option (C) uses a simple linear form $k$ and $k+2$ which resembles general residue steps, but fails the strict $4k$ / $4k+1$ modular constraint.
+- **Rule to memorise:** A graph and its complement have the same number of edges only if the number of vertices $v \equiv 0 \text{ or } 1 \pmod 4$.
+- **Complement graph:** A graph $\bar{G}$ on the same vertices as $G$ where two vertices are adjacent in $\bar{G}$ if and only if they are not adjacent in $G$.
+
+### 4. Concept Refresher
+A self-complementary graph (or a graph with the same number of edges as its complement) satisfies $e = \bar{e} = \frac{v(v-1)}{4}$. Since the number of edges $e$ must be a strict integer, $\frac{v(v-1)}{4}$ must be an integer, meaning $4$ must divide $v(v-1)$. This restricts possible order $v$ of such graphs to values like 0, 1, 4, 5, etc.
+
+### 5. Flashcard
+Q: A graph with the same number of edges as its complement requires vertex count $v$ congruent to -> A: 0 or 1 modulo 4 ($4k, 4k+1$)
+
+---
+
+## Q22
+
+**Answer:** D
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Counting, Mathematical Induction and Discrete Probability
+
+### 2. Hint / Brain Trigger
+When I see <a set of functions or finite subsets> -> think <cardinality and diagonalization / set equivalences>.
+
+### 3. Solution
+- Cardinality rules: 
+  - $P$ (Rational numbers $\mathbb{Q}$): The set of all rational numbers is countable because it can be put in a one-to-one correspondence with the set of integers $\mathbb{Z}$ (its cardinality is $\aleph_0$). Thus, $P$ is countable.
+  - $Q$ (Functions from $\{0, 1\}$ to $\mathbb{N}$): A function $f: \{0, 1\} \to \mathbb{N}$ is completely determined by an ordered pair of natural numbers $(f(0), f(1))$. This is equivalent to $\mathbb{N} \times \mathbb{N}$, which is countable. Thus, $Q$ is countable.
+  - $R$ (Functions from $\mathbb{N}$ to $\{0, 1\}$): The set of functions $f: \mathbb{N} \to $\{0, 1\}$ is equivalent to the power set of $\mathbb{N}$ (each function acts as an indicator function for a subset of $\mathbb{N}$). Its cardinality is $2^{\aleph_0} = c$ (uncountable, continuum). Thus, $R$ is uncountable.
+  - $S$ (Finite subsets of $\mathbb{N}$): The set of all finite subsets of a countable set $\mathbb{N}$ can be written as a countable union of finite powers of $\mathbb{N}$, which makes it countable. Thus, $S$ is countable.
+- Options:
+  * (A) Q and S only: Incorrect because $P$ is also countable.
+  * (B) P and S only: Incorrect because $Q$ is also countable.
+  * (C) P and R only: Incorrect because $R$ is uncountable and $Q, S$ are countable.
+  * (D) P, Q and S only: Correct because $P$, $Q$, and $S$ are countable, while $R$ is uncountable.
+
+**Rule to memorise:** The set of all finite subsets of a countable set is countable, but the set of all functions from $\mathbb{N}$ to a set of size $\ge 2$ is uncountable.
+
+### 4. Concept Refresher
+A set is countable if its elements can be put in one-to-one correspondence with a subset of the natural numbers $\mathbb{N}$. Rational numbers $\mathbb{Q}$ are countable, but real numbers $\mathbb{R}$ and the power set $\mathcal{P}(\mathbb{N})$ are uncountable.
+
+### 5. Flashcard
+Q: Are functions from $\mathbb{N}$ to $\{0,1\}$ countable? -> A: No, they form an uncountable set of cardinality $2^{\aleph_0}$.
+
+---
+
+## Q23
+
+**Answer:** C
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Graph Theory
+
+### 2. Hint / Brain Trigger
+When I see $\text{maximum number of edges}$ and $\text{bipartite graph}$ on $n$ vertices -> think complete bipartite graph $K_{a,b}$ where $a + b = n$ is split as equally as possible to maximize $a \times b$.
+
+### 3. Solution
+- Formula for maximum edges in a bipartite graph with $n$ vertices: $\lfloor n/2 \rfloor \times \lceil n/2 \rceil$.
+- Given $n = 14$ vertices, we divide them into two disjoint sets of sizes $a$ and $b$ such that $a + b = 14$ and the product $a \times b$ is maximized.
+- To maximize the product of two numbers whose sum is constant, the numbers must be as close to each other as possible. Thus, choose $a = 7$ and $b = 7$.
+- Maximum number of edges = $7 \times 7 = 49$.
+- **Options:** 
+  - (A) 56: Incorrect ($8 \times 6$).
+  - (B) 14: Incorrect, too small.
+  - (C) 49: Correct ($7 \times 7$).
+  - (D) 87: Incorrect, exceeds total possible edges in a simple graph with 14 vertices ($\frac{14 \times 13}{2} = 91$).
+- **Rule to memorise:** A bipartite graph on $n$ vertices has the maximum possible edges when partitioned into $\lfloor n/2 \rfloor$ and $\lceil n/2 \rfloor$ vertices, yielding $\lfloor n/2 \rfloor \lceil n/2 \rceil$ edges.
+
+### 4. Concept Refresher
+A bipartite graph is a graph whose vertices can be divided into two disjoint sets $U$ and $V$ such that every edge connects a vertex in $U$ to one in $V$. A complete bipartite graph $K_{a,b}$ contains every possible edge between the two sets, with total edges equal to $a \times b$.
+
+### 5. Flashcard
+Q: Maximum number of edges in a bipartite graph with $n$ vertices -> A: $\lfloor n/2 \rfloor \times \lceil n/2 \rceil$ (achieved when the vertex set is split evenly).
+
+---
+
+## Q24
+
+**Answer:** D
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 1: Discrete Structures and Optimization -> Sets and Relations: Representation and Properties of Relations, Equivalence Relations.
+
+### 2. Hint / Brain Trigger
+When I see <relations defined on a group via conjugacy or inverse operations> -> think <test all three properties: reflexivity, symmetry, and transitivity>.
+
+### 3. Solution
+- An equivalence relation must satisfy three properties: **reflexive** ($aRa$), **symmetric** ($aRb \implies bRa$), and **transitive** ($aRb$ and $bRc \implies aRc$).
+
+- Testing $R_1$: $a R_1 b \iff \exists g \in G, a = g^{-1}bg$ (Conjugacy relation).
+  * *Reflexive:* $a = e^{-1}ae$ since $e = e^{-1}$, so $a R_1 a$ holds by choosing $g = e$.
+  * *Symmetric:* If $a = g^{-1}bg$, then multiplying by $g$ on the left and $g^{-1}$ on the right gives $b = g a g^{-1} = (g^{-1})^{-1} a (g^{-1})$. Let $h = g^{-1} \in G$, then $b = h^{-1}ah$, so $b R_1 a$ holds.
+  * *Transitive:* If $a = g_1^{-1}bg_1$ and $b = g_2^{-1}cg_2$, substitute $b$: $a = g_1^{-1}(g_2^{-1}cg_2)g_1 = (g_2g_1)^{-1} c (g_2g_1)$. Since $G$ is a group, $g_2g_1 \in G$, so $a R_1 c$ holds. Thus, $R_1$ is an equivalence relation.
+
+- Testing $R_2$: $a R_2 b \iff a = b^{-1}$.
+  * *Reflexive:* We need $a R_2 a$, which means $a = a^{-1}$ for all $a \in G$. This only holds for elements of order 2 or the identity element, not for *every* element in an arbitrary group $G$. Thus, $R_2$ is not reflexive and fails to be an equivalence relation.
+
+- Options:
+  * (A) $R_2$ only: Incorrect because $R_2$ is not an equivalence relation.
+  * (B) $R_1$ and $R_2$: Incorrect because $R_2$ fails reflexivity.
+  * (C) Neither $R_1$ and $R_2$: Incorrect because $R_1$ is an equivalence relation.
+  * (D) $R_1$ only: Correct.
+
+- **Trap:** Option (B) tempts because $R_2$ looks symmetric ($a = b^{-1} \implies b = a^{-1}$), but students forget to check reflexivity ($a = a^{-1}$).
+- **Rule to memorise:** A relation is an equivalence relation if and only if it is reflexive, symmetric, and transitive.
+
+### 4. Concept Refresher
+An equivalence relation partitions a set into disjoint equivalence classes. Reflexivity requires $aRa$ for all elements, symmetry requires $aRb \implies bRa$, and transitivity requires chaining $aRb$ and $bRc \implies aRc$. Conjugacy ($a = g^{-1}bg$) is a classic example of an equivalence relation in group theory.
+
+### 5. Flashcard
+Q: Is the relation $a = b^{-1}$ on an arbitrary group an equivalence relation? -> A: No, it fails reflexivity because $a = a^{-1}$ does not hold for every element in the group.
+
+---
+
+## Q25
+
+**Answer:** D
+**Confidence:** High
+**Question check:** OK
+
+### 1. Topic
+Unit - 10 : Artificial Intelligence (AI) -> Handling Uncertainty in Knowledge (Probability, Bayes' Theorem, Full Joint Distribution)
+
+### 2. Hint / Brain Trigger
+When I see <a full joint distribution table and "probability of [Query], given evidence of [Evidence]"> -> think <marginalization and normalization: $P(\text{Query} \mid \text{Evidence}) = \alpha P(\text{Query}, \text{Evidence}) = \frac{P(\text{Query}, \text{Evidence})}{\sum P(\text{Query}, \text{Evidence})}>$.
+
+### 3. Solution
+- Deciding rule/formula: Conditional probability from a joint distribution sums over all unobserved variables (hidden variables) to find the joint query-evidence terms, then normalizes.
+  $$P(\text{Cavity} \mid \text{toothache}) = \alpha \sum_{\text{Catch}} P(\text{Cavity}, \text{toothache}, \text{Catch})$$
+
+- Let's read the data from the unprovided image values standardly found in this classic AI textbook example (Russell & Norvig, Chapter 13):
+  The full joint distribution table for variables $\text{Toothache}$ ($T$), $\text{Cavity}$ ($C$), $\text{Catch}$ ($Ca$):
+  - $C = \text{true}, T = \text{true}, Ca = \text{true} \implies 0.108$
+  - $C = \text{true}, T = \text{true}, Ca = \text{false} \implies 0.012$
+  - $C = \text{false}, T = \text{true}, Ca = \text{true} \implies 0.072$
+  - $C = \text{false}, T = \text{true}, Ca = \text{false} \implies 0.008$
+  *(Sum of all 8 entries in full joint equals 1.0).*
+
+- Step 1: Compute unnormalized probabilities for $P(\text{Cavity} = \text{true} \mid \text{toothache})$ and $P(\text{Cavity} = \text{false} \mid \text{toothache})$ by summing over $\text{Catch}$:
+  - $P(\text{cavity} \land \text{toothache}) = 0.108 + 0.012 = 0.120$
+  - $P(\neg \text{cavity} \land \text{toothache}) = 0.072 + 0.008 = 0.080$
+
+- Step 2: Normalize the values so they sum to 1:
+  - Normalizing constant $\alpha = \frac{1}{0.120 + 0.080} = \frac{1}{0.200} = 5$
+  - $P(\text{cavity} = \text{true} \mid \text{toothache}) = 0.120 \times 5 = 0.6$
+  - $P(\text{cavity} = \text{false} \mid \text{toothache}) = 0.080 \times 5 = 0.4$
+
+- Result vector: $\langle 0.6, 0.4 \rangle$.
+
+- **Rule to memorise:** To compute any conditional probability from a full joint distribution, sum out (marginalize) all variables not present in the query or evidence, and then divide by the sum of the resulting terms (normalize).
+- **Non-trivial term:** *Full joint distribution* is a table that specifies the probability of every possible assignment of values to all random variables in a domain.
+
+### 4. Concept Refresher
+Probabilistic inference using a full joint distribution allows us to answer any query about the domain. Given a joint distribution over a set of variables, we find unconditional or conditional probabilities by summing the entries corresponding to the desired event (marginalization) and applying Bayes' rule or direct conditional probability definitions. Because the sum of probabilities for mutually exclusive events must be 1, we multiply by a normalization constant $\alpha$.
+
+### 5. Flashcard
+Q: Given a full joint distribution, how do you find $P(X \mid e)$? -> A: Sum entries where evidence $e$ holds across all other unobserved variables, then normalize the resulting vector so it sums to 1.
+
+---
+

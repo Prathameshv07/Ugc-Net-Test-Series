@@ -65,7 +65,15 @@ The extent to which a software tolerates the unexpected problems, is termed as:
 (D) Robustness
 
 ## Q7
-<img src="paper2-csa/topic-wise/se-04-assets/q7-498058.png"/>
+
+| List I | List II |
+|---|---|
+| **I.** Determining whether you have built the right system is called ______ | **A.** Software testing |
+| **II.** Determining whether you have built the system right is called ______ | **B.** Software verification |
+| **III.** ______ is the process of demonstrating the existence of defects or providing confidence that they do not appear to be present. | **C.** Software debugging |
+| **IV.** ______ is the process of discovering the cause of a defect and fixing it. | **D.** Software validation |
+
+**Codes:** I — II — III — IV
 
 ## Q7 - Options
 (A) B D A C
