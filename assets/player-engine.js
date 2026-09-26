@@ -1,18 +1,29 @@
 /* ==========================================================================
    Universal test player. One page (player.html) + this engine handles every
    test. Reads ?test=<slug> from the URL, looks up that slug in
-   TESTS_MANIFEST (assets/tests-manifest.js, loaded before this file), fetches
-   the test's questions.md (and, on demand, answers.md), and renders
-   everything: start screen, timed attempt, and untimed revise mode.
+   TESTS_MANIFEST (assets/tests-manifest.js), fetches the test's ONE
+   Markdown file (question + options + hint + answer + explanation, all
+   together per question), and renders everything: start screen, timed
+   attempt, and untimed revise mode.
 
-   No per-test HTML or JS is needed anymore -- adding a test is purely:
-   write questions.md + answers.md, add one manifest entry.
+   File format per question (single file, no separate answers file):
+     ## Qn
+     <question text>
+     ## Qn - Options
+     (A) ...
+     (B) ...
+     ## Qn - Hint
+     <hint sentence>
+
+     **Answer:** X
+     ...rest of the explanation (Topic, Solution, whatever headings the
+     content uses)...
+   Everything from "**Answer:**" onward, up to the next "## Q(n+1)" heading,
+   is captured as that question's answer/explanation blob.
    ========================================================================== */
 
 (function () {
-  // ---------------- Markdown section parsers ----------------
-
-  function parseQuestionsMd(text) {
+  function parseTestMd(text) {
     const parts = text.split(/^##\s+(Q\d+(?:\s*-\s*(?:Options|Hint))?)\s*$/m);
     const data = {};
     for (let i = 1; i < parts.length; i += 2) {
@@ -20,16 +31,25 @@
       const body = (parts[i + 1] || '').trim();
       const m = label.match(/^(Q\d+)(?:\s*-\s*(Options|Hint))?$/);
       if (!m) continue;
-      const qid = m[1];
-      const kind = m[2];
-      if (!data[qid]) data[qid] = { stem: '', options: [], hint: '' };
+      const qid = m[1], kind = m[2];
+      if (!data[qid]) data[qid] = { stem: '', options: [], hint: '', correct: null, topic: null, explanation: '' };
       if (kind === 'Options') {
         const optParts = body.split(/^\(([A-E])\)\s*/m);
         for (let j = 1; j < optParts.length; j += 2) {
           data[qid].options.push({ letter: optParts[j], text: (optParts[j + 1] || '').trim() });
         }
       } else if (kind === 'Hint') {
-        data[qid].hint = body;
+        const answerIdx = body.search(/\*\*Answer:\*\*/);
+        if (answerIdx === -1) {
+          data[qid].hint = body;
+        } else {
+          data[qid].hint = body.slice(0, answerIdx).trim();
+          const rest = body.slice(answerIdx);
+          const ansMatch = rest.match(/\*\*Answer:\*\*\s*([A-E])/);
+          data[qid].correct = ansMatch ? ansMatch[1] : null;
+          data[qid].topic = extractTopic(rest);
+          data[qid].explanation = rest.trim();
+        }
       } else {
         data[qid].stem = body;
       }
@@ -37,21 +57,22 @@
     return data;
   }
 
-  function parseAnswersMd(text) {
-    const parts = text.split(/^##\s+(Q\d+)\s*$/m);
-    const data = {};
-    for (let i = 1; i < parts.length; i += 2) {
-      const qid = parts[i].trim();
-      let body = (parts[i + 1] || '').trim();
-      const answerMatch = body.match(/\*\*Answer:\*\*\s*([A-E])/);
-      const topicMatch = body.match(/\*\*Topic:\*\*\s*(.+)/);
-      const correct = answerMatch ? answerMatch[1] : null;
-      const topic = topicMatch ? topicMatch[1].trim() : null;
-      body = body.replace(/\*\*Answer:\*\*\s*[A-E]\s*/, '').replace(/\*\*Topic:\*\*\s*.+/, '').trim();
-      body = body.replace(/^-{3,}\s*$/gm, '').trim();
-      data[qid] = { correct, topic, explanation: body };
-    }
-    return data;
+  // Deliberately forgiving: real content uses several different phrasings
+  // for the topic line ("**Unit:** 5" / "**Unit – 5: X** → *Y*" /
+  // "X (Unit 5)" / plain "**Topic:** X"). Rather than parse out a clean
+  // Unit vs Sub-topic split (too inconsistent across existing content to
+  // do reliably -- see the chat for why), this just grabs a single
+  // readable label and strips Markdown decoration, good enough to bucket
+  // similar wrong answers together for the weak-topic chart.
+  function extractTopic(text) {
+    let m = text.match(/\*\*Unit:\*\*\s*(.+?)(?:\n|$).*?\*\*Sub-topic:\*\*\s*(.+?)(?:\n|$)/s);
+    if (m) return m[2].trim();
+    m = text.match(/###\s*(?:\d+\.\s*)?Topic\s*\n+([^\n]+)/) || text.match(/\*\*Topic:\*\*\s*(.+)/);
+    if (!m) return null;
+    let topic = m[1];
+    const arrowIdx = topic.indexOf('→');
+    if (arrowIdx !== -1) topic = topic.slice(arrowIdx + 1);
+    return topic.replace(/\*\*|\*|_/g, '').trim().replace(/\.$/, '');
   }
 
   function qidNum(qid) { return parseInt(qid.replace('Q', ''), 10); }
@@ -63,12 +84,27 @@
   function renderMath(el) {
     if (window.renderMathInElement) {
       renderMathInElement(el, {
-        // delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }],
         delimiters: [{ left: '$$', right: '$$', display: false }, { left: '$', right: '$', display: false }],
         throwOnError: false
       });
     }
   }
+  // Mermaid diagrams: marked turns ```mermaid fences into
+  // <pre><code class="language-mermaid">...</code></pre>; mermaid.js expects
+  // <pre class="mermaid">raw text</pre> instead, so convert then render.
+  function renderDiagrams(el) {
+    if (!window.mermaid) return;
+    const blocks = el.querySelectorAll('code.language-mermaid');
+    if (!blocks.length) return;
+    blocks.forEach(code => {
+      const pre = document.createElement('pre');
+      pre.className = 'mermaid';
+      pre.textContent = code.textContent;
+      code.parentElement.replaceWith(pre);
+    });
+    try { mermaid.run({ nodes: el.querySelectorAll('.mermaid') }); } catch (e) { console.warn('mermaid render failed', e); }
+  }
+  function renderExtras(el) { renderMath(el); renderDiagrams(el); }
 
   // ---------------- boot ----------------
 
@@ -88,36 +124,27 @@
   }
   document.title = cfg.title + ' — UGC NET Practice Test Series';
 
-  let questions = {};   // {qid: {stem, options, hint}}
-  let qids = [];         // ordered list
-  let answers = null;    // filled in lazily
+  let questions = {};
+  let qids = [];
   let current = 0;
   let userAnswers = {};
   let visited = {};
   let endsAt = null, timerHandle = null, submitted = false;
 
-  fetch(cfg.questionsFile)
+  fetch(cfg.file)
     .then(r => { if (!r.ok) throw new Error('fetch failed'); return r.text(); })
     .then(text => {
-      questions = parseQuestionsMd(text);
+      questions = parseTestMd(text);
       qids = Object.keys(questions).sort((a, b) => qidNum(a) - qidNum(b));
       statusEl.textContent = `${qids.length} questions loaded.`;
       renderStart();
     })
     .catch(err => {
       statusEl.textContent = '';
-      root.innerHTML = `<div class="notice">Couldn't load ${escapeHtml(cfg.questionsFile)}. If you're testing locally by
+      root.innerHTML = `<div class="notice">Couldn't load ${escapeHtml(cfg.file)}. If you're testing locally by
         double-clicking this file, that won't work — run a local server
         (<code>python3 -m http.server</code>) or use GitHub Pages.</div>`;
     });
-
-  async function ensureAnswers() {
-    if (answers) return answers;
-    const res = await fetch(cfg.answersFile);
-    if (!res.ok) throw new Error('answers fetch failed');
-    answers = parseAnswersMd(await res.text());
-    return answers;
-  }
 
   // ---------------- start screen ----------------
 
@@ -216,7 +243,7 @@
       });
       const hintBtn = qCard.querySelector('.hint-toggle');
       if (hintBtn) hintBtn.onclick = () => { const hc = qCard.querySelector('.hint-content'); hc.hidden = !hc.hidden; };
-      renderMath(qCard);
+      renderExtras(qCard);
 
       document.getElementById('qPosition').textContent = `Question ${current + 1} of ${qids.length}`;
       document.getElementById('prevBtn').disabled = current === 0;
@@ -264,20 +291,18 @@
     tick();
     timerHandle = setInterval(tick, 500);
 
-    async function finish() {
+    function finish() {
       if (submitted) return;
       submitted = true;
       clearInterval(timerHandle);
-      let ans, loadError = null;
-      try { ans = await ensureAnswers(); } catch (e) { loadError = e; ans = {}; }
 
       let correctCount = 0, wrongCount = 0, skipped = 0;
       const topicStats = {};
       const detail = qids.map(qid => {
+        const q = questions[qid];
         const given = userAnswers[qid] || null;
-        const a = ans[qid] || {};
-        const correct = a.correct || null;
-        const topic = a.topic || null;
+        const correct = q.correct;
+        const topic = q.topic;
         let outcome = 'skipped';
         if (given) { if (given === correct) { outcome = 'correct'; correctCount++; } else { outcome = 'wrong'; wrongCount++; } }
         else skipped++;
@@ -286,10 +311,10 @@
           topicStats[topic][outcome]++;
           topicStats[topic].total++;
         }
-        return { qid, given, correct, topic, outcome, explanation: a.explanation };
+        return { qid, given, correct, topic, outcome, explanation: q.explanation };
       });
       const marks = correctCount * cfg.marksPerQuestion - wrongCount * (cfg.negativeMarking || 0);
-      renderResults(detail, correctCount, wrongCount, skipped, marks, topicStats, loadError);
+      renderResults(detail, correctCount, wrongCount, skipped, marks, topicStats);
     }
   }
 
@@ -339,7 +364,7 @@
     return wrap;
   }
 
-  function renderResults(detail, correctCount, wrongCount, skipped, marks, topicStats, loadError) {
+  function renderResults(detail, correctCount, wrongCount, skipped, marks, topicStats) {
     root.innerHTML = '';
     const hero = document.createElement('div');
     hero.className = 'score-hero';
@@ -358,13 +383,6 @@
       chartCard.append(h, bars);
     }
     root.appendChild(chartCard);
-
-    if (loadError) {
-      const notice = document.createElement('div');
-      notice.className = 'notice';
-      notice.textContent = "Couldn't load the answer key — this happens when opening the file directly from disk (works fine once hosted). Your score above is still accurate, but explanations can't be shown right now.";
-      root.appendChild(notice);
-    }
 
     let filter = 'all';
     const filterRow = document.createElement('div'); filterRow.className = 'review-filter';
@@ -410,7 +428,7 @@
           const ex = document.createElement('div'); ex.className = 'explain';
           ex.innerHTML = renderMd(d.explanation);
           item.appendChild(ex);
-          renderMath(ex);
+          renderExtras(ex);
         }
         listWrap.appendChild(item);
       });
@@ -426,33 +444,24 @@
 
   // ---------------- revise mode ----------------
 
-  async function beginRevise() {
-    root.innerHTML = '<div class="notice">Loading…</div>';
-    let ans, loadError = null;
-    try { ans = await ensureAnswers(); } catch (e) { loadError = e; ans = {}; }
+  function beginRevise() {
     root.innerHTML = '';
     const h = document.createElement('div');
     h.className = 'sub';
     h.textContent = `${cfg.title} — revision mode. No timer, answers shown inline.`;
     root.appendChild(h);
-    if (loadError) {
-      const notice = document.createElement('div'); notice.className = 'notice';
-      notice.textContent = "Couldn't load the answer key — works once hosted (GitHub Pages / local server).";
-      root.appendChild(notice);
-    }
     qids.forEach(qid => {
       const q = questions[qid];
-      const a = ans[qid] || {};
       const item = document.createElement('div');
       item.className = 'review-item';
-      item.innerHTML = a.topic ? `<span class="tag skipped">${escapeHtml(a.topic)}</span>` : '';
+      item.innerHTML = q.topic ? `<span class="tag skipped">${escapeHtml(q.topic)}</span>` : '';
       const qIndex = document.createElement('div'); qIndex.className = 'q-index'; qIndex.textContent = qid;
       const qText = document.createElement('div'); qText.className = 'q-text'; qText.innerHTML = renderMd(q.stem);
       item.append(qIndex, qText);
       const optsWrap = document.createElement('div');
       optsWrap.className = 'options';
       q.options.forEach(opt => {
-        const isCorrect = opt.letter === a.correct;
+        const isCorrect = opt.letter === q.correct;
         const row = document.createElement('label');
         row.className = 'option' + (isCorrect ? ' is-correct' : '');
         const badge = isCorrect ? '<span class="tag correct" style="margin-left:8px;">Correct answer</span>' : '';
@@ -461,10 +470,15 @@
         optsWrap.appendChild(row);
       });
       item.appendChild(optsWrap);
-      if (a.explanation) {
-        const ex = document.createElement('div'); ex.className = 'explain'; ex.innerHTML = renderMd(a.explanation);
+      if (q.hint) {
+        const hintEl = document.createElement('div'); hintEl.className = 'hint-content'; hintEl.style.marginTop = '10px';
+        hintEl.innerHTML = '💡 ' + renderMd(q.hint);
+        item.appendChild(hintEl);
+      }
+      if (q.explanation) {
+        const ex = document.createElement('div'); ex.className = 'explain'; ex.innerHTML = renderMd(q.explanation);
         item.appendChild(ex);
-        renderMath(ex);
+        renderExtras(ex);
       }
       root.appendChild(item);
     });
