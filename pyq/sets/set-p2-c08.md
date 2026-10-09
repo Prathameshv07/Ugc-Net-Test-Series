@@ -39,11 +39,11 @@ Use inclusion–exclusion: \|paper ∩ plastic\| = \|paper\| + \|plastic\| − \
 ## Q3
 Let P denote power set and ∅ the empty set. Arrange in non-decreasing cardinality:
 
-A. P({a,b,{a,b}})<br>
-B. P({∅,a,{a},{{a}}})<br>
+A. P({a,b,{a,b &#125;&#125;)<br>
+B. P({∅,a,{a},&#123;&#123;a &#125;&#125;})<br>
 C. P(P(∅))<br>
 D. P(P({a}))<br>
-E. P({{a,b},c})
+E. P(&#123;&#123;a,b},c})
 
 ## Q3 - Options
 (A) C, D, A, B, E
@@ -106,7 +106,7 @@ Which statements about the sets are true?
 
 A. ∅ ∈ ∅<br>
 B. ∅ ∈ {∅}<br>
-C. {∅} ⊂ {∅, {∅}}<br>
+C. {∅} ⊂ {∅, {∅ &#125;&#125;<br>
 D. {∅} ∈ {∅}<br>
 E. {∅} ⊂ (∅, {∅})
 

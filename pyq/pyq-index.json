@@ -3067,7 +3067,7 @@
       "paper": "p2",
       "qnum": 67,
       "date": "2026-06-22",
-      "text": "Let P denote power set and ∅ the empty set. Arrange in non-decreasing cardinality: A. P({a,b,{a,b}}) B. P({∅,a,{a},{{a}}}) C. P(P(∅)) D. P(P({a})) E. P({{a,b},c}) ",
+      "text": "Let P denote power set and ∅ the empty set. Arrange in non-decreasing cardinality: A. P({a,b,{a,b &#125;&#125;) B. P({∅,a,{a},&#123;&#123;a &#125;&#125;}) C. P(P(∅)) D. P(P({a})) E. P(&#123;&#123;a,b},c}) ",
       "options": [
         "C, D, A, B, E",
         "D, C, E, A, B",
@@ -6454,7 +6454,7 @@
       "paper": "p2",
       "qnum": 64,
       "date": "2020-11-11",
-      "text": "Match List I with List II Let R, = {(1,1), (2,2), (3,3)} and R2 = {(1,1), (1,2), (1,3), (1,4)} List I List IT A. R, UR: @ = {(1,1),.2).(1.3),2.4).(2.2).(3,3)} B. Ry —R, aq) {aD} C. RiARz MM) {(1.2),(2.3).(1.4}} @) R:-R; QV) {(2.2),(8,3)} List I List II Items are listed in the question stem. Match each item to its stated description or complexity.",
+      "text": "Match List I with List II Let R, = {(1,1), (2,2), (3,3)} and R2 = {(1,1), (1,2), (1,3), (1,4)} List I List IT A. R, UR: @ = {(1,1),.2).(1.3),2.4).(2.2).(3,3)} B. Ry —R, aq) {aD} C. RiARz MM) {(1.2),(2.3).(1.4 &#125;&#125; @) R:-R; QV) {(2.2),(8,3)} List I List II Items are listed in the question stem. Match each item to its stated description or complexity.",
       "options": [
         "ALT. B-Il. C-IV. D-III (2) AI, B-IV, C-II, D-II",
         "OCR review required",
@@ -26418,7 +26418,7 @@
       "paper": "p2",
       "qnum": 30,
       "date": "2025-01-06",
-      "text": "Which statements about the sets are true? A. ∅ ∈ ∅ B. ∅ ∈ {∅} C. {∅} ⊂ {∅, {∅}} D. {∅} ∈ {∅} E. {∅} ⊂ (∅, {∅}) ",
+      "text": "Which statements about the sets are true? A. ∅ ∈ ∅ B. ∅ ∈ {∅} C. {∅} ⊂ {∅, {∅ &#125;&#125; D. {∅} ∈ {∅} E. {∅} ⊂ (∅, {∅}) ",
       "options": [
         "A, B, C, D and E",
         "A, B, C and E only",
@@ -34153,7 +34153,7 @@
         "(A)-(1, (B)-@, (C)-(V), (D)-C)",
         "(A)-(0), (B)-(), (C)-(IV), (D)-"
       ],
-      "expl": "The key idea is stated in the problem: Match List - I with List - II. List - I List - II A. oN {b}= OQ ¢ B. {6}. {6} = () {4} (CS) th, {b}}-b= (IT) {{}} D. $U {l}}= (IV) {, {}} Choose the correct answer from the options given below :. The correct answer is D: (A)-(0), (B)-(), (C)-(IV), (D)-. It follows the governing definition, algorithm, or calculation in this artificial intelligence item; the other choices fail to ",
+      "expl": "The key idea is stated in the problem: Match List - I with List - II. List - I List - II A. oN {b}= OQ ¢ B. {6}. {6} = () {4} (CS) th, {b &#125;&#125;-b= (IT) &#123;&#123; &#125;&#125; D. $U {l &#125;&#125;= (IV) {, { &#125;&#125; Choose the correct answer from the options given below :. The correct answer is D: (A)-(0), (B)-(), (C)-(IV), (D)-. It follows the governing definition, algorithm, or calculation in this artificial intelligence item; the other choices fail to ",
       "answer": [
         "D"
       ],

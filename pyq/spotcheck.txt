@@ -34,7 +34,7 @@
     The total storage capacity of a floppy disk having 80 tracks and storing 128 bytes/sector is 163,840 bytes. How many sectors does this disk have? 
 
 2026-jun-22-s2-p2 Q67  ->  C08 Sets, Relations & Power Set
-    Let P denote power set and ∅ the empty set. Arrange in non-decreasing cardinality: A. P({a,b,{a,b}}) B. P({∅,a,{a},{{a}}}) C. P(P(∅)) D. P(P({a})) E. 
+    Let P denote power set and ∅ the empty set. Arrange in non-decreasing cardinality: A. P({a,b,{a,b &#125;&#125;) B. P({∅,a,{a},&#123;&#123;a &#125;&#125;}) C. P(P(∅)) D. P(P({a})) E. 
 
 2023-jun-17-s1-p2 Q55  ->  C19 Hashing, Stacks, Queues & Linked Lists
     Suppose a circular queue of capacity (n - 1) elements is implemented with an array of n elements. Assume that the insertion and deletion operations ar
