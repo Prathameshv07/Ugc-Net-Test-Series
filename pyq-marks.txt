@@ -1,0 +1,25 @@
+# ============================================================================
+# pyq-marks.txt  -  YOUR hand-edited marks. Applied on top of the automatic
+# classification every time you run pyq_build.py (and pyq_classify.py).
+#
+# 1) Fix or assign a TOPIC for specific questions (this is how you "mark" a
+#    question as belonging to a high-yield topic):
+#
+#       <paper> Q21,Q35,Q40-Q44 = C23
+#
+#    <paper> is the paper name, e.g.  2026-jun-p2   (add the day only if the
+#    month is ambiguous: 2023-mar-15-p2).  Topic IDs are in tools/pyq/pyq-topics.txt
+#    (C01-C45 = your coaching list, G01+ = gap topics, A01+ = Paper 1).
+#
+# 2) Star questions you personally want to revisit (collected into a practice
+#    set called "My marked questions"):
+#
+#       2025-jun-p2 Q12,Q33 *
+#
+# Blank lines and everything after a # are ignored.
+# Examples (delete the leading # to activate):
+#
+# 2026-jun-p2 Q21 = C16
+# 2024-aug-p2 Q5,Q9-Q12 = C23
+# 2023-dec-p2 Q40 *
+# ============================================================================

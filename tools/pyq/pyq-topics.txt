@@ -1,0 +1,270 @@
+# ============================================================================
+# CLOSED TOPIC LIST for PYQ classification. Edit freely.
+#
+# Format:   ID | unit | star | name
+#             ! strong keywords; separated; by semicolons   (weight 3)
+#             . weak keywords                               (weight 1)
+#   star: * = marked important in the coaching "45 topics" PDF, - = not marked
+#   Keywords are case-insensitive, match from a word start ("sort" matches
+#   "sorting"); end with $ to require a whole word ("dfa$").
+#   C01-C45 mirror the coaching PDF numbers. G01+ are gap topics (syllabus areas
+#   the 45-topic list doesn't cover). A01+ are Paper 1.
+# ============================================================================
+
+@units paper2
+1 | Discrete Structures and Optimization
+2 | Computer System Architecture
+3 | Programming Languages and Computer Graphics
+4 | Database Management Systems
+5 | System Software and Operating System
+6 | Software Engineering
+7 | Data Structures and Algorithms
+8 | Theory of Computation and Compilers
+9 | Data Communication and Computer Networks
+10 | Artificial Intelligence
+
+@units paper1
+1 | Teaching Aptitude
+2 | Research Aptitude
+3 | Comprehension
+4 | Communication
+5 | Mathematical Reasoning and Aptitude
+6 | Logical Reasoning
+7 | Data Interpretation
+8 | Information and Communication Technology (ICT)
+9 | People, Development and Environment
+10 | Higher Education System
+
+@topics paper2
+C01 | 9 | * | OSI Model & Layer Responsibilities
+  ! osi model; osi reference; osi layer; osi$; seven layers
+  . data link layer; network layer; transport layer; session layer; presentation layer; physical layer; application layer; layer responsib; protocol data unit; encapsulation
+C02 | 9 | * | TCP/IP, TCP & UDP Protocols and Headers
+  ! tcp$; tcp/ip; udp$; three-way handshake; congestion window; slow start; icmp$; sctp$
+  . port number; socket; sequence number; acknowledg; header; connection-oriented; connectionless; checksum; retransmi; timeout
+C03 | 9 | - | MAC Layer, CSMA/CD, Collision Resolution & Piggybacking
+  ! csma; collision domain; aloha; token ring; token bus; piggyback; backoff; ethernet; contention; medium access
+  . mac$; mac layer; frame; collision; 802.3; 802.11; slot time; persistent
+C04 | 9 | - | Hamming Code, Error Detection & Bit Stuffing
+  ! hamming; crc$; cyclic redundancy; checksum; parity; bit stuffing; byte stuffing; error detection; error correction; generator polynomial; codeword; code word
+  . redundan; burst error; framing; flag byte
+C05 | 9 | * | Subnetting & IP Addressing
+  ! subnet; ip address; cidr$; netmask; ipv4; ipv6; classful; classless; network id; host id; broadcast address; dhcp; nat$; arp$
+  . class a; class b; class c; mask; address range; prefix
+C06 | 9 | - | Flow Control, Switching & Routing Protocols
+  ! sliding window; go-back-n; go back n; selective repeat; stop-and-wait; stop and wait; routing; distance vector; link state; ospf; rip$; bgp$; circuit switching; packet switching; virtual circuit; datagram; leaky bucket; token bucket; message switching
+  . congestion; router; flow control; window size; hop; dijkstra
+C07 | 9 | - | Propagation Delay, Bit Rate & Channel Throughput
+  ! propagation delay; transmission delay; throughput; bit rate; baud rate; nyquist; shannon; channel capacity; signal-to-noise; round trip time; link utilization; bandwidth-delay
+  . bandwidth; latency; efficiency; utilization; bps$; mbps$; kbps$; delay
+C08 | 1 | * | Sets, Relations & Power Set
+  ! power set; equivalence relation; partial order; poset; hasse; reflexive; antisymmetric; transitive; symmetric relation; cartesian product; injective; surjective; bijective; one-to-one; set operation; relation on
+  . relation; function; domain; range; subset; union; intersection; set$; sets$; lattice; cardinality
+C09 | 1 | * | Propositional & Predicate Logic
+  ! propositional; predicate logic; tautology; contradiction; logical equivalen; quantifier; first-order; first order logic; universe of discourse; rules of inference; satisfiab; truth table; well formed formula; conjunctive normal form; disjunctive normal form; modus
+  . implication; negation; de morgan; valid argument; ∀; ∃; ¬
+C10 | 1 | * | Graph Theory
+  ! graph theory; euler; hamilton; planar; chromatic; bipartite; handshaking; complete graph; connected graph; isomorphic; vertices; vertex; cut vertex; cut set; degree of a vertex; degree sequence; multigraph; digraph; graph coloring; graph colouring; clique; independent set; incidence matrix
+  . graph; edge; edges; path; cycle; circuit; tree$; trees$; degree; connected; regular graph; subgraph; spanning; adjacency
+C11 | 1 | - | Groups, Subgroups & Algebraic Structures
+  ! abelian; cyclic group; subgroup; coset; lagrange; semigroup; monoid; homomorphism; isomorphism; algebraic structure; integral domain; boolean ring; quotient group; normal subgroup; abelian group; group homomorphism; group theory
+  . group$; groups$; ring$; field$; closure; identity element; inverse; associative; commutative; generator; order of
+C12 | 1 | - | Probability, Permutation & Combination
+  ! probability; permutation; combination; expected value; random variable; binomial; ways to arrange; how many ways; number of ways; distinct arrangements; poisson; conditional probability; independent events; dice; coin$; cards drawn
+  . bayes; factorial; arrange; choose; random; expectation; variance; distribution
+C13 | 1 | - | Linear Programming & Transportation Problem
+  ! linear programming; simplex; transportation problem; feasible region; objective function; dual problem; duality; assignment problem; north-west corner; vogel; basic feasible; lpp$; maximize z; minimize z; slack variable; optimal solution; degenerate
+  . constraint; feasible; optimal; corner point
+C14 | 7 | * | Time Complexity, Asymptotic Notation & Recurrences
+  ! time complexity; space complexity; big-o; big o; asymptotic; recurrence; master theorem; theta notation; omega notation; worst case; best case; average case; order of growth; growth rate; o(n; θ(; t(n); ω(; asymptotically; complexity of
+  . complexity; running time; loop; iteration; efficient; polynomial time
+C15 | 7 | * | Sorting Algorithms & Sorting Complexity
+  ! sorting; quick sort; quicksort; merge sort; mergesort; heap sort; heapsort; bubble sort; insertion sort; selection sort; radix sort; counting sort; bucket sort; stable sort; inversion; shell sort; sorted array
+  . sort; pivot; comparison-based; in-place
+C16 | 7 | * | Trees: BST, AVL & Heaps
+  ! binary search tree; bst$; avl; min heap; max heap; min-heap; max-heap; heap$; binary tree; preorder; inorder; postorder; tree traversal; b-tree; b+ tree; b+-tree; red-black; red black; threaded binary; complete binary tree; full binary tree; height of the tree; height of a tree; expression tree; trie$; leaf nodes
+  . tree; node; nodes; traversal; leaf; root; parent; child; depth; level order; rotation
+C17 | 7 | - | BFS, DFS & Graph Algorithms
+  ! bfs$; dfs$; breadth first; breadth-first; depth first; depth-first; dijkstra; kruskal; prim$; prim's; bellman; floyd; warshall; shortest path; topological; minimum spanning; maximum flow; max flow; max-flow; ford-fulkerson; strongly connected; all pairs; single source
+  . weighted graph; shortest; spanning tree; edge weight; negative cycle; adjacency list; adjacency matrix
+C18 | 7 | - | Greedy Algorithms & Dynamic Programming
+  ! greedy; dynamic programming; knapsack; huffman; longest common subsequence; lcs$; matrix chain; optimal substructure; overlapping subproblem; activity selection; job sequencing; coin change; memoization; memoisation; edit distance; subset sum; tabulation; fractional
+  . optimal; subproblem; table; bottom-up; top-down
+C19 | 7 | - | Hashing, Stacks, Queues & Linked Lists
+  ! hash; linear probing; quadratic probing; double hashing; open addressing; chaining; stack$; stacks$; linked list; circular queue; priority queue; postfix; infix; prefix expression; deque; enqueue; dequeue; doubly linked; singly linked; circular linked; load factor
+  . queue; bucket; insert; delete; front; rear; top of the stack; lifo; fifo; push; pop
+C20 | 5 | * | CPU Scheduling (Theory, Numerical, Rate Monotonic)
+  ! cpu scheduling; process scheduling; round robin; shortest job; sjf; first come first; priority scheduling; turnaround time; waiting time; gantt; rate monotonic; earliest deadline; time quantum; srtf; preemptive; non-preemptive; multilevel queue; multilevel feedback; response time; burst time; arrival time; real-time scheduling; scheduler
+  . scheduling; quantum; starvation; aging; ready queue; context switch; dispatcher; cpu burst; fcfs
+C21 | 5 | * | Memory Management, Page Replacement & Thrashing
+  ! page replacement; page fault; paging; segmentation; thrashing; virtual memory; tlb; translation look; demand paging; belady; lru$; optimal page; fifo page; page table; fragmentation; first fit; best fit; worst fit; swapping; working set; logical address; physical address; page size; page frame; memory management; effective access time; effective memory access; address translation; inverted page; copy-on-write
+  . page; pages; allocation; compaction; overlay; base register; limit register; relocation register; frame
+C22 | 5 | - | Process Management, IPC, Semaphores & Threads
+  ! semaphore; mutex; critical section; process synchroni; producer-consumer; producer consumer; readers-writers; readers writers; dining philosopher; thread; fork(); inter-process; interprocess; inter process; pipe$; process state; monitor$; race condition; peterson; test-and-set; test and set; pcb$; process control block; zombie; orphan process; message passing; shared memory; multithreading; busy waiting; spin lock; spinlock; priority inversion
+  . process; processes; synchronization; signal; wait; ipc$; lock; concurrent
+C23 | 5 | * | Deadlock
+  ! deadlock; banker; resource allocation graph; safe state; unsafe state; wait-for graph; wait for graph; circular wait; hold and wait; mutual exclusion; no preemption
+  . resource; safe sequence; claim edge; need matrix; allocation matrix
+C24 | 5 | - | Disk Scheduling, File Systems & RAID
+  ! disk scheduling; scan$; c-scan; look$; c-look; sstf; seek time; seek; rotational latency; raid; inode; file system; fat$; directory; contiguous allocation; linked allocation; indexed allocation; file allocation; free space; free-space; cylinder; sector; file access; access method; mounting
+  . file; files; block; blocks; storage; disk; track$
+C25 | 8 | * | Finite Automata, Regular Languages & DFA Minimization
+  ! dfa$; nfa$; finite automat; finite state machine; regular language; regular expression; minimal dfa; minimization; minimized; myhill; mealy; moore machine; epsilon; ε; regular grammar; kleene; transition diagram; transition function; accepting state; final state; start state; accepts the language; string accepted
+  . automata; automaton; regular; state; states; alphabet; strings; language
+C26 | 8 | * | Chomsky Hierarchy, Grammars & CNF/GNF
+  ! chomsky; context free grammar; context-free grammar; cfg$; cnf$; gnf$; greibach; ambiguous grammar; ambiguity; derivation; type 0; type-0; type 1; type 2; type 3; unrestricted grammar; context sensitive; context-sensitive; production rule; productions; left recursion; left-recursive
+  . grammar; parse tree; leftmost; rightmost; nonterminal; terminal symbols; generates
+C27 | 8 | - | CFL, PDA, Pumping Lemma & Closure Properties
+  ! pushdown; pda$; npda$; dpda$; context free language; context-free language; pumping lemma; closure propert; closed under; deterministic context; cfl$; non-regular; nonregular; stack automaton
+  . closure; closed; union of; intersection of; complement of; concatenation; homomorphism
+C28 | 8 | - | Turing Machines, Decidability & NP-Completeness
+  ! turing; np-complete; np complete; np-hard; np hard; p vs np; decidab; halting; recursively enumerable; recursive language; undecidab; np$; sat$; 3-sat; cook; npc$; tractable; intractable; post correspondence; church; universal turing
+  . tape; head; halt; computable; reducible; verifier; certificate; reduction; polynomial time
+C29 | 8 | * | Parsing, FIRST/FOLLOW, Compiler Phases & Three-Address Code
+  ! first and follow; first(; follow(; ll(1); lr(0); lr(1); slr; lalr; parser; parsing; shift-reduce; shift reduce; compiler phase; phases of compiler; lexical analy; three-address; three address code; intermediate code; quadruple; triple$; handle pruning; recursive descent; predictive parsing; parse table; canonical collection; lexeme; yacc; compiler$; compilers$
+  . symbol table; syntax analysis; syntax tree; bottom-up; top-down; shift; reduce; token$; tokens$
+C30 | 4 | - | ER Model & Database Design
+  ! er model; er diagram; e-r; entity-relationship; entity relationship; weak entity; participation constraint; generalization; specialization; relationship set; entity set; mapping cardinalit; cardinality ratio; total participation; composite attribute; multivalued attribute; derived attribute; ternary relationship
+  . entity; entities; relationship; cardinality; attribute
+C31 | 4 | * | Normalization & Functional Dependencies
+  ! 1nf; 2nf; 3nf; bcnf; 4nf; normalization; normalisation; functional dependenc; boyce; first normal form; second normal form; third normal form; highest normal form; closure of; lossless; lossy decomposition; dependency preserving; decomposition; minimal cover; canonical cover; armstrong; multivalued dependenc; fd$; fds$; attribute closure; partial dependency; transitive dependency
+  . normal form; dependency; dependencies; key; keys; determines; relation schema; candidate key
+C32 | 4 | * | SQL, Keys & Relational Algebra/Calculus
+  ! sql$; sql query; sql statement; sql command; select *; select distinct; select count; select max; select min; select sum; select avg; where clause; from clause; primary key; foreign key; super key; superkey; candidate keys; relational calculus; tuple relational; domain relational; relational algebra; natural join; outer join; inner join; group by; having clause; aggregate function; nested quer; stored procedure; referential integrity; delete from; insert into; create table; alter table; embedded sql
+  . join; tuple; relation; relational; query; table; schema; constraint; projection; selection; view$; views$; trigger
+C33 | 4 | - | Transactions, Schedules, Concurrency Control & Indexing
+  ! transaction; serializab; conflict serial; view serial; two-phase locking; two phase locking; 2pl$; strict 2pl; timestamp ordering; timestamp-based; acid propert; recoverable; cascadeless; cascading rollback; precedence graph; lock-based; locking protocol; wait-die; wound-wait; wait die; wound wait; indexing; hash join; nested loop join; query optimi; query processing; b+ tree index; sparse index; dense index; clustered; primary index; secondary index; multilevel index; blocking factor
+  . schedule$; schedules$; lock; locks; commit; rollback; concurrency; index; join cost; selectivity
+C34 | 6 | * | SDLC Models & Requirements (SRS)
+  ! sdlc; software development life cycle; software development lifecycle; waterfall; spiral model; prototyp; agile; scrum; extreme programming; incremental model; rad model; srs$; requirements specification; software requirement; use case; v-model; v model; devops; software process model; process model; iterative model; user stories; sprint; kanban; evolutionary model
+  . requirement; requirements; model; phase; phases; stakeholder; feasibility
+C35 | 6 | - | COCOMO, Project Management & Risk
+  ! cocomo; function point; lines of code; kloc; effort estimation; cost estimation; project management; risk management; risk analysis; risk mitigation; rmmm; project scheduling; staffing; software project; project plan; work breakdown; critical path method; person-month; person months; line of code; semi-detached
+  . risk; effort; estimation; schedule; cost; team; productivity; gantt; organic
+C36 | 6 | - | Software Testing, V&V & Quality (CMM)
+  ! software testing; white box; white-box; black box; black-box; verification; validation; cmm$; cmmi; software quality; iso 9126; mccall; regression testing; unit testing; integration testing; cyclomatic; test case; boundary value; equivalence partition; alpha test; beta test; mutation testing; acceptance testing; system testing; stress testing; basis path; code coverage; statement coverage; branch coverage; defect; software reliab; maintainab
+  . testing; test; quality; verify; validate; reliability; fault; failure; error; bug$
+C37 | 2 | * | Memory Hierarchy, Cache & Access Time
+  ! cache; memory hierarchy; interleav; access time; hit ratio; hit rate; miss rate; miss penalty; direct mapped; direct-mapped; set associative; set-associative; fully associative; write back; write-back; write through; write-through; average memory access; effective access; main memory; associative memory; content addressable; cam$; locality; cache coherence; replacement policy; tag bits
+  . memory; hit; miss; ram$; rom$; dram; sram; latency; block size
+C38 | 2 | - | Pipelining & Amdahl's Law
+  ! pipelin; amdahl; speedup; speed-up; data hazard; control hazard; structural hazard; hazard; stall; clock cycle; superscalar; instruction pipeline; arithmetic pipeline; branch prediction; raw hazard; forwarding; non-pipelined; cpi$
+  . stage; stages; parallel; clock; throughput; bubble
+C39 | 2 | - | Interrupts, DMA, Instruction Cycle & Addressing Modes
+  ! interrupt; dma$; direct memory access; instruction cycle; addressing mode; cisc$; risc$; fetch-decode; fetch decode; instruction format; opcode; immediate addressing; indirect addressing; register addressing; indexed addressing; relative addressing; effective address; zero address; one address; two address; three address instruction; instruction set; program counter; machine cycle; isr$; vectored; polling; handshak; programmed i/o; memory mapped i/o
+  . instruction; instructions; operand; fetch; decode; execute; register; registers; i/o
+C40 | 2 | * | K-Map, SOP & Boolean Laws
+  ! k-map; k map; karnaugh; sop$; sum of product; sum-of-product; pos$; product of sum; product-of-sum; boolean algebra; boolean expression; boolean function; boolean law; minterm; maxterm; prime implicant; don't care; dont care; de morgan; canonical form; canonical sop; duality; consensus; absorption; boolean identity; logic expression; logic function
+  . boolean; expression; implicant; literal; minimal; minimized; simplif
+C41 | 2 | - | Combinational/Sequential Circuits, Flip-Flops & Number Systems
+  ! multiplexer; mux$; demultiplexer; decoder; encoder; flip-flop; flip flop; counter; half adder; full adder; adder; subtractor; latch; sequential circuit; combinational circuit; shift register; ripple; synchronous counter; asynchronous counter; state table; excitation; jk$; sr latch; d flip; t flip; number system; binary number; binary to; to binary; binary representation; binary code; binary addition; binary subtraction; hexadecimal; octal; decimal to; complement; gray code; bcd$; excess-3; floating point; ieee 754; fixed point; sign magnitude; sign-magnitude; logic gate; nand; nor$; xor; xnor; universal gate; clocked; edge triggered; edge-triggered
+  . gate; gates; circuit; circuits; bit; bits; byte; clock; output; binary; register
+C42 | 10 | * | ANN, Perceptron & Types of Machine Learning
+  ! neural network; ann$; perceptron; backpropagation; back propagation; activation function; supervised learning; unsupervised learning; reinforcement learning; machine learning; hopfield; self-organizing; self organizing; deep learning; gradient descent; hidden layer; sigmoid; relu; learning rate; training data; overfitting; underfitting; convolutional; recurrent; delta rule; hebbian; kohonen; boltzmann; neuron
+  . weights; weight; layer; layers; training; learning; supervised; classification; regression; clustering; decision tree
+C43 | 10 | - | NLP, Bayes Rule, Search, Genetic & Fuzzy Concepts
+  ! natural language; nlp$; bayes; heuristic; a*; best-first; best first; hill climbing; hill-climbing; genetic algorithm; fuzzy; minimax; min-max; alpha-beta; alpha beta; state space; turing test; intelligent agent; crossover; fitness function; simulated annealing; iterative deepening; uniform cost; admissible; game tree; membership function; defuzzif; tokenization; stemming; part-of-speech; pos tagging; semantic analysis; pragmatics
+  . search; agent; agents; fitness; chromosome; population; selection; mutation
+C44 | 3 | * | Programming Output, Pointers, OOP & Data Types
+  ! printf; scanf; cout; cin$; pointer; constructor; destructor; inheritance; polymorphism; virtual function; object-oriented; object oriented; c++; int main; output of the following; output of following; what will be the output; following program; following code; following c program; code snippet; struct; union$; static variable; overloading; overriding; data type; malloc; sizeof; typedef; abstract class; encapsulation; operator overloading; template; exception handling; friend function; this pointer; call by reference; call by value; namespace; iostream; main(
+  . class; classes; object; objects; function; functions; variable; variables; loop; int$; float$; char$; string; code; array
+C45 | 3 | * | 2D Transformations, Reflection, Projection & Clipping
+  ! translation; scaling; shear; reflection; homogeneous coordinate; clipping; cohen-sutherland; cohen sutherland; liang-barsky; liang barsky; sutherland-hodgman; sutherland hodgman; bezier; b-spline; projection; viewport; window-to-viewport; window to viewport; transformation matrix; viewing pipeline; composite transformation; parallel projection; perspective projection; orthographic; oblique; vanishing point; control points; view plane; clip window; 2d transformation; 3d transformation; rotation matrix; rotated about
+  . transformation; transform; matrix; coordinates; point; polygon; vertices; viewing; curve; rotation
+G01 | 4 | - | Data Warehousing & Data Mining
+  ! data warehouse; data mining; olap; oltp; association rule; apriori; k-means; k means; star schema; snowflake schema; fact table; dimension table; etl$; concept hierarchy; support and confidence; frequent itemset; frequent pattern; data cube; data mart; support vector; k-nearest; knn$; hidden markov; naive bayes; dbscan; hierarchical clustering; data preprocessing; data cleaning; outlier
+  . clustering; classification; regression; mining; warehouse; itemset; confidence; support
+G02 | 4 | - | Big Data, Hadoop & NoSQL
+  ! big data; hadoop; hdfs; mapreduce; map-reduce; map reduce; nosql; mongodb; cassandra; key-value; key value store; cap theorem; spark$; hive$; pig$; document store; graph database; column-family; column family; data node; name node; namenode
+  . volume; variety; veracity; distributed file
+G03 | 4 | - | DBMS: Architecture, Recovery, Object DBs & Security
+  ! data independence; three-schema; three schema; dbms architecture; database architecture; recovery; checkpoint; log-based; write-ahead; shadow paging; undo; redo; object-oriented database; object-relational; distributed database; database security; authorization; grant$; revoke; codd; data model; data definition; ddl$; dml$; dcl$; client-server; temporal database; multimedia database; deductive database; spatial database; xml database; data dictionary
+  . database; dbms$; schema; instance
+G04 | 9 | - | Network Security & Cryptography
+  ! cryptograph; encrypt; decrypt; rsa$; aes$; des$; digital signature; firewall; firewall; vpn$; malware; virus; trojan; worm$; steganograph; public key; public-key; symmetric key; symmetric-key; asymmetric; hash function; sql injection; cipher; kerberos; ssl$; tls$; ipsec; phishing; authentication; diffie; man-in-the-middle; denial of service; dos attack; ddos; spoofing; sniffing; ransomware; botnet; intrusion; certificate authority; digital certificate; message digest; md5; non-repudiation
+  . security; secure; attack; attacker; key$; keys$; secret; confidential; integrity
+G05 | 9 | - | Application Layer & WWW (DNS, Email, HTTP, FTP)
+  ! dns$; domain name; smtp; pop3; imap; http$; https$; ftp$; telnet; url$; www$; world wide web; web server; email; e-mail; web browser; cookie; web page; uniform resource
+  . web; browser; server; client; mail; website; hyperlink; hypertext
+G06 | 9 | - | Cloud, IoT & Mobile/Wireless
+  ! cloud; saas$; paas$; iaas$; iot$; internet of things; gsm$; cdma$; mobile ip; wireless; bluetooth; ad hoc; adhoc; manet; wi-fi; wifi; satellite; cellular; gprs; sms$; mobile computing; mobile network; sensor network; rfid; zigbee; 4g; 5g; 3g; lte$
+  . mobile; sensor; base station; handoff; handover; roaming
+G07 | 5 | - | System Software (Assemblers, Loaders, Linkers, Macros)
+  ! assembler; loader; linker; linking; macro; relocation; debugger; interpreter; two-pass; two pass; one-pass; single pass; object code; machine code; assembly language; absolute loader; relocating loader; dynamic linking; static linking; load module; text editor; system software; bootstrap
+  . assembly; compile; compiler; source code; translator
+G08 | 5 | - | OS: Linux, Windows, Security, Virtualization & Distributed
+  ! linux; windows; unix; kernel; system call; virtual machine; hypervisor; distributed system; distributed operating; access matrix; protection; microkernel; monolithic; shell$; booting; multiprogramming; multitasking; time sharing; time-sharing; batch system; real-time operating; embedded operating
+  . operating system; operating; mode; user mode; kernel mode; privileged
+G09 | 3 | - | Web Programming (HTML, XML, Java, Servlets)
+  ! html; xml$; dhtml; css$; javascript; servlet; applet; jsp$; java$; java program; jdbc; web programming; web application; dom$; ajax; php$; json; xslt; xpath; dtd$; hyperlink
+  . web; page; script; scripting; browser; bytecode; jvm$; tag$; tags$
+G10 | 3 | - | Language Design, Data Types & Paradigms
+  ! binding; paradigm; scope; static scoping; dynamic scoping; call by name; call-by-name; parameter passing; type system; strongly typed; weakly typed; orthogonality; subprogram; programming language; language design; imperative; declarative; functional programming; logic programming; lambda; garbage collection; type conversion; coercion; abstract data type; data abstraction; early binding; late binding; lifetime; aliasing; side effect
+  . language; syntax; semantics; type; types; compile-time
+G11 | 3 | - | Computer Graphics: Display, Algorithms & 3D
+  ! raster; random scan; random-scan; bresenham; dda$; midpoint; mid-point; scan line; scan-line; flood fill; flood-fill; boundary fill; boundary-fill; polygon fill; illumination; shading; phong; gouraud; ray tracing; ray casting; crt$; frame buffer; framebuffer; pixel; resolution; video display; display device; refresh rate; aspect ratio; plotter; light pen; graphics monitor; color model; rgb$; cmyk; hsv; texture; hidden surface; z-buffer; depth buffer; back-face; backface; polygon mesh; quadric; solid modeling; fractal
+  . graphics; screen; display; color; colour; line drawing; circle drawing; ellipse; surface
+G12 | 10 | - | AI: Knowledge Representation, Planning & Expert Systems
+  ! expert system; knowledge representation; semantic network; ontolog; planning; strips$; multi-agent; multiagent; multi agent; prolog; lisp$; forward chaining; backward chaining; uncertainty; rational agent; conceptual dependency; script$; knowledge base; inference engine; production system; certainty factor; dempster; bayesian network; belief network; semantic web; goal stack; partial order planning; means-ends; blackboard; agent communication; knowledge sharing
+  . knowledge; reasoning; inference; rule-based; rules
+G13 | 1 | - | Optimization: PERT/CPM & Integer Programming
+  ! pert$; cpm$; critical path; integer programming; sensitivity analysis; project crashing; queueing; queuing; game theory; resource levelling; resource leveling; float$; slack time; earliest start; latest finish
+  . project; activity; activities; duration; path
+G14 | 1 | - | Discrete Maths: Counting, Induction, Lattices & Number Theory
+  ! pigeonhole; inclusion-exclusion; inclusion exclusion; mathematical induction; generating function; combinatorics; counting principle; number theory; modular arithmetic; congruence; euclidean; gcd$; lcm$; chinese remainder; fermat; euler's theorem; prime number; primality; fibonacci; stirling; catalan; derangement; partition of; recurrence relation; boolean lattice; distributive lattice; complemented; summation; induction
+  . counting; prime; divisible; remainder; modulo; mod$; lattice; sequence; series
+G15 | 6 | - | SE: Design, UML, Configuration Management & Reuse
+  ! cohesion; coupling; uml$; design pattern; class diagram; sequence diagram; use case diagram; activity diagram; object-oriented design; software design; configuration management; version control; reengineering; re-engineering; reverse engineering; software reuse; maintenance; software architecture; modularity; data flow diagram; dfd$; component-based; component based; aspect-oriented; aspect oriented; information hiding; abstraction; software configuration; change control; baseline; architectural design; user interface design
+  . design; module; modules; interface; object-oriented; patterns
+G16 | 2 | - | COA: Arithmetic, Microprogramming, I/O & Multiprocessors
+  ! microprogram; microprogrammed; control memory; control unit; booth; register transfer; microoperation; micro-operation; multiprocessor; multicore; multi-core; vector processing; array processor; flynn; simd; mimd; misd; sisd; interprocessor; interconnection network; asynchronous data transfer; i/o interface; i/o processor; stored program; memory-reference; shift micro; bus system; common bus; tri-state; address sequencing; hardwired
+  . arithmetic; addition; subtraction; multiplication; division; shift; bus$; processor; channel
+G17 | 7 | - | Algorithms: Divide & Conquer, Backtracking, String Matching & More
+  ! divide and conquer; divide-and-conquer; backtracking; branch and bound; branch-and-bound; string matching; kmp$; knuth; rabin-karp; rabin karp; boyer; fft$; fast fourier; approximation algorithm; randomized algorithm; parallel algorithm; n-queen; n queen; lower bound; comparison tree; strassen; binary search; linear search; searching; closest pair; convex hull; sum of subsets; travelling salesman; tsp$
+  . algorithm; algorithms; search; recursion; recursive
+G18 | 8 | - | Compilers: Semantic Analysis, Run-time & Optimization
+  ! syntax directed; syntax-directed; sdt$; sdd$; attribute grammar; inherited attribute; synthesized attribute; activation record; activation tree; run-time; runtime environment; stack allocation; heap allocation; code optimization; peephole; basic block; data-flow; data flow analysis; register allocation; directed acyclic; type checking; intermediate representation; code generation; loop optimization; common subexpression; dead code; constant folding; strength reduction; induction variable; control flow graph; live variable; reaching definition
+  . optimization; optimisation; runtime; semantic; attribute; generation
+G19 | 9 | - | Data Communication: Modulation, Multiplexing, Media & Topologies
+  ! modulation; multiplexing; fdm$; tdm$; wdm$; transmission media; topology; topologies; bus topology; star topology; ring topology; mesh topology; optical fiber; fiber optic; coaxial; twisted pair; analog signal; digital signal; manchester; encoding; nrz; line coding; lan$; man$; wan$; repeater; bridge$; hub$; switch$; vlan; frame relay; atm$; x.25; isdn; simplex; half-duplex; half duplex; full-duplex; full duplex; pcm$; sampling; quantization; ask$; fsk; psk; qam; baseband; broadband; attenuation; noise; distortion; guided media; unguided
+  . signal; signals; transmission; network; networks; cable
+
+@topics paper1
+A01 | 1 | - | Teaching Aptitude
+  ! teaching; teacher; learner; learners; pedagog; classroom; bloom; learning; student; students; instruction; lecture method; discussion method; teaching aid; evaluation; formative; summative; assessment; effective teaching; teaching-learning; curriculum; motivation; adolescent; gifted; slow learner; mentor; micro-teaching; microteaching; programmed instruction; heuristic method; project method; inclusive
+  . education; school; academic; skill; skills
+A02 | 2 | - | Research Aptitude
+  ! research; hypothesis; hypotheses; thesis; dissertation; research paper; journal; citation; bibliograph; plagiarism; ethics; case study; survey method; experimental method; qualitative; quantitative; research design; seminar; symposium; conference; action research; ex post facto; literature review; review of literature; sampling; sample; variable; null hypothesis; type i error; standard deviation; correlation; t-test; chi-square; anova; reliability; validity; population; probability sampling; interview; questionnaire; data collection; footnote; impact factor; h-index
+  . statistics; mean; median; mode; findings; study; abstract; reference
+A03 | 3 | - | Comprehension
+  ! passage; according to the passage; as per the passage; the author; the writer; read the following
+A04 | 4 | - | Communication
+  ! communication; verbal; non-verbal; nonverbal; barrier; mass media; classroom communication; encoding; decoding; feedback; sender; receiver; grapevine; newspaper; television; radio; media; intrapersonal; interpersonal; group communication; formal communication; informal communication; body language; gesture; social media; journalism; advertis
+  . speech; listening; language; oral; message
+A05 | 5 | - | Mathematical Reasoning (Series, Coding, Relationships)
+  ! series; coding-decoding; coding decoding; coded; code language; odd one; odd man; blood relation; letter series; number series; missing term; missing number; analogy; direction; ranking; calendar; clock; alphabet; vowel; word formation; seating; arrangement; classification; pattern; next term; arrange the following; dictionary order; meaningful word
+  . relation; letters; numbers; sequence
+A06 | 5 | - | Mathematical Aptitude (Arithmetic)
+  ! ratio; percent; profit; loss; interest; speed; distance; average; work and time; proportion; fraction; age of; mixture; simple interest; compound interest; lcm; hcf; train; boat; stream; cost price; selling price; discount; marked price; per cent; rs.; rupees; km/h; kmph
+  . number; numbers; digit; digits; area; volume; angle; triangle; circle; probability; permutation; difference between; sum of
+A07 | 6 | - | Logical Reasoning (Venn, Syllogism, Arguments)
+  ! venn; syllogism; premise; conclusion; assertion; argument; inference; deductive; inductive; fallacy; assumption; categorical; proposition; square of opposition; contradictory; contrary; subaltern; sub-contrary; distribution of terms; middle term; major term; minor term; truth value; logical; reasoning; cause and effect; counter argument
+  . statement; valid; invalid; true; false; follow
+A08 | 6 | - | Logical Reasoning: Indian Logic
+  ! anumana; pramana; pratyaksha; pratyaksa; upamana; shabda; sabda; nyaya; hetu; vyapti; paksha; sadhya; hetvabhasa; buddhist; jain; syadvada; pratityasamutpada; vaisheshika; mimamsa; arthapatti; anupalabdhi; avayava; udaharana; upanaya; nigamana; pratijna; tarka; indian logic; five-membered; sapaksha; vipaksha; savyabhichara; badhita; satpratipaksha; asiddha; viruddha; anaikantika; testimony; sankhya; vedanta; navya
+  . perception; inference; comparison; knowledge; sense
+A09 | 7 | - | Data Interpretation
+  ! data interpretation; pie chart; bar graph; bar chart; line graph; histogram; following table; table shows; table given; data given; tabular; per cent of the total; percentage of the total; the graph; graph shows; chart shows; given graph; given table; the table; following graph; following chart; the chart; the data; data below; the following data; data in the table
+  . table; chart; graph; data; percentage; total
+A10 | 8 | - | ICT (Computers, Internet, Terminology)
+  ! ict$; computer; internet; email; e-mail; www$; software; hardware; ram$; rom$; cpu$; byte; file extension; url$; browser; search engine; keyboard; operating system; spreadsheet; wifi; wi-fi; gigabyte; cloud; virus; mouse; smartphone; pixel; dpi; usb; bluetooth; ip address; domain name; hyperlink; http; ftp; modem; router; network; lan$; wan$; pdf$; ms word; excel; powerpoint; windows; linux; android; website; webpage; blog; wiki; podcast; social networking; abbreviation; full form; stands for
+  . data; digital; online; system; technology
+A11 | 9 | - | Environment (Pollution, Climate, Resources, Hazards)
+  ! pollution; climate; greenhouse; global warming; ozone; acid rain; renewable; non-renewable; biodiversity; natural hazard; disaster; earthquake; flood; cyclone; landslide; tsunami; drought; carbon; waste; ecosystem; forest; water quality; air quality; noise pollution; solar; fossil fuel; energy; hydro; wind energy; biomass; geothermal; nuclear; smog; eutrophication; bod$; deforestation; desertification; wetland; mangrove; coral; endangered; wildlife; sanctuary; national park; biosphere; food chain; food web; pollutant; sewage; e-waste; plastic; recycl
+  . environment; environmental; natural; resource; resources; conservation; temperature
+A12 | 9 | - | People, Development & Environmental Policy
+  ! sustainable development; sdg; kyoto; montreal protocol; paris agreement; rio; stockholm; earth summit; chipko; narmada; silent valley; environmental movement; eia$; environmental impact; population growth; urbanization; urbanisation; human development; hdi$; millennium development; agenda 21; unfccc; brundtland; carrying capacity; ecological footprint; environmental education; environmental ethics; environment protection act; air act; water act; forest act; wildlife protection act; ngt$; national green tribunal; people and environment; people-environment; livelihood
+  . development; policy; policies; act$; movement; protocol; convention
+A13 | 10 | - | Higher Education System
+  ! higher education; ugc$; aicte; naac; nirf; nba$; ncte; ncert; university; universities; nep$; national education policy; institution; institutions; regulatory; distance education; open university; deemed; autonomous college; ignou; kothari; radhakrishnan; accreditation; governance; education system; right to education; vocational; skill development; nalanda; taxila; vikramshila; wood's despatch; macaulay; charter act; sadler; hunter commission; mudaliar; ranking; gross enrolment; enrolment; enrollment; affiliated college; central university; state university; private university; open and distance; swayam; mooc; academic bank; credit framework; nhec; nta$; cuet; pm-usha; rusa
+  . education; college; colleges; commission; policy; committee; act

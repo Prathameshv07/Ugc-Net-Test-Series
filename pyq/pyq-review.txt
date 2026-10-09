@@ -1,0 +1,68 @@
+# PYQ extraction review
+
+2249 questions, 2216 playable.
+
+
+## Needs a human look
+
+- QUARANTINED 2020-nov-11-s2-p2 Q61: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q62: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q63: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q64: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q65: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q66: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q67: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q69: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q70: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q71: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q72: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q73: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q74: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q75: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q76: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q77: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q78: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q79: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q81: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q83: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q85: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q87: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q89: ocr-damaged
+- QUARANTINED 2020-nov-11-s2-p2 Q90: ocr-damaged
+- MULTI-ACCEPTED 2019-dec-04-s1-p1 Q39: B, C
+- VERIFY diagram vs image: 2019-dec-04-s1-p2 q13-er-diagram.png (ER diagram)
+- VERIFY diagram vs image: 2019-dec-04-s1-p2 q53-game-tree.png (Game tree (MAX / MIN / MAX / MIN, 16 leaves))
+- MULTI-ACCEPTED 2019-dec-04-s1-p2 Q58: A, D
+- VERIFY diagram vs image: 2019-dec-04-s1-p2 q68-sequence-diagram.png (Sequence diagram (weather information system))
+- MULTI-ACCEPTED 2019-dec-04-s1-p2 Q68: C, D
+- VERIFY diagram vs image: 2019-jun-24-s1-p2 q42-game-tree.png (Game tree (MAX / MIN / MAX / MIN, 16 leaves))
+- VERIFY diagram vs image: 2025-jun-26-s1-p2 q31-automaton.png (Automaton with 6 states)
+- MULTI-ACCEPTED 2025-jun-26-s1-p2 Q67: C, D
+- QUARANTINED 2023-dec-07-s2-p2 Q66: no question text in source (placeholder)
+- QUARANTINED 2023-dec-07-s2-p2 Q92: no question text in source (placeholder)
+- QUARANTINED 2023-dec-07-s2-p2 Q93: no question text in source (placeholder)
+- QUARANTINED 2023-dec-07-s2-p2 Q94: no question text in source (placeholder)
+- QUARANTINED 2023-dec-07-s2-p2 Q96: no question text in source (placeholder)
+- QUARANTINED 2023-dec-07-s2-p2 Q97: no question text in source (placeholder)
+- QUARANTINED 2023-dec-07-s2-p2 Q98: no question text in source (placeholder)
+- QUARANTINED 2023-dec-07-s2-p2 Q99: no question text in source (placeholder)
+- QUARANTINED 2023-dec-07-s2-p2 Q100: no question text in source (placeholder)
+- MULTI-ACCEPTED 2023-mar-11-s2-p2 Q50: A, C
+- MULTI-ACCEPTED 2022-oct-08-s1-p2 Q91: A, C
+- MULTI-ACCEPTED 2021-nov-26-s2-p1 Q48: A, B, C, D
+- VERIFY diagram vs image: 2021-nov-26-s2-p2 q36-automata-diagram.png (3-state automaton (unlabelled states))
+
+## Images that stayed as images (no faithful Mermaid diagram)
+
+- 2026-jun-22-s2-p2 Q52 q102-multiplexer.png: no diagram yet
+- 2026-jun-22-s2-p2 Q54 q104-neural-network.png: no diagram yet
+- 2026-jun-22-s2-p2 Q70 q120-dfa-minimization.png: no diagram yet
+- 2026-jun-22-s2-p2 Q74 q124-min-heap.png: no diagram yet
+- 2026-jun-22-s2-p2 Q83 q133-reflection.png: no diagram yet
+- 2025-jun-26-s1-p2 Q32 q32-nfa-options-trimmed.png: partial diagram - real image kept
+- 2025-jun-26-s1-p2 Q93 q93-tac-flow-options.png: no diagram yet
+- 2025-jan-06-s1-p2 Q83 q133-planar-graphs.png: partial diagram - real image kept
+- 2021-nov-26-s2-p2 Q27 q27-planar-graphs.png: partial diagram - real image kept
+
+## Diagram blocks never matched to an image
+

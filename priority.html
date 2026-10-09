@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>High-yield topics — UGC NET Practice Test Series</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/quiz-style.css">
+<style>
+  .banner{ border:1px solid var(--line); border-left:4px solid var(--warn); background:var(--surface); border-radius:var(--radius); padding:12px 16px; font-size:14px; line-height:1.55; margin-bottom:18px; }
+  .banner.ok{ border-left-color:var(--correct); }
+  .tabs, .chips{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px; }
+  .stats{ display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:10px; margin-bottom:18px; }
+  .stat{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:12px 14px; }
+  .stat b{ display:block; font-family:'IBM Plex Mono',monospace; font-size:20px; }
+  .stat span{ font-size:12px; color:var(--muted); }
+  .pie-wrap{ display:flex; gap:22px; align-items:center; flex-wrap:wrap; }
+  .pie{ width:150px; height:150px; border-radius:50%; flex-shrink:0; }
+  .legend{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:6px 18px; flex:1; font-size:13px; }
+  .legend div{ display:flex; gap:8px; align-items:baseline; }
+  .sw{ width:10px; height:10px; border-radius:3px; flex-shrink:0; }
+  .row{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:12px 14px; margin-bottom:10px; }
+  .row-top{ display:flex; gap:10px; align-items:baseline; }
+  .rank{ font-family:'IBM Plex Mono',monospace; color:var(--muted); min-width:26px; font-size:13px; }
+  .tname{ font-weight:600; flex:1; font-size:15px; }
+  .unit{ font-size:12px; color:var(--muted); margin:2px 0 8px 36px; }
+  .bar{ height:7px; border-radius:4px; background:var(--paper); overflow:hidden; margin:0 0 8px 36px; }
+  .bar i{ display:block; height:100%; background:var(--accent); }
+  .nums{ font-size:13px; color:var(--muted); margin-left:36px; }
+  .go{ margin:8px 0 0 36px; display:flex; gap:8px; flex-wrap:wrap; }
+  .go a{ font-size:13px; text-decoration:none; border:1px solid var(--line); border-radius:6px; padding:4px 10px; color:var(--accent); }
+  .go a:hover{ border-color:var(--accent); }
+  .t1{ background:var(--correct-bg); color:var(--correct); } .t2{ background:var(--paper); color:var(--warn); border:1px solid var(--line); }
+  .t3{ background:var(--paper); color:var(--muted); border:1px solid var(--line); }
+  .star{ color:var(--warn); }
+  details{ margin-bottom:18px; font-size:14px; line-height:1.6; } summary{ cursor:pointer; color:var(--accent); }
+  h2.sec{ margin:26px 0 10px; }
+  .cmp{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; }
+  .cmp ul{ margin:6px 0 0; padding-left:18px; font-size:14px; line-height:1.7; }
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html" style="text-decoration:none;color:inherit;"><div class="brand">UGC NET Practice<small>High-yield topics from real papers</small></div></a>
+</header>
+<main>
+  <h1>High-yield topics</h1>
+  <div class="sub" id="subline"></div>
+  <div id="banner"></div>
+  <div class="tabs" id="paperTabs"></div>
+  <div class="stats" id="stats"></div>
+  <details><summary>How the ranking works</summary>
+    <p><b>Score</b> = 50% how many questions the topic had in total + 30% how many in the <b>last 5 papers</b> (the exam drifts, so recent counts more) + 20% how many of the papers it appeared in at all (consistency).
+    <b>Tiers</b> go down the ranked list by cumulative share of questions: Tier 1 until 50% of all classified questions are covered, Tier 2 until 80%, Tier 3 the rest.
+    <b>≈ marks/paper</b> is the average questions per paper × 2 marks. Exact repeats of the same question are rare (about 0.5% in Paper 2), so this ranks <i>concepts</i>, not questions to memorise.</p>
+  </details>
+  <h2 class="sec">Questions per unit</h2>
+  <div class="pie-wrap" id="pie"></div>
+  <h2 class="sec">Topics, ranked</h2>
+  <div class="chips" id="tierChips"></div>
+  <div id="list"></div>
+  <div id="compare"></div>
+</main>
+<script src="assets/priority-data.js"></script>
+<script>
+(function () {
+  const esc = s => (s || '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const $ = id => document.getElementById(id);
+  let paper = 'p2', tier = 0;
+  if (typeof PRIORITY === 'undefined') { $('subline').textContent = 'No data yet — run tools/pyq/pyq_build.py first.'; return; }
+
+  function btn(label, active, fn) {
+    const b = document.createElement('button');
+    b.className = 'btn' + (active ? ' btn-primary' : ''); b.textContent = label; b.onclick = fn; return b;
+  }
+
+  function render() {
+    const d = PRIORITY.papers[paper];
+    const top = d.topics, maxTotal = Math.max(1, ...top.map(r => r.total));
+    const first = d.sittings[d.sittings.length - 1].title.replace('UGC NET ', '').split(' (')[0];
+    const last = d.sittings[0].title.replace('UGC NET ', '').split(' (')[0];
+    $('subline').textContent = `${d.n_questions} Paper ${paper[1]} questions from ${d.n_sittings} real sittings (${first} → ${last}).`;
+
+    const pct = Math.round(100 * d.classified / d.n_questions);
+    $('banner').innerHTML = PRIORITY.draft
+      ? `<div class="banner"><b>DRAFT ranking.</b> Only ${pct}% of questions are classified so far, by keyword rules that are roughly 75–80% accurate. Topic-level numbers (and the “coaching vs data” comparison below) can be off — e.g. TCP/UDP is visibly undercounted. For the real thing run <code>python tools/pyq/pyq_classify.py --root . --ai-only</code> then <code>pyq_build.py</code>.</div>`
+      : `<div class="banner ok">Classified ${pct}% of questions (AI + your marks).</div>`;
+    if (PRIORITY.errors && PRIORITY.errors.length) $('banner').innerHTML += `<div class="banner">${PRIORITY.errors.map(esc).join('<br>')}</div>`;
+
+    const t1 = top.filter(r => r.tier === 1).length;
+    $('stats').innerHTML = [
+      [t1, 'Tier 1 topics (≈50% of the paper)'], [`${pct}%`, 'questions classified'],
+      [d.quarantined, 'damaged questions (OCR) kept out of tests'], [top.filter(r => r.total === 0).length, 'topics never asked']
+    ].map(([n, l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join('');
+
+    // paper tabs
+    $('paperTabs').replaceChildren(btn('Paper 2 (CS)', paper === 'p2', () => { paper = 'p2'; tier = 0; render(); }),
+                                   btn('Paper 1 (General)', paper === 'p1', () => { paper = 'p1'; tier = 0; render(); }));
+
+    // unit pie
+    const tot = d.units.reduce((s, u) => s + u.total, 0) || 1;
+    let acc = 0; const stops = [];
+    d.units.forEach((u, i) => { const a = acc / tot * 100; acc += u.total; stops.push(`hsl(${i * 36} 55% 52%) ${a}% ${acc / tot * 100}%`); });
+    $('pie').innerHTML = `<div class="pie" style="background:conic-gradient(${stops.join(',')})"></div><div class="legend">` +
+      d.units.map((u, i) => `<div><span class="sw" style="background:hsl(${i * 36} 55% 52%)"></span><span><b>${u.total}</b> · ${Math.round(100 * u.total / tot)}% — ${esc(u.name)}</span></div>`).join('') + '</div>';
+
+    // tier chips
+    $('tierChips').replaceChildren(...[[0, 'All'], [1, 'Tier 1'], [2, 'Tier 2'], [3, 'Tier 3']].map(([t, l]) => btn(l, tier === t, () => { tier = t; render(); })));
+
+    // list
+    const list = $('list'); list.innerHTML = '';
+    top.filter(r => !tier || r.tier === tier).forEach(r => {
+      const tcls = r.tier ? 't' + r.tier : 't3';
+      const links = r.sets.map((s, i) => `<a href="player.html?test=${encodeURIComponent(s)}">Practice${r.sets.length > 1 ? ' ' + (i + 1) : ''}</a>`).join('');
+      const el = document.createElement('div'); el.className = 'row';
+      el.innerHTML = `<div class="row-top"><span class="rank">#${r.rank}</span><span class="tname">${esc(r.name)} ${r.star ? '<span class="star" title="Marked ★ in the coaching list">★</span>' : ''}</span>
+          <span class="tag ${tcls}">${r.tier ? 'Tier ' + r.tier : 'not asked'}</span></div>
+        <div class="unit">Unit ${r.unit} · ${esc(r.unit_name)}</div>
+        <div class="bar"><i style="width:${100 * r.total / maxTotal}%"></i></div>
+        <div class="nums"><b>${r.total}</b> questions · in ${r.appeared}/${d.n_sittings} papers · last 5 papers: ${r.recent} · ≈ ${r.avg}/paper (≈ ${r.marks} marks) · cumulative ${Math.round(100 * r.cum)}%</div>
+        ${links ? `<div class="go">${links}</div>` : '<div class="nums" style="margin-top:6px">too few playable questions for a practice set</div>'}`;
+      list.appendChild(el);
+    });
+
+    // data vs coaching (Paper 2 only)
+    const cmp = $('compare'); cmp.innerHTML = '';
+    if (paper === 'p2') {
+      const lowStar = top.filter(r => r.star && r.tier > 1), topNoStar = top.filter(r => !r.star && r.tier === 1);
+      const gaps = top.filter(r => r.id.startsWith('G') && r.tier > 0).slice(0, 5);
+      const li = a => a.length ? a.map(r => `<li>${esc(r.name)} <span style="color:var(--muted)">(#${r.rank}, ${r.total} Qs)</span></li>`).join('') : '<li style="color:var(--muted)">none</li>';
+      cmp.innerHTML = `<h2 class="sec">Your coaching list vs the data</h2><div class="cmp">
+        <div class="q-card"><b>★ in the coaching list, but not Tier 1</b><ul>${li(lowStar)}</ul></div>
+        <div class="q-card"><b>Tier 1 in the data, not ★ in the coaching list</b><ul>${li(topNoStar)}</ul></div>
+        <div class="q-card"><b>Best-ranked topics outside the 45</b><ul>${li(gaps)}</ul></div></div>`;
+    }
+  }
+  render();
+})();
+</script>
+</body>
+</html>

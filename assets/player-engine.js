@@ -32,7 +32,7 @@
       const m = label.match(/^(Q\d+)(?:\s*-\s*(Options|Hint))?$/);
       if (!m) continue;
       const qid = m[1], kind = m[2];
-      if (!data[qid]) data[qid] = { stem: '', options: [], hint: '', correct: null, topic: null, explanation: '' };
+      if (!data[qid]) data[qid] = { stem: '', options: [], hint: '', correct: null, correctAll: [], topic: null, explanation: '' };
       if (kind === 'Options') {
         const optParts = body.split(/^\(([A-E])\)\s*/m);
         for (let j = 1; j < optParts.length; j += 2) {
@@ -45,8 +45,11 @@
         } else {
           data[qid].hint = body.slice(0, answerIdx).trim();
           const rest = body.slice(answerIdx);
-          const ansMatch = rest.match(/\*\*Answer:\*\*\s*([A-E])/);
-          data[qid].correct = ansMatch ? ansMatch[1] : null;
+          // "**Answer:** C" normally; "**Answer:** C, D" when the official key accepts several options
+          const ansLine = rest.match(/\*\*Answer:\*\*[ \t]*([^\n]*)/);
+          const letters = ansLine ? (ansLine[1].match(/\b[A-E]\b/g) || []) : [];
+          data[qid].correct = letters[0] || null;
+          data[qid].correctAll = letters;
           data[qid].topic = extractTopic(rest);
           data[qid].explanation = rest.trim();
         }
@@ -303,15 +306,16 @@
         const given = userAnswers[qid] || null;
         const correct = q.correct;
         const topic = q.topic;
+        const accepted = q.correctAll;
         let outcome = 'skipped';
-        if (given) { if (given === correct) { outcome = 'correct'; correctCount++; } else { outcome = 'wrong'; wrongCount++; } }
+        if (given) { if (accepted.includes(given)) { outcome = 'correct'; correctCount++; } else { outcome = 'wrong'; wrongCount++; } }
         else skipped++;
         if (topic) {
           topicStats[topic] = topicStats[topic] || { correct: 0, wrong: 0, skipped: 0, total: 0 };
           topicStats[topic][outcome]++;
           topicStats[topic].total++;
         }
-        return { qid, given, correct, topic, outcome, explanation: q.explanation };
+        return { qid, given, correct, accepted, topic, outcome, explanation: q.explanation };
       });
       const marks = correctCount * cfg.marksPerQuestion - wrongCount * (cfg.negativeMarking || 0);
       renderResults(detail, correctCount, wrongCount, skipped, marks, topicStats);
@@ -343,9 +347,11 @@
   }
 
   function renderTopicBars(topicStats) {
-    const topics = Object.keys(topicStats);
+    let topics = Object.keys(topicStats);
+    if (topics.length > 12) topics = topics.filter(t => topicStats[t].total >= 2);   // full papers: skip one-off topics
     if (!topics.length) return null;
     topics.sort((a, b) => (topicStats[a].correct / topicStats[a].total) - (topicStats[b].correct / topicStats[b].total));
+    topics = topics.slice(0, 12);
     const wrap = document.createElement('div');
     wrap.style.marginTop = '10px';
     topics.forEach(topic => {
@@ -413,8 +419,8 @@
         const optsWrap = document.createElement('div');
         optsWrap.className = 'options';
         q.options.forEach(opt => {
-          const isCorrect = opt.letter === d.correct;
-          const isUserWrong = opt.letter === d.given && d.given !== d.correct;
+          const isCorrect = d.accepted.includes(opt.letter);
+          const isUserWrong = opt.letter === d.given && !d.accepted.includes(d.given);
           const row = document.createElement('label');
           row.className = 'option' + (isCorrect ? ' is-correct' : '') + (isUserWrong ? ' is-wrong-pick' : '');
           const badge = isCorrect ? '<span class="tag correct" style="margin-left:8px;">Correct answer</span>'
@@ -461,7 +467,7 @@
       const optsWrap = document.createElement('div');
       optsWrap.className = 'options';
       q.options.forEach(opt => {
-        const isCorrect = opt.letter === q.correct;
+        const isCorrect = q.correctAll.includes(opt.letter);
         const row = document.createElement('label');
         row.className = 'option' + (isCorrect ? ' is-correct' : '');
         const badge = isCorrect ? '<span class="tag correct" style="margin-left:8px;">Correct answer</span>' : '';

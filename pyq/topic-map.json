@@ -1,0 +1,11209 @@
+{
+"map": {
+"2026-jun-22-s2-p1-q6": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q7": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q8": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q10": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q11": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q12": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q13": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q14": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q15": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q16": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q17": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q18": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q19": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q20": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q21": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q22": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q23": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q24": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q25": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q26": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q28": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q31": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q34": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q35": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q37": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q38": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q39": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q41": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q43": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q45": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q46": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q47": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q48": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q49": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q50": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q1": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q2": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q3": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q4": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q5": {
+"topic": "G19",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q6": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q8": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q10": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q11": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q12": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q13": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q14": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q16": {
+"topic": "C30",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q17": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q19": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q20": {
+"topic": "C03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q21": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q22": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q23": {
+"topic": "G07",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q26": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q28": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q29": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q30": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q31": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q32": {
+"topic": "C15",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q33": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q34": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q35": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q36": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q37": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q38": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q42": {
+"topic": "C30",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q43": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q44": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q46": {
+"topic": "C03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q49": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q50": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q51": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q52": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q54": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q56": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q57": {
+"topic": "G18",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q58": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q59": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q60": {
+"topic": "C15",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q61": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q64": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q65": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q67": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q70": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q71": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q72": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q74": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q75": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q76": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q77": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q78": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q79": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q81": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q82": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q83": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q84": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q87": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q88": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q90": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q92": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q94": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q96": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q98": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q1": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q2": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q3": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q4": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q6": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q7": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q8": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q10": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q11": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q12": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q13": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q14": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q15": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q16": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q17": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q18": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q20": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q22": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q23": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q24": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q26": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q27": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q28": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q29": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q30": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q31": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q32": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q33": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q34": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q35": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q36": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q37": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q38": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q39": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q43": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q45": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q2": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q4": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q5": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q7": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q10": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q11": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q13": {
+"topic": "G02",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q14": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q15": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q16": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q18": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q19": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q22": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q24": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q26": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q28": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q29": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q30": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q32": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q37": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q38": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q39": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q41": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q43": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q44": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q45": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q46": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q47": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q48": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q49": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q51": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q52": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q53": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q57": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q62": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q63": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q65": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q66": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q67": {
+"topic": "C30",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q70": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q73": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q75": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q76": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q78": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q79": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q81": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q82": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q83": {
+"topic": "G01",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q87": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q88": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q89": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q90": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q91": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q92": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q93": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q94": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q95": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q99": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q100": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q1": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q2": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q3": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q4": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q5": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q6": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q7": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q8": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q9": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q10": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q11": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q12": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q14": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q15": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q17": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q19": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q20": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q21": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q22": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q23": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q24": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q25": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q26": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q27": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q29": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q32": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q33": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q34": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q35": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q36": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q37": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q38": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q40": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q41": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q42": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q43": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q44": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q45": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q46": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q47": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q48": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q49": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q50": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q1": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q2": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q3": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q4": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q5": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q6": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q8": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q9": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q11": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q12": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q13": {
+"topic": "C30",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q14": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q15": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q16": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q17": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q18": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q19": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q20": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q22": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q24": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q25": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q27": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q28": {
+"topic": "G17",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q29": {
+"topic": "G19",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q31": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q32": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q33": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q34": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q35": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q38": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q40": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q42": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q43": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q44": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q47": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q49": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q51": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q52": {
+"topic": "G17",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q55": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q56": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q57": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q58": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q59": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q60": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q61": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q62": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q63": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q65": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q66": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q67": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q68": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q69": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q70": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q71": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q72": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q73": {
+"topic": "C23",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q74": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q76": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q77": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q78": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q79": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q80": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q84": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q85": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q89": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q90": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q91": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q96": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q97": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q98": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q99": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q100": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q1": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q2": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q3": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q4": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q5": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q6": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q7": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q9": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q10": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q11": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q15": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q16": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q17": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q18": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q19": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q20": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q21": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q22": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q23": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q25": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q26": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q28": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q29": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q30": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q33": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q34": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q35": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q36": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q37": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q39": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q40": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q41": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q42": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q43": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q44": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q45": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q46": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q48": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q49": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q50": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q1": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q2": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q4": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q5": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q6": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q7": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q8": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q9": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q10": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q11": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q12": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q13": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q14": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q16": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q17": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q19": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q20": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q21": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q22": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q23": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q26": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q27": {
+"topic": "C23",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q28": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q29": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q30": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q31": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q33": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q37": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q38": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q39": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q40": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q41": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q43": {
+"topic": "G02",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q44": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q45": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q47": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q49": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q50": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q51": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q52": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q53": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q54": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q56": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q57": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q58": {
+"topic": "G01",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q59": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q60": {
+"topic": "C15",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q61": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q63": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q64": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q65": {
+"topic": "G18",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q66": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q67": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q69": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q71": {
+"topic": "C15",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q72": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q74": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q75": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q76": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q78": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q79": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q80": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q82": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q83": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q84": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q85": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q86": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q88": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q89": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q91": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q92": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q94": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q95": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q97": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q98": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q99": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q2": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q3": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q4": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q5": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q6": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q7": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q8": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q9": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q15": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q16": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q17": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q18": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q19": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q20": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q21": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q22": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q23": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q25": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q26": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q27": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q28": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q30": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q31": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q32": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q33": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q34": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q35": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q36": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q37": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q39": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q40": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q42": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q44": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q45": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q46": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q47": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q48": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q49": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q50": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q2": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q3": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q4": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q5": {
+"topic": "G01",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q6": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q8": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q9": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q11": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q12": {
+"topic": "G05",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q14": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q15": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q16": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q17": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q18": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q19": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q20": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q21": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q22": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q23": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q24": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q26": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q27": {
+"topic": "C03",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q29": {
+"topic": "G03",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q30": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q31": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q32": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q33": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q35": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q37": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q39": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q40": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q42": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q43": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q44": {
+"topic": "G02",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q46": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q47": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q48": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q49": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q50": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q51": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q52": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q53": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q54": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q55": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q57": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q58": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q59": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q60": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q61": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q62": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q63": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q64": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q65": {
+"topic": "G13",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q68": {
+"topic": "G06",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q69": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q70": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q71": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q72": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q73": {
+"topic": "G01",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q74": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q76": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q77": {
+"topic": "G06",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q78": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q79": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q80": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q81": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q83": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q85": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q86": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q87": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q88": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q89": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q90": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q93": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q94": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q95": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q97": {
+"topic": "C23",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q98": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q99": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q100": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q1": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q2": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q3": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q4": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q5": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q6": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q8": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q9": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q11": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q12": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q13": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q16": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q17": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q19": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q21": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q22": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q25": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q26": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q27": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q28": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q31": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q32": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q34": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q35": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q36": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q37": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q38": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q39": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q40": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q41": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q42": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q43": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q45": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q46": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q48": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q3": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q4": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q5": {
+"topic": "G02",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q6": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q8": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q10": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q11": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q13": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q15": {
+"topic": "G17",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q17": {
+"topic": "G19",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q18": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q19": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q20": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q21": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q22": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q24": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q25": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q26": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q27": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q28": {
+"topic": "G19",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q29": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q32": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q33": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q34": {
+"topic": "G19",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q35": {
+"topic": "C03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q37": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q38": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q41": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q42": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q43": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q45": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q46": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q47": {
+"topic": "C30",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q48": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q49": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q50": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q52": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q53": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q54": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q55": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q56": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q57": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q58": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q59": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q61": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q62": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q63": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q65": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q67": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q69": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q71": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q72": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q73": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q74": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q75": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q76": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q77": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q78": {
+"topic": "G01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q79": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q82": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q83": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q84": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q85": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q86": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q88": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q91": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q92": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q93": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q94": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q95": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q96": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q97": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q98": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q99": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q100": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q5": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q7": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q8": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q9": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q10": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q11": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q12": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q14": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q15": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q16": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q17": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q19": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q20": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q24": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q25": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q26": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q27": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q28": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q29": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q31": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q32": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q33": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q34": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q35": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q36": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q37": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q38": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q40": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q42": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q46": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q47": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q48": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q49": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q50": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q3": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q4": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q5": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q6": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q8": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q9": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q10": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q11": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q12": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q13": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q15": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q16": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q18": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q19": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q21": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q22": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q23": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q24": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q26": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q27": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q28": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q30": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q31": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q32": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q33": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q36": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q39": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q40": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q41": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q42": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q45": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q46": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q47": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q48": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q49": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q50": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q51": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q52": {
+"topic": "G05",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q53": {
+"topic": "G06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q55": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q56": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q58": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q59": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q60": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q61": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q62": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q63": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q64": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q65": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q66": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q67": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q68": {
+"topic": "C03",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q69": {
+"topic": "G19",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q71": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q72": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q73": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q74": {
+"topic": "G01",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q75": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q77": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q78": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q80": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q81": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q83": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q84": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q85": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q86": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q87": {
+"topic": "G06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q88": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q89": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q91": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q92": {
+"topic": "G18",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q95": {
+"topic": "G18",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q96": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q97": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q98": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q99": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q100": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q2": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q3": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q5": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q7": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q8": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q9": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q10": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q11": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q14": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q16": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q17": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q18": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q19": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q21": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q22": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q23": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q25": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q28": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q30": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q34": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q35": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q36": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q38": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q39": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q40": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q41": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q42": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q43": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q44": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q45": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q1": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q2": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q3": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q6": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q7": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q8": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q10": {
+"topic": "G01",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q11": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q12": {
+"topic": "G03",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q14": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q16": {
+"topic": "C04",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q17": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q18": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q19": {
+"topic": "G06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q21": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q22": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q24": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q28": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q29": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q31": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q32": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q33": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q39": {
+"topic": "C15",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q40": {
+"topic": "C03",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q41": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q42": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q43": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q45": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q46": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q47": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q48": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q50": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q51": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q52": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q53": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q54": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q55": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q57": {
+"topic": "G05",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q58": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q59": {
+"topic": "G18",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q60": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q61": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q62": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q66": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q68": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q70": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q71": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q74": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q75": {
+"topic": "C03",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q76": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q77": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q78": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q79": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q80": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q81": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q82": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q83": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q85": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q86": {
+"topic": "G02",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q87": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q88": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q90": {
+"topic": "G06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q91": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q92": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q93": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q94": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q95": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q96": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q97": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q98": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q99": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q100": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q1": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q2": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q3": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q4": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q5": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q6": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q7": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q8": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q9": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q10": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q11": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q12": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q16": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q17": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q18": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q19": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q20": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q21": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q22": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q23": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q24": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q27": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q28": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q30": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q32": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q33": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q34": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q35": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q38": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q39": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q41": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q42": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q43": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q44": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q45": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q2": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q3": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q5": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q6": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q7": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q8": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q9": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q12": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q13": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q14": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q15": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q16": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q17": {
+"topic": "C03",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q18": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q19": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q20": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q21": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q22": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q23": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q25": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q26": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q27": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q28": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q29": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q30": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q31": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q32": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q33": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q34": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q35": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q36": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q37": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q38": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q39": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q40": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q41": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q42": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q45": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q46": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q47": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q48": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q49": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q50": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q51": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q52": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q53": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q55": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q57": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q58": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q59": {
+"topic": "C15",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q60": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q61": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q62": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q63": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q64": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q65": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q68": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q69": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q70": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q71": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q72": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q73": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q74": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q75": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q76": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q77": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q78": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q79": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q80": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q81": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q82": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q83": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q84": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q85": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q86": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q87": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q88": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q89": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q91": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q92": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q93": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q94": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q95": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q96": {
+"topic": "C23",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q97": {
+"topic": "C23",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q98": {
+"topic": "C23",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q99": {
+"topic": "C23",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q100": {
+"topic": "C23",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q3": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q6": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q7": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q8": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q9": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q10": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q11": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q12": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q13": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q14": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q15": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q17": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q18": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q19": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q20": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q21": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q22": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q23": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q25": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q27": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q28": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q29": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q30": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q32": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q33": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q34": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q35": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q38": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q39": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q40": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q42": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q43": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q46": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q1": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q3": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q4": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q5": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q6": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q10": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q11": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q13": {
+"topic": "G03",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q16": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q17": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q18": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q19": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q20": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q25": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q26": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q27": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q28": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q29": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q30": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q31": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q32": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q33": {
+"topic": "G19",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q34": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q36": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q38": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q39": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q40": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q43": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q44": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q45": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q48": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q49": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q51": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q53": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q54": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q55": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q59": {
+"topic": "C03",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q60": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q61": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q62": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q63": {
+"topic": "G19",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q64": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q65": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q68": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q69": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q70": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q71": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q72": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q73": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q74": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q77": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q78": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q81": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q89": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q90": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q91": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q95": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q100": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q1": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q2": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q3": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q4": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q5": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q6": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q7": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q8": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q9": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q10": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q11": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q12": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q13": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q14": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q15": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q16": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q17": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q18": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q20": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q21": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q22": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q23": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q24": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q26": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q27": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q28": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q29": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q30": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q31": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q32": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q33": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q35": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q36": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q37": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q39": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q40": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q41": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q42": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q43": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q44": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q45": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q47": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q48": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q49": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q4": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q5": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q9": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q10": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q11": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q12": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q14": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q17": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q18": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q19": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q20": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q22": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q25": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q28": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q29": {
+"topic": "C15",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q31": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q34": {
+"topic": "C30",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q35": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q36": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q39": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q40": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q41": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q42": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q44": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q45": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q47": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q48": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q49": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q50": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q51": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q52": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q54": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q55": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q56": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q57": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q58": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q61": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q64": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q65": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q66": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q67": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q68": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q69": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q70": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q71": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q72": {
+"topic": "G13",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q73": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q74": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q75": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q76": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q77": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q78": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q80": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q82": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q83": {
+"topic": "G06",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q85": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q88": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q89": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q90": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q94": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q95": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q96": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q98": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q99": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q100": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q1": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q2": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q3": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q4": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q5": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q6": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q7": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q8": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q9": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q10": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q12": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q13": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q14": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q15": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q17": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q18": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q19": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q20": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q21": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q26": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q27": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q28": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q29": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q30": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q31": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q32": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q33": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q35": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q36": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q37": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q38": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q40": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q41": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q43": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q44": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q45": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q48": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q50": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q2": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q3": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q4": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q5": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q7": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q8": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q11": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q13": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q15": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q17": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q18": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q19": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q20": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q22": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q24": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q27": {
+"topic": "G17",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q28": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q30": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q31": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q32": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q33": {
+"topic": "C03",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q34": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q35": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q37": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q38": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q39": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q40": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q41": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q43": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q46": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q47": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q48": {
+"topic": "G03",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q51": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q54": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q56": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q57": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q58": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q59": {
+"topic": "G18",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q60": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q63": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q64": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q65": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q67": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q68": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q69": {
+"topic": "G02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q70": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q71": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q72": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q74": {
+"topic": "G06",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q76": {
+"topic": "G13",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q81": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q83": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q84": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q85": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q87": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q88": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q89": {
+"topic": "G17",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q91": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q92": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q93": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q94": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q95": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q96": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q97": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q98": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q99": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q2": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q3": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q4": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q5": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q6": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q7": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q8": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q9": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q10": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q11": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q13": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q15": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q16": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q17": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q21": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q22": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q23": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q24": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q25": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q26": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q27": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q28": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q29": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q30": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q33": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q34": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q35": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q36": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q38": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q42": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q43": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q44": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q45": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q46": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q48": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q5": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q6": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q7": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q8": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q11": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q12": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q13": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q14": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q15": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q17": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q18": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q19": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q20": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q23": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q24": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q25": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q26": {
+"topic": "G17",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q29": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q30": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q31": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q32": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q33": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q34": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q35": {
+"topic": "C04",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q36": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q38": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q40": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q41": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q42": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q43": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q45": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q46": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q48": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q49": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q50": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q51": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q52": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q53": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q54": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q55": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q56": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q57": {
+"topic": "G17",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q58": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q59": {
+"topic": "G18",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q60": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q61": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q63": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q65": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q66": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q68": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q69": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q70": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q72": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q73": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q74": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q75": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q76": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q77": {
+"topic": "C15",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q78": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q79": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q80": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q82": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q84": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q85": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q86": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q87": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q88": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q89": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q90": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q91": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q92": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q93": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q95": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q96": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q98": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q99": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q1": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q2": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q3": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q4": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q7": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q9": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q11": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q12": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q13": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q14": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q15": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q17": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q18": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q19": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q22": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q23": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q24": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q26": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q27": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q30": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q31": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q32": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q34": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q35": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q37": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q38": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q40": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q41": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q42": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q43": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q44": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q45": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q46": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q47": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q48": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q49": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q1": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q2": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q3": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q4": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q5": {
+"topic": "C04",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q6": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q7": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q8": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q9": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q10": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q11": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q12": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q13": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q14": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q17": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q18": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q20": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q21": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q22": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q23": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q24": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q25": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q26": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q27": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q28": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q29": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q31": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q32": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q34": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q35": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q36": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q37": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q38": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q40": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q42": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q43": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q44": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q45": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q46": {
+"topic": "C15",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q47": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q48": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q49": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q50": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q51": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q53": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q54": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q56": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q57": {
+"topic": "G07",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q59": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q61": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q62": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q64": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q65": {
+"topic": "G02",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q66": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q67": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q68": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q69": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q70": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q71": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q72": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q74": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q75": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q76": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q77": {
+"topic": "G17",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q78": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q79": {
+"topic": "C30",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q81": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q82": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q83": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q84": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q87": {
+"topic": "G07",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q88": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q89": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q90": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q91": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q92": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q93": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q94": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q95": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q96": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q97": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q98": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q100": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q2": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q3": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q4": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q6": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q7": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q9": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q11": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q13": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q14": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q15": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q16": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q17": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q18": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q19": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q20": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q21": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q22": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q23": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q24": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q25": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q26": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q27": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q28": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q29": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q31": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q32": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q33": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q34": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q36": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q37": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q38": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q39": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q41": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q43": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q44": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q47": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q49": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q50": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q1": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q2": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q4": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q5": {
+"topic": "G10",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q7": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q8": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q9": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q10": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q11": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q14": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q16": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q17": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q20": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q25": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q26": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q27": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q28": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q29": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q30": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q31": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q32": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q33": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q34": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q35": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q36": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q38": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q40": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q41": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q43": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q44": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q45": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q46": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q48": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q49": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q50": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q52": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q54": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q56": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q57": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q58": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q64": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q65": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q66": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q67": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q68": {
+"topic": "C30",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q69": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q70": {
+"topic": "G03",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q71": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q72": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q73": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q74": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q75": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q77": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q78": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q79": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q80": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q81": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q82": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q85": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q87": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q88": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q89": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q92": {
+"topic": "G05",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q95": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q96": {
+"topic": "G05",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q97": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q98": {
+"topic": "G19",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q99": {
+"topic": "G19",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q100": {
+"topic": "C04",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q50": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q12": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q13": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q14": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q11": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q12": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q13": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q14": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q47": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q49": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q50": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q1": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q46": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q47": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q48": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q49": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q50": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q47": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q48": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q49": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q50": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q46": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q50": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q46": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q47": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q49": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q46": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q48": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q7": {
+"topic": "G05",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q9": {
+"topic": "G06",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q15": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q18": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q24": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q25": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q27": {
+"topic": "C04",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q39": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q40": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q41": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q45": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q47": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q48": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q53": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q55": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q62": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q63": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q66": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q68": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q69": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q73": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q80": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q85": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q86": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q89": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q91": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q93": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q95": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q97": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q99": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p2-q100": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q2": {
+"topic": "G02",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q7": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q9": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q12": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q14": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q16": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q23": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q30": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q31": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q36": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q39": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q40": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q44": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q51": {
+"topic": "C03",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q60": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q64": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q66": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q68": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q70": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q80": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q81": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q87": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q89": {
+"topic": "C16",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p2-q90": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q1": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q2": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q7": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q14": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q17": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q20": {
+"topic": "C20",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q25": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q29": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q34": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q35": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q37": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q38": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q43": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q44": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q54": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q57": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q70": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q76": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q79": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q82": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q90": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q93": {
+"topic": "G18",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p2-q94": {
+"topic": "G18",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q4": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q5": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q9": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q13": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q15": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q20": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q23": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q25": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q26": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q27": {
+"topic": "C30",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q30": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q34": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q35": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q36": {
+"topic": "G17",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q37": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q38": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q44": {
+"topic": "G18",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q49": {
+"topic": "G18",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q56": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q63": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q64": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q65": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q67": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q69": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q72": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q73": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q84": {
+"topic": "C38",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p2-q89": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q1": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q4": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q10": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q11": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q24": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q43": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q44": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q54": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q56": {
+"topic": "G05",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q66": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q67": {
+"topic": "C30",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p2-q90": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q2": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q7": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q8": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q9": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q12": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q14": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q15": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q21": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q22": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q23": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q24": {
+"topic": "C29",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q35": {
+"topic": "C04",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q37": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q41": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q42": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q46": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q47": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q50": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q52": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q56": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q57": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q58": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q67": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q75": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q76": {
+"topic": "G01",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q79": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q80": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q82": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q83": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q84": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q85": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q86": {
+"topic": "C13",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q87": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p2-q88": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q1": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q2": {
+"topic": "G17",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q3": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q6": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q7": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q8": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q13": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q15": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q16": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q21": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q23": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q24": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q26": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q27": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q30": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q32": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q33": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q37": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q38": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q43": {
+"topic": "C11",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q46": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q53": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q59": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q60": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q62": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q63": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q79": {
+"topic": "G07",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q81": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q84": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q86": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q87": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q91": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q92": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q93": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p2-q97": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q1": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q2": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q3": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q4": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q9": {
+"topic": "G10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q10": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q16": {
+"topic": "C42",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q21": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q22": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q27": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q28": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q37": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q39": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q44": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q47": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q62": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q64": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q67": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q71": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q81": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q83": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q94": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p2-q97": {
+"topic": "C18",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q1": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q6": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q9": {
+"topic": "G07",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q10": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q12": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q14": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q16": {
+"topic": "C31",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q21": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q23": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q25": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q26": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q29": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q36": {
+"topic": "C04",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q42": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q44": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q45": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q49": {
+"topic": "G03",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q50": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q52": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q53": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q55": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q61": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q62": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q66": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q73": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q75": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q77": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q78": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q79": {
+"topic": "G01",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q80": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q82": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q86": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q90": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p2-q100": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q15": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q16": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q19": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q30": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q33": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q39": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q41": {
+"topic": "C03",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q52": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q55": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q58": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q60": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q63": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q73": {
+"topic": "C02",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q80": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q85": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q86": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p2-q99": {
+"topic": "C07",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q3": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q6": {
+"topic": "G11",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q12": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q13": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q15": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q18": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q19": {
+"topic": "C34",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q21": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q22": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q23": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q24": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q37": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q39": {
+"topic": "G18",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q42": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q47": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q51": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q53": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q55": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q59": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q60": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q61": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q62": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q63": {
+"topic": "C33",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q76": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q83": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q84": {
+"topic": "G07",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q86": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q90": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q91": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q93": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p2-q94": {
+"topic": "G19",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q1": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q3": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q6": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q8": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q9": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q12": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q17": {
+"topic": "C24",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q20": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q21": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q23": {
+"topic": "C10",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q25": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q27": {
+"topic": "C27",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q31": {
+"topic": "C04",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q33": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q34": {
+"topic": "G19",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q35": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q36": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q40": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q42": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q50": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q54": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q55": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q56": {
+"topic": "C25",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q58": {
+"topic": "G06",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q59": {
+"topic": "G05",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q60": {
+"topic": "G04",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q61": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q64": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q68": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q69": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q71": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q72": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q74": {
+"topic": "C08",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q77": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q80": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q84": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q85": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q86": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q96": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q97": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p2-q98": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q7": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q10": {
+"topic": "C21",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q21": {
+"topic": "C06",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q23": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q26": {
+"topic": "G05",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q30": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q36": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q37": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q39": {
+"topic": "G06",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q41": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q45": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q46": {
+"topic": "G06",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q48": {
+"topic": "C19",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q53": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q54": {
+"topic": "G09",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q64": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q75": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q81": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q82": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q83": {
+"topic": "C45",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q86": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q87": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q88": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q92": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q93": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q94": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p2-q95": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q3": {
+"topic": "G19",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q15": {
+"topic": "C05",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q18": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q24": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q25": {
+"topic": "G08",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q32": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q34": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q35": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q36": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q42": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q46": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q48": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q55": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q62": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q68": {
+"topic": "C40",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q70": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q73": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q77": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q81": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q87": {
+"topic": "C26",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q90": {
+"topic": "C22",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q93": {
+"topic": "C35",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q96": {
+"topic": "C28",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p2-q100": {
+"topic": "G15",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q1": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q7": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q10": {
+"topic": "C17",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q13": {
+"topic": "C14",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q25": {
+"topic": "C41",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q28": {
+"topic": "G12",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q34": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q36": {
+"topic": "C01",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q38": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q41": {
+"topic": "C12",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q45": {
+"topic": "G17",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q56": {
+"topic": "C44",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q66": {
+"topic": "G16",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q67": {
+"topic": "C32",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q75": {
+"topic": "C43",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q82": {
+"topic": "C09",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q84": {
+"topic": "G14",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q91": {
+"topic": "C37",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q92": {
+"topic": "C36",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p2-q96": {
+"topic": "C39",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q1": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q2": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q3": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q4": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q5": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q9": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q27": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q29": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q30": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q32": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q33": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q36": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q40": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q42": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2026-jun-22-s2-p1-q44": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q7": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q10": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q14": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q15": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q18": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q20": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q23": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q24": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q29": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q30": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q33": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2026-jan-02-s1-p1-q44": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q1": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q2": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q3": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q4": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q6": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q13": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q18": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q21": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q22": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q23": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q30": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q39": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q41": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q43": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q44": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2025-jun-26-s1-p1-q45": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q1": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q4": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q6": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q12": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q13": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q15": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q20": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q24": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q26": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q27": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q29": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q31": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q32": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q33": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q37": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q46": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q47": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q48": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q49": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2025-jan-06-s1-p1-q50": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q13": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q14": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q15": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q25": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q26": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q29": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q31": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q36": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q37": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2024-aug-23-s1-p1-q40": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q1": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q2": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q4": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q5": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q16": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q24": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q26": {
+"topic": "A07",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q31": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q36": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q37": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q41": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q44": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-dec-07-s2-p1-q45": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q19": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q25": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q34": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2023-jun-17-s1-p1-q38": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q1": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q12": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q14": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q18": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q19": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q20": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q31": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q32": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q37": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q39": {
+"topic": "A12",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q40": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q41": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q47": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q49": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-15-s1-p1-q50": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q11": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q16": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q22": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q23": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q24": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q25": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q34": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q39": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2023-mar-11-s2-p1-q42": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q5": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q6": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q8": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q10": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q16": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q20": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q21": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q25": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q28": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q29": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q33": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q36": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q39": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2022-oct-08-s1-p1-q50": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q1": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q5": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q8": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q10": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q12": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q30": {
+"topic": "A08",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q35": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q40": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q42": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2021-nov-26-s2-p1-q45": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q5": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q9": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q19": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q21": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q25": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q40": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q41": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q42": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q44": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q46": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q47": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q48": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q49": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2020-nov-11-s2-p1-q50": {
+"topic": "A03",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q13": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q16": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q18": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q28": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q30": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q31": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2019-dec-04-s1-p1-q39": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q8": {
+"topic": "A01",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q24": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q27": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q31": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q32": {
+"topic": "A09",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q38": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2019-jun-24-s1-p1-q47": {
+"topic": "A10",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q1": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q10": {
+"topic": "A02",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q24": {
+"topic": "A04",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q29": {
+"topic": "A05",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q38": {
+"topic": "A11",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q41": {
+"topic": "A06",
+"method": "ai",
+"by": "claude"
+},
+"2018-dec-20-s1-p1-q43": {
+"topic": "A13",
+"method": "ai",
+"by": "claude"
+}
+}
+}

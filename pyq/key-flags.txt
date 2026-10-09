@@ -1,0 +1,16 @@
+# Answer keys that look wrong or debatable (flagged by Claude while classifying).
+# Format: paper  question  official-key  note
+
+2026-jun-22-s2-p2  Q13  key=A  Two statements are false: D ("H1 - H2 is a subgroup") is also false, since the difference never contains the identity.
+2026-jun-22-s2-p2  Q40  key=B  L3 = a^n b^n c^n d^n e^n is context-SENSITIVE (not "unrestricted") and L4 is context-free; no option is strictly right, B is the intended one.
+2026-jun-22-s2-p2  Q76  key=D  Debatable: System V UNIX IPC lists semaphores alongside message queues and shared memory as its three IPC facilities.
+2025-jan-06-s1-p2  Q6   key=C  F = AB + CD' + A'B + CD' simplifies to B + CD', so F' = B'(C' + D). The keyed (A + B')(C' + D) is not equal (A=B=1, C=0 gives 1 vs 0); no option is exactly right.
+2025-jan-06-s1-p2  Q7   key=C  The LP's true optimum is (20, 0) with z = 600; none of the listed points is the optimal solution (E only has the highest z among them, 150).
+2025-jan-06-s1-p2  Q17  key=B  Official key gives D, B, C, A, E. The textbook ISR order (save registers -> identify flag -> service -> restore -> re-enable interrupts) is option D: A, D, C, E, B.
+2025-jan-06-s1-p2  Q71  key=D  Key treats "an NP-complete problem can be solved in polynomial time" as true; that is only right for NONdeterministic polynomial time (deterministically it would mean P = NP).
+2024-aug-23-s1-p2  Q49  key=C  For two CFLs, "L1 ∩ L2 is recursively enumerable" is true, but option D "context-sensitive" is also true (and tighter), since CSLs are closed under intersection.
+2024-aug-23-s1-p2  Q88  key=A  1024/16 = 64 passes, but each operation takes 5 cycles: ~64+5-1 = 68 cycles if pipelined, 320 if not. The keyed 64 ignores the 5-cycle latency.
+2023-dec-07-s2-p2  Q7   key=B  Dividing a SIGNED binary number by 2 is an arithmetic shift right (option C), not a logical shift.
+2023-dec-07-s2-p2  Q33  key=C  Four 100 Kbps channels multiplexed -> 400 Kbps. The keyed "40 Kbps" looks like OCR damage of 400.
+2023-dec-07-s2-p2  Q66,Q92-Q94,Q96-Q100  -  No question text in the source (placeholder + garbled options). Kept out of tests; find the original NTA paper if you want them.
+2023-jun-17-s1-p2  Q52  key=D  The grammar S->AB, A->CD, B->e, C->a, D->b derives exactly one string ("abe", length 3); none of 8/7/4/5 fits. The source item looks garbled.
