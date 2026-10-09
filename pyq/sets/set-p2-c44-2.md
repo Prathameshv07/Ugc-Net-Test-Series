@@ -599,11 +599,11 @@ So x is an array of 3 pointers to functions, where each function returns a point
 Among the given options, C is the closest full match to the derived type, so it is the intended answer.
 
 ## Q22
-Given
-
-int arr[3][4][2] = {{{2,4},{7,8},{3,4},{5,6}},{{7,6},{3,4},{5,3},{2,3}},{{8,9},{7,2},{3,4},{5,1}}};
-
-Which one of the following can be used to refer to element 1 in the above 3-d array?
+<p>
+  Given
+  <code>int arr[3][4][2] = &#123;&#123;&#123;2,4&#125;,&#123;7,8&#125;,&#123;3,4&#125;,&#123;5,6&#125;&#125;,&#123;&#123;7,6&#125;,&#123;3,4&#125;,&#123;5,3&#125;,&#123;2,3&#125;&#125;,&#123;&#123;8,9&#125;,&#123;7,2&#125;,&#123;3,4&#125;,&#123;5,1&#125;&#125;&#125;;</code>
+  Which one of the following can be used to refer to element 1 in the above 3-d array?
+</p>
 
 ## Q22 - Options
 (A) arr[3][4][2]
