@@ -318,6 +318,11 @@
         return { qid, given, correct, accepted, topic, outcome, explanation: q.explanation };
       });
       const marks = correctCount * cfg.marksPerQuestion - wrongCount * (cfg.negativeMarking || 0);
+      try {
+        const hist = JSON.parse(localStorage.getItem('combo_last') || '{}');
+        hist[slug] = { correct: correctCount, wrong: wrongCount, total: qids.length, marks, on: new Date().toLocaleDateString() };
+        localStorage.setItem('combo_last', JSON.stringify(hist));
+      } catch (e) {}
       renderResults(detail, correctCount, wrongCount, skipped, marks, topicStats);
     }
   }

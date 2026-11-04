@@ -173,3 +173,15 @@ h2{ font-family:'Lora', serif; font-weight:600; font-size:20px; margin:0 0 4px; 
   padding:14px 16px; font-size:13.5px; color:var(--muted); margin-bottom:16px;
 }
 .tag + .tag{ margin-left:6px; }
+/* ---- additions for the combo test series ---- */
+.stem p{ margin:0 0 6px; }
+.stem table td, .stem table th{ border:1px solid var(--line); padding:4px 8px; }
+.stem pre{ white-space:pre-wrap; }
+.explain blockquote, .hint-content blockquote{ margin:12px 0; padding:8px 12px; border-left:4px solid #d9822b; background:rgba(217,130,43,.10); border-radius:4px; }
+.explain blockquote p{ margin:0; }
+.test-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px; }
+.test-card{ border:1px solid var(--line); border-radius:10px; padding:14px 16px; background:var(--surface); }
+.test-card h3{ margin:0 0 10px; font-size:16px; }
+.test-card a{ display:flex; justify-content:space-between; gap:8px; padding:8px 10px; margin:6px 0; border-radius:8px; border:1px solid var(--line); text-decoration:none; color:inherit; font-size:14px; }
+.test-card a:hover{ border-color:var(--accent); }
+.test-card .meta{ color:var(--muted); font-size:12px; text-align:right; }

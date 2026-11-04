@@ -3,113 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UGC NET Practice Test Series</title>
+<title>UGC NET · Combo Test Series</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/quiz-style.css">
 </head>
 <body>
-
 <header>
-  <div class="brand">UGC NET Practice Test Series<small>Paper 1 &amp; Paper 2 test series</small></div>
-  <div class="who">
-    Browsing as
-    <input id="whoInput" type="text" placeholder="your name" />
-  </div>
+  <div class="brand">UGC NET · Combo Test Series<small>10 tests · Paper 1 &amp; Paper 2</small></div>
 </header>
-
 <main>
-  <a class="test-link" href="priority.html" style="margin-bottom:22px;border-color:var(--accent);">
-    <span><strong>High-yield topics</strong> — what 15 real UGC NET papers say to study first</span>
-    <span class="meta">PYQ analysis →</span>
-  </a>
   <h1>Choose a test</h1>
-  <div class="sub" id="countLine"></div>
-
-  <div style="display:flex; gap:10px; margin-bottom:22px; flex-wrap:wrap;">
-    <input id="searchBox" type="text" placeholder="Search tests…"
-      style="flex:1; min-width:180px; padding:10px 14px; border-radius:8px; border:1px solid var(--line); background:var(--surface); color:var(--ink); font-size:14px;">
-    <select id="categoryFilter"
-      style="padding:10px 14px; border-radius:8px; border:1px solid var(--line); background:var(--surface); color:var(--ink); font-size:14px;">
-      <option value="">All categories</option>
-    </select>
-  </div>
-
-  <div id="catContainer"></div>
+  <div class="sub">Each test has Paper 1 (50 Q · 60 min), Paper 2 (100 Q · 120 min) and a full mock (150 Q · 3 h). 2 marks per question, no negative marking. Open a test and pick <b>Revise</b> to see every answer with its explanation.</div>
+  <div id="grid" class="test-grid"></div>
 </main>
-
 <script src="assets/tests-manifest.js"></script>
-<script src="assets/pyq-manifest.js"></script>
 <script>
-  const whoInput = document.getElementById('whoInput');
-  whoInput.value = localStorage.getItem('net_practice_who') || '';
-  whoInput.addEventListener('input', () => {
-    localStorage.setItem('net_practice_who', whoInput.value);
-    render();
-  });
-
-  const searchBox = document.getElementById('searchBox');
-  const categoryFilter = document.getElementById('categoryFilter');
-  searchBox.addEventListener('input', render);
-  categoryFilter.addEventListener('change', render);
-
-  // populate category dropdown
-  const categories = [...new Set(TESTS_MANIFEST.map(t => t.category))];
-  categories.forEach(c => {
-    const opt = document.createElement('option');
-    opt.value = c; opt.textContent = c;
-    categoryFilter.appendChild(opt);
-  });
-
-  function attemptInfo(testTitle){
-    const who = (whoInput.value || 'me').trim().toLowerCase();
-    const history = JSON.parse(localStorage.getItem(`net_practice_history_${who}`) || '{}');
-    const attempts = history[testTitle];
-    if (!attempts || attempts.length === 0) return null;
-    return attempts[attempts.length - 1];
-  }
-
-  function render(){
-    const q = searchBox.value.trim().toLowerCase();
-    const catFilterVal = categoryFilter.value;
-    const filtered = TESTS_MANIFEST.filter(t =>
-      (!catFilterVal || t.category === catFilterVal) &&
-      (!q || t.title.toLowerCase().includes(q) || t.category.toLowerCase().includes(q))
-    );
-
-    document.getElementById('countLine').textContent =
-      `${filtered.length} of ${TESTS_MANIFEST.length} tests shown.`;
-
-    const container = document.getElementById('catContainer');
-    container.innerHTML = '';
-    const grouped = {};
-    filtered.forEach(t => { (grouped[t.category] = grouped[t.category] || []).push(t); });
-
-    Object.keys(grouped).sort().forEach(cat => {
-      const block = document.createElement('div');
-      block.className = 'cat-block';
-      const title = document.createElement('div');
-      title.className = 'cat-title';
-      title.textContent = cat;
-      block.appendChild(title);
-      const list = document.createElement('div');
-      list.className = 'test-link-list';
-      grouped[cat].forEach(t => {
-        const info = attemptInfo(t.title);
-        const a = document.createElement('a');
-        a.className = 'test-link';
-        a.href = `player.html?test=${encodeURIComponent(t.slug)}`;
-        const badge = info
-          ? `Last: ${info.correctCount}/${info.total} · tap to revise or retake`
-          : 'Not attempted yet';
-        a.innerHTML = `<span>${t.title}</span><span class="meta">${t.questions} q · ${t.minutes} min · ${badge}</span>`;
-        list.appendChild(a);
-      });
-      block.appendChild(list);
-      container.appendChild(block);
+  const last = JSON.parse(localStorage.getItem('combo_last') || '{}');
+  const grid = document.getElementById('grid');
+  const groups = {};
+  TESTS_MANIFEST.forEach(t => (groups[t.category] = groups[t.category] || []).push(t));
+  Object.keys(groups).sort().forEach(cat => {
+    const card = document.createElement('div');
+    card.className = 'test-card';
+    card.innerHTML = `<h3>${cat.replace('Combo Test 0', 'Combo Test ')}</h3>`;
+    groups[cat].forEach(t => {
+      const r = last[t.slug];
+      const status = r ? `Last: ${r.correct}/${r.total} · ${r.marks} marks` : `${t.questions} q · ${t.minutes} min`;
+      const a = document.createElement('a');
+      a.href = `player.html?test=${encodeURIComponent(t.slug)}`;
+      a.innerHTML = `<span>${t.title.split(' · ')[1]}</span><span class="meta">${status}</span>`;
+      card.appendChild(a);
     });
-  }
-  render();
+    grid.appendChild(card);
+  });
 </script>
 </body>
 </html>
