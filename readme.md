@@ -23,6 +23,18 @@ tests/
 
 Each test is one Markdown file: `## Qn` (question), `## Qn - Options`, then `## Qn - Hint` holding `**Answer:**`, `**Topic:**` and the explanation. Orange "⚠ Note" boxes mark questions where the coaching key or the question itself looks wrong.
 
+## During a test
+
+- **Mark for review:** ☆ Mark & Next flags a question to come back to (press again to unmark). The palette shows five states with live counts: answered, not answered, marked (not answered), answered & marked (still scored), not visited.
+- **Shortcuts (laptop):** 1–4 or A–D pick an option, ← → move between questions, M marks/unmarks.
+- **Submit** asks for confirmation and tells you how many questions are unanswered or marked.
+- After the test, the review has an **All / Wrong / Skipped / Marked** filter; marked questions are tagged ★.
+
+## Switching devices
+
+- **📱 Hand off (mid-test):** press it in the timer bar to get a QR code and link. Scan it with the other device's camera (or send yourself the link) and press **Resume** there. The link itself carries the attempt — one character per question (answered / marked / visited), the current question and the time left — after a `#`, which browsers never send to the server. Press **Stop here** on the first device.
+- **📋 Copy / 📥 Paste sync code (home page):** your whole progress (all attempts) as one compressed text you can paste on another device; it merges like Import.
+
 ## Progress (no server needed)
 
 - **Autosave:** while a timed test is running, answers, position and remaining time are saved in the browser every few seconds. Close the tab and come back later to see **Resume** on the test's start screen. The timer pauses while you are away.

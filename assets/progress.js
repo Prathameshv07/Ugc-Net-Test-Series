@@ -161,9 +161,29 @@ var Progress = (function () {
     return summary;
   }
 
+
+  // ---- whole progress as a copy-paste text code (compressed when the browser supports it) ----
+  function b64url(bytes) { var s = ''; bytes.forEach(function (b) { s += String.fromCharCode(b); }); return btoa(s).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); }
+  function unb64url(t) { t = t.replace(/-/g, '+').replace(/_/g, '/'); while (t.length % 4) t += '='; var s = atob(t), a = new Uint8Array(s.length); for (var i = 0; i < s.length; i++) a[i] = s.charCodeAt(i); return a; }
+  function streamBytes(bytes, stream) { return new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer().then(function (b) { return new Uint8Array(b); }); }
+
+  function exportCode() {
+    var json = JSON.stringify(load()), bytes = new TextEncoder().encode(json);
+    if (window.CompressionStream) return streamBytes(bytes, new CompressionStream('deflate-raw')).then(function (z) { return 'P1z.' + b64url(z); });
+    return Promise.resolve('P1j.' + b64url(bytes));
+  }
+
+  function importCode(code) {
+    code = String(code || '').trim();
+    var kind = code.slice(0, 4), body = code.slice(4);
+    var p = kind === 'P1z.' ? (window.DecompressionStream ? streamBytes(unb64url(body), new DecompressionStream('deflate-raw')) : Promise.reject(new Error('This browser cannot read compressed codes'))) :
+            kind === 'P1j.' ? Promise.resolve(unb64url(body)) : Promise.reject(new Error('Not a progress code'));
+    return p.then(function (bytes) { var data = merge(load(), JSON.parse(new TextDecoder().decode(bytes))); save(data); return data; });
+  }
+
   function reset() { localStorage.removeItem(KEY); }
 
   return { load: load, attempts: attempts, addAttempt: addAttempt, getInProgress: getInProgress,
            setInProgress: setInProgress, clearInProgress: clearInProgress,
-           exportFile: exportFile, importFile: importFile, importReport: importReport, readReport: readReport, loadFromRepo: loadFromRepo, reset: reset };
+           exportFile: exportFile, importFile: importFile, importReport: importReport, exportCode: exportCode, importCode: importCode, readReport: readReport, loadFromRepo: loadFromRepo, reset: reset };
 })();

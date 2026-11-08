@@ -25,6 +25,10 @@
       <button class="btn" id="repoBtn">↻ Load repo copy</button>
     </div>
     <div class="progress-actions">
+      <button class="btn" id="codeCopyBtn">📋 Copy sync code</button>
+      <button class="btn" id="codePasteBtn">📥 Paste sync code</button>
+    </div>
+    <div class="progress-actions">
       <span class="meta">Coaching report:</span>
       <select id="reportTest" class="btn"></select>
       <label class="btn" for="reportInput">⬆ Import report page</label>
@@ -84,6 +88,16 @@
   document.getElementById('repoBtn').onclick = () => {
     Progress.loadFromRepo().then(() => { render(); msg('Merged progress/progress.json from the repo.'); })
       .catch(err => msg(err.message));
+  };
+  document.getElementById('codeCopyBtn').onclick = () => Progress.exportCode().then(code => {
+    const done = () => msg(`Sync code copied (${code.length} characters). Paste it on your other device with 📥 Paste sync code — e.g. send it to yourself on WhatsApp.`);
+    (navigator.clipboard ? navigator.clipboard.writeText(code) : Promise.reject()).then(done).catch(() => { prompt('Copy this sync code:', code); });
+  });
+  document.getElementById('codePasteBtn').onclick = () => {
+    const code = prompt('Paste the sync code from your other device:');
+    if (!code) return;
+    Progress.importCode(code).then(() => { render(); msg('Sync code loaded — attempts merged (nothing was overwritten).'); })
+      .catch(err => msg('Could not load the code: ' + err.message));
   };
   const sel = document.getElementById('reportTest');
   for (let i = 1; i <= 10; i++) sel.add(new Option('Combo Test ' + i, i));

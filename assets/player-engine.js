@@ -132,6 +132,7 @@
   let current = 0;
   let userAnswers = {};
   let visited = {};
+  let flagged = {};
   let endsAt = null, timerHandle = null, submitted = false;
 
   fetch(cfg.file)
@@ -140,6 +141,7 @@
       questions = parseTestMd(text);
       qids = Object.keys(questions).sort((a, b) => qidNum(a) - qidNum(b));
       statusEl.textContent = `${qids.length} questions loaded.`;
+      receiveHandoff(location.hash);
       renderStart();
     })
     .catch(err => {
@@ -148,6 +150,99 @@
         double-clicking this file, that won't work — run a local server
         (<code>python3 -m http.server</code>) or use GitHub Pages.</div>`;
     });
+
+  // ---------------- hand-off between devices ----------------
+  // The whole unfinished attempt is packed into the link itself (after #h=), one character
+  // per question:  -  not visited   .  visited, unanswered   *  marked, unanswered
+  //                a-e answered     A-E answered and marked
+  // plus the current question and the seconds left. Nothing is uploaded anywhere: the part
+  // after # never leaves the browser, and the other device just saves it locally.
+  let handoffNote = '';
+
+  function packState(st) {
+    const chars = qids.map(qid => {
+      const a = (st.answers || {})[qid], m = (st.marked || {})[qid];
+      if (a) return m ? a.toUpperCase() : a.toLowerCase();
+      if (m) return '*';
+      return (st.visited || {})[qid] ? '.' : '-';
+    }).join('');
+    return ['1', slug, st.current || 0, Math.round((st.remainingMs || 0) / 1000), chars].join('~');
+  }
+
+  function unpackState(code) {
+    const parts = code.split('~');
+    if (parts.length !== 5 || parts[0] !== '1') throw new Error('This is not a valid hand-off code.');
+    if (parts[1] !== slug) throw new Error('This code belongs to a different test (' + parts[1] + ').');
+    const chars = parts[4];
+    if (chars.length !== qids.length) throw new Error('The code does not match this test\'s questions.');
+    const st = { answers: {}, visited: {}, marked: {}, current: Math.min(+parts[2] || 0, qids.length - 1), remainingMs: (+parts[3] || 0) * 1000 };
+    qids.forEach((qid, i) => {
+      const c = chars[i];
+      if (c === '-') return;
+      st.visited[qid] = true;
+      if (c === '*') st.marked[qid] = true;
+      else if (/[a-e]/.test(c)) st.answers[qid] = c.toUpperCase();
+      else if (/[A-E]/.test(c)) { st.answers[qid] = c; st.marked[qid] = true; }
+    });
+    return st;
+  }
+
+  function handoffLink(st) {
+    return location.origin + location.pathname + '?test=' + encodeURIComponent(slug) + '#h=' + packState(st);
+  }
+
+  // accepts a full link, "#h=..." or the bare code
+  function receiveHandoff(text) {
+    if (!text) return false;
+    const m = String(text).match(/h=([^\s&]+)/);
+    const code = decodeURIComponent(m ? m[1] : String(text).trim());
+    if (!code || code.indexOf('~') === -1) return false;
+    try {
+      const st = unpackState(code);
+      Progress.setInProgress(slug, st);
+      const n = Object.keys(st.answers).length;
+      handoffNote = `Progress received from your other device: ${n} answered, ${Math.floor(st.remainingMs / 60000)} min left. Press Resume to continue.`;
+    } catch (e) {
+      handoffNote = 'Could not load the hand-off: ' + e.message;
+    }
+    if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+    return true;
+  }
+
+  function showHandoff(st, onStop) {
+    const link = handoffLink(st);
+    const overlay = document.createElement('div');
+    overlay.className = 'modal-overlay';
+    overlay.innerHTML = `
+      <div class="modal-box">
+        <h3 style="margin-top:0">Continue on another device</h3>
+        <p class="sub">Scan with the other device's camera, or send yourself the link. It carries your answers, marks, current question and the time left (${Math.floor((st.remainingMs || 0) / 60000)} min).</p>
+        <div id="handoffQr" class="handoff-qr"></div>
+        <input class="handoff-link" readonly value="${escapeHtml(link)}">
+        <div class="modal-actions">
+          <button class="btn" id="hoCopy">Copy link</button>
+          ${navigator.share ? '<button class="btn" id="hoShare">Share…</button>' : ''}
+          <button class="btn btn-primary" id="hoStop">Stop here</button>
+          <button class="btn" id="hoClose">Keep going here</button>
+        </div>
+        <p class="legend-note">After the other device opens the link, press <b>Stop here</b> on this one so you don't answer on both.</p>
+      </div>`;
+    document.body.appendChild(overlay);
+    const qrBox = overlay.querySelector('#handoffQr');
+    if (window.QRCode) new QRCode(qrBox, { text: link, width: 220, height: 220, correctLevel: QRCode.CorrectLevel.L });
+    else qrBox.innerHTML = '<div class="sub">QR code needs an internet connection — use Copy link instead.</div>';
+    const close = () => overlay.remove();
+    overlay.querySelector('#hoCopy').onclick = e => {
+      const inp = overlay.querySelector('.handoff-link'); inp.select();
+      (navigator.clipboard ? navigator.clipboard.writeText(link) : Promise.reject()).catch(() => document.execCommand('copy'));
+      e.target.textContent = 'Copied ✓';
+    };
+    const sh = overlay.querySelector('#hoShare');
+    if (sh) sh.onclick = () => navigator.share({ title: cfg.title, url: link }).catch(() => {});
+    overlay.querySelector('#hoClose').onclick = close;
+    overlay.querySelector('#hoStop').onclick = () => { close(); onStop && onStop(); };
+    overlay.onclick = e => { if (e.target === overlay) close(); };
+  }
 
   // ---------------- start screen ----------------
 
@@ -189,7 +284,23 @@
     }
     btnRow.style.flexWrap = 'wrap';
     btnRow.append(startBtn, reviseBtn);
+    if (handoffNote) {
+      const note = document.createElement('div');
+      note.className = 'notice'; note.style.margin = '12px 0'; note.textContent = handoffNote;
+      card.appendChild(note); handoffNote = '';
+    }
     card.appendChild(btnRow);
+
+    const recv = document.createElement('details');
+    recv.className = 'handoff-receive';
+    recv.innerHTML = `<summary>Continue from another device</summary>
+      <p class="sub">On the other device, press <b>📱 Hand off</b> during the test and scan its QR code with this device's camera. Or paste the link / code here:</p>
+      <div class="handoff-row"><input class="handoff-link" placeholder="Paste link or code"><button class="btn">Load</button></div>`;
+    recv.querySelector('button').onclick = () => {
+      if (!receiveHandoff(recv.querySelector('input').value)) handoffNote = 'That doesn\'t look like a hand-off link or code.';
+      renderStart();
+    };
+    card.appendChild(recv);
 
     const past = Progress.attempts(slug);
     if (past.length) {
@@ -218,10 +329,11 @@
     current = resume ? (resume.current || 0) : 0;
     userAnswers = resume ? Object.assign({}, resume.answers) : {};
     visited = resume ? Object.assign({}, resume.visited) : { [qids[0]]: true };
+    flagged = resume ? Object.assign({}, resume.marked || {}) : {};
     const totalMs = cfg.minutes * 60 * 1000;
     function saveState() {
       if (submitted || !endsAt) return;
-      Progress.setInProgress(slug, { answers: userAnswers, visited, current, remainingMs: Math.max(0, endsAt - Date.now()) });
+      Progress.setInProgress(slug, { answers: userAnswers, visited, marked: flagged, current, remainingMs: Math.max(0, endsAt - Date.now()) });
     }
     window.onpagehide = saveState;
     document.onvisibilitychange = () => { if (document.hidden) saveState(); };
@@ -231,7 +343,9 @@
     timerBar.className = 'timer-bar';
     timerBar.innerHTML = `
       <div><div class="timer-label">${escapeHtml(cfg.title)}</div><div id="qPosition" style="font-size:13px;color:var(--muted)"></div></div>
-      <div style="text-align:right"><div class="timer-label">Time remaining</div><div id="timerClock" class="timer-clock"></div></div>`;
+      <div style="text-align:right"><div class="timer-label">Time remaining</div><div id="timerClock" class="timer-clock"></div></div>
+      <button class="btn handoff-btn" id="handoffBtn" type="button" title="Continue this attempt on another device">📱 Hand off</button>
+      <button class="btn palette-toggle" id="paletteToggle" type="button">☰ Questions</button>`;
     root.appendChild(timerBar);
 
     const quizWrap = document.createElement('div');
@@ -247,13 +361,20 @@
     palette.innerHTML = `
       <div class="palette-title">Question palette</div>
       <div class="palette-grid" id="paletteGrid"></div>
-      <div class="palette-legend">
-        <div class="legend-item"><span class="legend-swatch" style="background:var(--correct)"></span>Answered</div>
-        <div class="legend-item"><span class="legend-swatch" style="background:var(--warn)"></span>Visited, not answered</div>
-        <div class="legend-item"><span class="legend-swatch" style="background:var(--not-visited)"></span>Not visited</div>
-      </div>
+      <div class="palette-legend" id="paletteLegend"></div>
       <button class="btn btn-primary" id="submitAllBtn" style="width:100%;margin-top:14px;">Submit test</button>`;
     quizWrap.appendChild(palette);
+    document.getElementById('paletteToggle').onclick = () => quizWrap.classList.toggle('show-palette');
+    document.getElementById('handoffBtn').onclick = () => {
+      saveState();
+      const st = { answers: userAnswers, visited, marked: flagged, current, remainingMs: Math.max(0, endsAt - Date.now()) };
+      showHandoff(st, () => {           // stop here: keep the saved state, leave the test without submitting
+        saveState(); submitted = true; clearInterval(timerHandle);
+        window.onpagehide = null; document.onvisibilitychange = null; document.onkeydown = null;
+        handoffNote = 'Paused here — continue on your other device. (You can also Resume here later.)';
+        submitted = false; endsAt = null; renderStart();
+      });
+    };
 
     const navRow = document.createElement('div');
     navRow.className = 'nav-row';
@@ -261,6 +382,7 @@
       <button class="btn" id="prevBtn">&larr; Previous</button>
       <div class="right">
         <button class="btn" id="clearBtn">Clear response</button>
+        <button class="btn btn-mark" id="markBtn">☆ Mark for review</button>
         <button class="btn btn-primary" id="nextBtn">Save &amp; Next &rarr;</button>
         <button class="btn btn-primary" id="submitBtn" style="display:none;">Submit test</button>
       </div>`;
@@ -280,7 +402,15 @@
         label.dataset.letter = opt.letter;
         label.innerHTML = `<input type="radio" name="opt" ${userAnswers[qid] === opt.letter ? 'checked' : ''}>
           <span><strong>${opt.letter}.</strong> ${renderMdInline(opt.text)}</span>`;
-        label.onclick = () => { userAnswers[qid] = opt.letter; renderQuestion(); };
+        label.onclick = e => {
+          e.preventDefault();                       // one click = one update (no double fire from the radio)
+          userAnswers[qid] = opt.letter;
+          optsWrap.querySelectorAll('.option').forEach(l => {
+            const on = l.dataset.letter === opt.letter;
+            l.classList.toggle('selected', on); l.querySelector('input').checked = on;
+          });
+          updatePalette(); saveState();
+        };
         optsWrap.appendChild(label);
       });
       const hintBtn = qCard.querySelector('.hint-toggle');
@@ -302,21 +432,70 @@
       qids.forEach((qid, i) => {
         const cell = document.createElement('button');
         let cls = 'p-cell';
-        if (userAnswers[qid]) cls += ' answered';
+        if (userAnswers[qid] && flagged[qid]) cls += ' answered marked';
+        else if (flagged[qid]) cls += ' marked';
+        else if (userAnswers[qid]) cls += ' answered';
         else if (visited[qid]) cls += ' visited';
         if (i === current) cls += ' current';
         cell.className = cls;
         cell.textContent = i + 1;
-        cell.onclick = () => { current = i; visited[qid] = true; renderQuestion(); };
+        cell.onclick = () => { quizWrap.classList.remove('show-palette'); goTo(i); };
         grid.appendChild(cell);
       });
+      let ans = 0, notAns = 0, mk = 0, ansMk = 0, nv = 0;
+      qids.forEach(qid => {
+        if (userAnswers[qid] && flagged[qid]) ansMk++; else if (flagged[qid]) mk++;
+        else if (userAnswers[qid]) ans++; else if (visited[qid]) notAns++; else nv++;
+      });
+      const sw = c => `<span class="legend-swatch p-cell ${c}"></span>`;
+      document.getElementById('paletteLegend').innerHTML = `
+        <div class="legend-item">${sw('answered')}Answered — ${ans}</div>
+        <div class="legend-item">${sw('visited')}Not answered — ${notAns}</div>
+        <div class="legend-item">${sw('marked')}Marked, not answered — ${mk}</div>
+        <div class="legend-item">${sw('answered marked')}Answered &amp; marked — ${ansMk}</div>
+        <div class="legend-item">${sw('')}Not visited — ${nv}</div>
+        <div class="legend-note">Answered &amp; marked questions are still evaluated.</div>`;
+      const mb = document.getElementById('markBtn');
+      if (mb) mb.textContent = flagged[qids[current]] ? '★ Unmark' : (current === qids.length - 1 ? '☆ Mark for review' : '☆ Mark & Next');
     }
 
-    document.getElementById('prevBtn').onclick = () => { current--; visited[qids[current]] = true; renderQuestion(); };
-    document.getElementById('nextBtn').onclick = () => { current++; visited[qids[current]] = true; renderQuestion(); };
-    document.getElementById('clearBtn').onclick = () => { delete userAnswers[qids[current]]; renderQuestion(); };
-    document.getElementById('submitBtn').onclick = finish;
-    document.getElementById('submitAllBtn').onclick = finish;
+    function goTo(i) {
+      current = i; visited[qids[current]] = true; renderQuestion();
+      const top = qCard.getBoundingClientRect().top;
+      if (top < 70 || top > window.innerHeight * 0.4) window.scrollTo({ top: window.scrollY + top - 140, behavior: 'smooth' });
+    }
+    function confirmSubmit() {
+      const left = qids.length - Object.keys(userAnswers).length;
+      const mk = Object.keys(flagged).length;
+      let msg = left ? `${left} question${left === 1 ? ' is' : 's are'} unanswered.` : 'All questions answered.';
+      if (mk) msg += ` ${mk} marked for review.`;
+      msg += ' Submit the test now?';
+      if (confirm(msg)) finish();
+    }
+    document.getElementById('prevBtn').onclick = () => goTo(current - 1);
+    document.getElementById('nextBtn').onclick = () => goTo(current + 1);
+    document.getElementById('clearBtn').onclick = () => {
+      delete userAnswers[qids[current]];
+      qCard.querySelectorAll('.option').forEach(l => { l.classList.remove('selected'); l.querySelector('input').checked = false; });
+      updatePalette(); saveState();
+    };
+    document.getElementById('markBtn').onclick = () => {
+      const qid = qids[current];
+      if (flagged[qid]) { delete flagged[qid]; updatePalette(); saveState(); return; }
+      flagged[qid] = true; saveState();
+      if (current < qids.length - 1) goTo(current + 1); else updatePalette();
+    };
+    document.onkeydown = e => {
+      if (submitted || e.ctrlKey || e.metaKey || e.altKey || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
+      const k = e.key.toLowerCase(), opts = qCard.querySelectorAll('.option');
+      const idx = '1234'.indexOf(k) !== -1 ? '1234'.indexOf(k) : 'abcd'.indexOf(k);
+      if (idx !== -1 && k.length === 1 && opts[idx]) { opts[idx].click(); e.preventDefault(); }
+      else if (e.key === 'ArrowRight' && current < qids.length - 1) goTo(current + 1);
+      else if (e.key === 'ArrowLeft' && current > 0) goTo(current - 1);
+      else if (k === 'm') document.getElementById('markBtn').click();
+    };
+    document.getElementById('submitBtn').onclick = confirmSubmit;
+    document.getElementById('submitAllBtn').onclick = confirmSubmit;
 
     endsAt = Date.now() + (resume ? resume.remainingMs : totalMs);
     renderQuestion();
@@ -356,7 +535,7 @@
           topicStats[topic][outcome]++;
           topicStats[topic].total++;
         }
-        return { qid, given, correct, accepted, topic, outcome, explanation: q.explanation };
+        return { qid, given, correct, accepted, topic, outcome, explanation: q.explanation, marked: !!flagged[qid] };
       });
       const marks = correctCount * cfg.marksPerQuestion - wrongCount * (cfg.negativeMarking || 0);
       const answersGiven = {};
@@ -365,9 +544,9 @@
         correct: correctCount, wrong: wrongCount, skipped, total: qids.length, marks,
         maxMarks: qids.length * cfg.marksPerQuestion,
         timeTakenSec: Math.round((totalMs - Math.max(0, endsAt - Date.now())) / 1000),
-        answers: answersGiven, topics: topicStats
+        answers: answersGiven, marked: Object.keys(flagged), topics: topicStats
       });
-      window.onpagehide = null; document.onvisibilitychange = null;
+      window.onpagehide = null; document.onvisibilitychange = null; document.onkeydown = null;
       renderResults(detail, correctCount, wrongCount, skipped, marks, topicStats);
     }
   }
@@ -447,7 +626,7 @@
 
     function draw() {
       filterRow.innerHTML = '';
-      [['all', 'All'], ['wrong', 'Wrong only'], ['skipped', 'Skipped only']].forEach(([key, label]) => {
+      [['all', 'All'], ['wrong', 'Wrong only'], ['skipped', 'Skipped only'], ['marked', 'Marked']].forEach(([key, label]) => {
         const b = document.createElement('button');
         b.className = 'btn' + (filter === key ? ' btn-primary' : '');
         b.textContent = label;
@@ -455,13 +634,13 @@
         filterRow.appendChild(b);
       });
       listWrap.innerHTML = '';
-      detail.filter(d => filter === 'all' || d.outcome === filter).forEach(d => {
+      detail.filter(d => filter === 'all' || (filter === 'marked' ? d.marked : d.outcome === filter)).forEach(d => {
         const q = questions[d.qid];
         const item = document.createElement('div');
         item.className = 'review-item';
         const tagClass = d.outcome === 'correct' ? 'correct' : d.outcome === 'wrong' ? 'wrong' : 'skipped';
         const tagLabel = d.outcome === 'correct' ? 'Correct' : d.outcome === 'wrong' ? 'Wrong' : 'Skipped';
-        item.innerHTML = `<span class="tag ${tagClass}">${tagLabel}</span>` + (d.topic ? ` <span class="tag skipped">${escapeHtml(d.topic)}</span>` : '');
+        item.innerHTML = `<span class="tag ${tagClass}">${tagLabel}</span>` + (d.marked ? ' <span class="tag marked">★ Marked</span>' : '') + (d.topic ? ` <span class="tag skipped">${escapeHtml(d.topic)}</span>` : '');
         const qDiv = document.createElement('div');
         qDiv.className = 'q-text'; qDiv.style.marginTop = '10px';
         qDiv.innerHTML = renderMd(q.stem);
@@ -511,7 +690,7 @@
         const ts = topicStats[q.topic] = topicStats[q.topic] || { correct: 0, wrong: 0, skipped: 0, total: 0 };
         ts[outcome]++; ts.total++;
       }
-      return { qid, given, correct: q.correct, accepted: q.correctAll, topic: q.topic, outcome, explanation: q.explanation };
+      return { qid, given, correct: q.correct, accepted: q.correctAll, topic: q.topic, outcome, explanation: q.explanation, marked: (a.marked || []).includes(qid) };
     });
     renderResults(detail, c, w, sk, c * cfg.marksPerQuestion - w * (cfg.negativeMarking || 0), topicStats);
   }
