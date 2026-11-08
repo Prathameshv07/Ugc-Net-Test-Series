@@ -185,3 +185,13 @@ h2{ font-family:'Lora', serif; font-weight:600; font-size:20px; margin:0 0 4px; 
 .test-card a{ display:flex; justify-content:space-between; gap:8px; padding:8px 10px; margin:6px 0; border-radius:8px; border:1px solid var(--line); text-decoration:none; color:inherit; font-size:14px; }
 .test-card a:hover{ border-color:var(--accent); }
 .test-card .meta{ color:var(--muted); font-size:12px; text-align:right; }
+.progress-bar{ border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin:0 0 20px; background:var(--surface); display:flex; flex-direction:column; gap:8px; }
+.progress-actions{ display:flex; gap:8px; flex-wrap:wrap; }
+.progress-actions .btn{ cursor:pointer; }
+.meta{ color:var(--muted); font-size:13px; }
+.history{ margin-top:18px; border-top:1px solid var(--line); padding-top:12px; }
+.history-title{ font-weight:600; margin-bottom:6px; }
+.history-row{ display:flex; justify-content:space-between; gap:10px; font-size:13px; padding:4px 0; border-bottom:1px dashed var(--line); }
+
+.btn-small{ padding:3px 10px; font-size:12px; margin-left:8px; }
+.progress-actions select.btn{ padding:6px 10px; }

@@ -15,28 +15,87 @@
 <main>
   <h1>Choose a test</h1>
   <div class="sub">Each test has Paper 1 (50 Q · 60 min), Paper 2 (100 Q · 120 min) and a full mock (150 Q · 3 h). 2 marks per question, no negative marking. Open a test and pick <b>Revise</b> to see every answer with its explanation.</div>
+
+  <div class="progress-bar">
+    <div><b>Progress</b> <span id="progSummary" class="meta"></span></div>
+    <div class="progress-actions">
+      <button class="btn" id="exportBtn">⬇ Export file</button>
+      <label class="btn" for="importInput">⬆ Import file</label>
+      <input type="file" id="importInput" accept=".json,application/json" hidden>
+      <button class="btn" id="repoBtn">↻ Load repo copy</button>
+    </div>
+    <div class="progress-actions">
+      <span class="meta">Coaching report:</span>
+      <select id="reportTest" class="btn"></select>
+      <label class="btn" for="reportInput">⬆ Import report page</label>
+      <input type="file" id="reportInput" accept=".html,.htm,.txt" hidden>
+    </div>
+    <div id="progMsg" class="meta"></div>
+  </div>
+
   <div id="grid" class="test-grid"></div>
 </main>
 <script src="assets/tests-manifest.js"></script>
+<script src="assets/progress.js"></script>
+<script src="assets/report-map.js"></script>
 <script>
-  const last = JSON.parse(localStorage.getItem('combo_last') || '{}');
-  const grid = document.getElementById('grid');
-  const groups = {};
-  TESTS_MANIFEST.forEach(t => (groups[t.category] = groups[t.category] || []).push(t));
-  Object.keys(groups).sort().forEach(cat => {
-    const card = document.createElement('div');
-    card.className = 'test-card';
-    card.innerHTML = `<h3>${cat.replace('Combo Test 0', 'Combo Test ')}</h3>`;
-    groups[cat].forEach(t => {
-      const r = last[t.slug];
-      const status = r ? `Last: ${r.correct}/${r.total} · ${r.marks} marks` : `${t.questions} q · ${t.minutes} min`;
-      const a = document.createElement('a');
-      a.href = `player.html?test=${encodeURIComponent(t.slug)}`;
-      a.innerHTML = `<span>${t.title.split(' · ')[1]}</span><span class="meta">${status}</span>`;
-      card.appendChild(a);
+  const msg = t => { document.getElementById('progMsg').textContent = t; };
+
+  function render() {
+    const data = Progress.load();
+    let attemptsTotal = 0;
+    Object.values(data.tests).forEach(t => attemptsTotal += t.attempts.length);
+    const ip = Object.keys(data.inProgress).length;
+    document.getElementById('progSummary').textContent =
+      `· ${attemptsTotal} attempt${attemptsTotal === 1 ? '' : 's'} saved` + (ip ? ` · ${ip} unfinished` : '') +
+      (data.updated ? ` · updated ${new Date(data.updated).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}` : '');
+
+    const grid = document.getElementById('grid');
+    grid.innerHTML = '';
+    const groups = {};
+    TESTS_MANIFEST.forEach(t => (groups[t.category] = groups[t.category] || []).push(t));
+    Object.keys(groups).sort().forEach(cat => {
+      const card = document.createElement('div');
+      card.className = 'test-card';
+      card.innerHTML = `<h3>${cat.replace('Combo Test 0', 'Combo Test ')}</h3>`;
+      groups[cat].forEach(t => {
+        const at = (data.tests[t.slug] || { attempts: [] }).attempts;
+        let status = `${t.questions} q · ${t.minutes} min`;
+        if (at.length) {
+          const last = at[at.length - 1], best = Math.max(...at.map(a => a.marks));
+          status = `Last ${last.marks}/${t.questions * t.marksPerQuestion} · best ${best} · ${at.length}×`;
+        }
+        if (data.inProgress[t.slug]) status = `⏸ unfinished · ` + status;
+        const a = document.createElement('a');
+        a.href = `player.html?test=${encodeURIComponent(t.slug)}`;
+        a.innerHTML = `<span>${t.title.split(' · ')[1]}</span><span class="meta">${status}</span>`;
+        card.appendChild(a);
+      });
+      grid.appendChild(card);
     });
-    grid.appendChild(card);
-  });
+  }
+
+  document.getElementById('exportBtn').onclick = () => { Progress.exportFile(); msg('Saved progress.json — keep it in Drive or upload it to the repo’s progress/ folder.'); };
+  document.getElementById('importInput').onchange = e => {
+    const f = e.target.files[0]; if (!f) return;
+    Progress.importFile(f).then(() => { render(); msg('Imported and merged ' + f.name + '.'); })
+      .catch(err => msg('Import failed: ' + err.message)).finally(() => { e.target.value = ''; });
+  };
+  document.getElementById('repoBtn').onclick = () => {
+    Progress.loadFromRepo().then(() => { render(); msg('Merged progress/progress.json from the repo.'); })
+      .catch(err => msg(err.message));
+  };
+  const sel = document.getElementById('reportTest');
+  for (let i = 1; i <= 10; i++) sel.add(new Option('Combo Test ' + i, i));
+  document.getElementById('reportInput').onchange = e => {
+    const f = e.target.files[0]; if (!f) return;
+    f.text().then(txt => {
+      const s = Progress.importReport(txt, +sel.value);
+      render();
+      msg(`Combo Test ${sel.value} report imported — Paper 1: ${s.p1}; Paper 2: ${s.p2}.`);
+    }).catch(err => msg('Report import failed: ' + err.message)).finally(() => { e.target.value = ''; });
+  };
+  render();
 </script>
 </body>
 </html>

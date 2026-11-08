@@ -167,25 +167,64 @@
     const startBtn = document.createElement('button');
     startBtn.className = 'btn btn-primary';
     startBtn.textContent = 'Take test (timed)';
-    startBtn.onclick = beginTimedAttempt;
+    startBtn.onclick = () => beginTimedAttempt();
 
     const reviseBtn = document.createElement('button');
     reviseBtn.className = 'btn';
     reviseBtn.textContent = 'Revise (view Q&A, no timer)';
     reviseBtn.onclick = beginRevise;
 
+    const saved = Progress.getInProgress(slug);
+    if (saved) {
+      const n = Object.keys(saved.answers || {}).length;
+      const mins = Math.floor(saved.remainingMs / 60000), secs = Math.floor(saved.remainingMs / 1000) % 60;
+      const resumeBtn = document.createElement('button');
+      resumeBtn.className = 'btn btn-primary';
+      resumeBtn.textContent = `Resume (${n} answered · ${mins}:${String(secs).padStart(2, '0')} left)`;
+      resumeBtn.onclick = () => beginTimedAttempt(saved);
+      startBtn.className = 'btn';
+      startBtn.textContent = 'Start over (timed)';
+      startBtn.onclick = () => { Progress.clearInProgress(slug); beginTimedAttempt(); };
+      btnRow.append(resumeBtn);
+    }
+    btnRow.style.flexWrap = 'wrap';
     btnRow.append(startBtn, reviseBtn);
     card.appendChild(btnRow);
+
+    const past = Progress.attempts(slug);
+    if (past.length) {
+      const h = document.createElement('div');
+      h.className = 'history';
+      h.innerHTML = `<div class="history-title">Your attempts</div>` + past.slice().reverse().map(a => {
+        const d = a.date ? new Date(a.date).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' }) : 'earlier';
+        const t = a.timeTakenSec ? ` · ${Math.round(a.timeTakenSec / 60)} min` : '';
+        const src = a.source ? ` · ${escapeHtml(a.source)}` : '';
+        const rev = a.answers ? ` <button class="btn btn-small" data-review="${escapeHtml(a.id)}">Review</button>` : '';
+        return `<div class="history-row"><span>${d}${src}</span><span>${a.correct}/${a.total} correct · ${a.marks} marks${t}${rev}</span></div>`;
+      }).join('');
+      card.appendChild(h);
+      h.querySelectorAll('[data-review]').forEach(btn => {
+        btn.onclick = () => reviewAttempt(past.find(a => a.id === btn.dataset.review));
+      });
+    }
     root.appendChild(card);
   }
 
   // ---------------- timed attempt ----------------
 
-  function beginTimedAttempt() {
+  function beginTimedAttempt(resume) {
     submitted = false;
-    current = 0;
-    userAnswers = {};
-    visited = { [qids[0]]: true };
+    endsAt = null;
+    current = resume ? (resume.current || 0) : 0;
+    userAnswers = resume ? Object.assign({}, resume.answers) : {};
+    visited = resume ? Object.assign({}, resume.visited) : { [qids[0]]: true };
+    const totalMs = cfg.minutes * 60 * 1000;
+    function saveState() {
+      if (submitted || !endsAt) return;
+      Progress.setInProgress(slug, { answers: userAnswers, visited, current, remainingMs: Math.max(0, endsAt - Date.now()) });
+    }
+    window.onpagehide = saveState;
+    document.onvisibilitychange = () => { if (document.hidden) saveState(); };
     root.innerHTML = '';
 
     const timerBar = document.createElement('div');
@@ -254,6 +293,7 @@
       document.getElementById('nextBtn').style.display = isLast ? 'none' : '';
       document.getElementById('submitBtn').style.display = isLast ? '' : 'none';
       updatePalette();
+      saveState();
     }
 
     function updatePalette() {
@@ -278,9 +318,9 @@
     document.getElementById('submitBtn').onclick = finish;
     document.getElementById('submitAllBtn').onclick = finish;
 
+    endsAt = Date.now() + (resume ? resume.remainingMs : totalMs);
     renderQuestion();
-
-    endsAt = Date.now() + cfg.minutes * 60 * 1000;
+    let lastSave = Date.now();
     function tick() {
       if (submitted) { clearInterval(timerHandle); return; }
       const remaining = endsAt - Date.now();
@@ -290,6 +330,7 @@
       const total = Math.round(remaining / 1000);
       clock.textContent = `${String(Math.floor(total / 60)).padStart(2, '0')}:${String(total % 60).padStart(2, '0')}`;
       clock.classList.toggle('low', remaining < 60000);
+      if (Date.now() - lastSave > 5000) { lastSave = Date.now(); saveState(); }
     }
     tick();
     timerHandle = setInterval(tick, 500);
@@ -318,11 +359,15 @@
         return { qid, given, correct, accepted, topic, outcome, explanation: q.explanation };
       });
       const marks = correctCount * cfg.marksPerQuestion - wrongCount * (cfg.negativeMarking || 0);
-      try {
-        const hist = JSON.parse(localStorage.getItem('combo_last') || '{}');
-        hist[slug] = { correct: correctCount, wrong: wrongCount, total: qids.length, marks, on: new Date().toLocaleDateString() };
-        localStorage.setItem('combo_last', JSON.stringify(hist));
-      } catch (e) {}
+      const answersGiven = {};
+      detail.forEach(d => { if (d.given) answersGiven[d.qid] = d.given; });
+      Progress.addAttempt(slug, {
+        correct: correctCount, wrong: wrongCount, skipped, total: qids.length, marks,
+        maxMarks: qids.length * cfg.marksPerQuestion,
+        timeTakenSec: Math.round((totalMs - Math.max(0, endsAt - Date.now())) / 1000),
+        answers: answersGiven, topics: topicStats
+      });
+      window.onpagehide = null; document.onvisibilitychange = null;
       renderResults(detail, correctCount, wrongCount, skipped, marks, topicStats);
     }
   }
@@ -451,6 +496,24 @@
     backBtn.textContent = '← Back to start screen';
     backBtn.onclick = renderStart;
     root.appendChild(backBtn);
+  }
+
+  // ---------------- review a saved attempt ----------------
+
+  function reviewAttempt(a) {
+    let c = 0, w = 0, sk = 0;
+    const topicStats = {};
+    const detail = qids.map(qid => {
+      const q = questions[qid], given = (a.answers || {})[qid] || null;
+      let outcome = 'skipped';
+      if (given) { if (q.correctAll.includes(given)) { outcome = 'correct'; c++; } else { outcome = 'wrong'; w++; } } else sk++;
+      if (q.topic) {
+        const ts = topicStats[q.topic] = topicStats[q.topic] || { correct: 0, wrong: 0, skipped: 0, total: 0 };
+        ts[outcome]++; ts.total++;
+      }
+      return { qid, given, correct: q.correct, accepted: q.correctAll, topic: q.topic, outcome, explanation: q.explanation };
+    });
+    renderResults(detail, c, w, sk, c * cfg.marksPerQuestion - w * (cfg.negativeMarking || 0), topicStats);
   }
 
   // ---------------- revise mode ----------------
