@@ -1,7 +1,7 @@
 {
  "app": "ugc-net-combo",
  "version": 1,
- "updated": "2026-11-08T12:22:28.573Z",
+ "updated": "2026-11-08T16:48:32.405Z",
  "tests": {
   "combo-01-full": {
    "attempts": [
@@ -995,6 +995,983 @@
      "date": "2026-11-08T12:22:28.571Z"
     }
    ]
+  },
+  "combo-02-full": {
+   "attempts": [
+    {
+     "correct": 89,
+     "wrong": 18,
+     "skipped": 43,
+     "total": 150,
+     "marks": 178,
+     "maxMarks": 300,
+     "timeTakenSec": 10344,
+     "answers": {
+      "Q1": "C",
+      "Q3": "C",
+      "Q4": "A",
+      "Q5": "B",
+      "Q6": "D",
+      "Q7": "A",
+      "Q8": "B",
+      "Q9": "B",
+      "Q10": "B",
+      "Q11": "A",
+      "Q12": "A",
+      "Q13": "B",
+      "Q14": "C",
+      "Q15": "A",
+      "Q16": "B",
+      "Q17": "A",
+      "Q18": "C",
+      "Q19": "A",
+      "Q20": "A",
+      "Q21": "C",
+      "Q22": "A",
+      "Q23": "A",
+      "Q24": "A",
+      "Q25": "A",
+      "Q26": "A",
+      "Q29": "B",
+      "Q30": "B",
+      "Q31": "C",
+      "Q32": "D",
+      "Q33": "A",
+      "Q34": "A",
+      "Q35": "B",
+      "Q36": "A",
+      "Q37": "C",
+      "Q38": "C",
+      "Q39": "B",
+      "Q40": "A",
+      "Q41": "A",
+      "Q42": "B",
+      "Q43": "A",
+      "Q44": "B",
+      "Q45": "B",
+      "Q46": "B",
+      "Q47": "B",
+      "Q48": "C",
+      "Q49": "B",
+      "Q50": "B",
+      "Q51": "C",
+      "Q52": "A",
+      "Q54": "D",
+      "Q55": "C",
+      "Q56": "D",
+      "Q57": "A",
+      "Q59": "D",
+      "Q60": "B",
+      "Q61": "A",
+      "Q62": "C",
+      "Q63": "D",
+      "Q64": "A",
+      "Q66": "A",
+      "Q69": "C",
+      "Q70": "A",
+      "Q71": "C",
+      "Q73": "C",
+      "Q75": "D",
+      "Q76": "B",
+      "Q77": "D",
+      "Q79": "D",
+      "Q80": "A",
+      "Q81": "D",
+      "Q82": "B",
+      "Q84": "B",
+      "Q88": "B",
+      "Q89": "B",
+      "Q90": "C",
+      "Q91": "C",
+      "Q94": "D",
+      "Q96": "C",
+      "Q97": "C",
+      "Q99": "D",
+      "Q100": "C",
+      "Q102": "A",
+      "Q103": "B",
+      "Q104": "C",
+      "Q105": "B",
+      "Q109": "B",
+      "Q111": "C",
+      "Q113": "A",
+      "Q114": "D",
+      "Q115": "C",
+      "Q119": "A",
+      "Q120": "A",
+      "Q122": "A",
+      "Q124": "A",
+      "Q126": "B",
+      "Q129": "C",
+      "Q131": "B",
+      "Q134": "B",
+      "Q137": "A",
+      "Q139": "B",
+      "Q140": "D",
+      "Q143": "A",
+      "Q144": "C",
+      "Q145": "C",
+      "Q147": "B",
+      "Q148": "B",
+      "Q150": "A"
+     },
+     "marked": [
+      "Q3",
+      "Q5",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q20",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q42",
+      "Q52",
+      "Q55",
+      "Q56",
+      "Q57",
+      "Q60",
+      "Q62",
+      "Q63",
+      "Q71",
+      "Q73",
+      "Q77",
+      "Q79",
+      "Q80",
+      "Q84",
+      "Q88",
+      "Q90",
+      "Q94",
+      "Q96",
+      "Q97",
+      "Q99",
+      "Q100",
+      "Q105",
+      "Q106",
+      "Q109",
+      "Q111",
+      "Q113",
+      "Q115",
+      "Q120",
+      "Q122",
+      "Q124",
+      "Q126",
+      "Q134",
+      "Q137",
+      "Q139",
+      "Q140",
+      "Q145",
+      "Q147",
+      "Q148"
+     ],
+     "topics": {
+      "Data Interpretation": {
+       "correct": 3,
+       "wrong": 1,
+       "skipped": 1,
+       "total": 5
+      },
+      "Research Aptitude – Types of Research": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Teaching Aptitude – Classroom Communication": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Mathematical Reasoning – Direction Sense": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Research Aptitude – Meta-analysis": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "ICT – Cybersecurity": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Environment – Pollution": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Research Aptitude – Sampling": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "ICT – Memory Units": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Mathematical Reasoning – Profit & Loss": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Mathematical Reasoning – Weighted Average": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Mathematical Reasoning – Boats & Streams": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Logical Reasoning – Coding–Decoding": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Mathematical Reasoning – Averages": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Teaching Aptitude – Effective Teaching": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Communication – Non-verbal Communication": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Teaching Aptitude – Lesson Planning": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Research Aptitude – Research Ethics": {
+       "correct": 2,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 2
+      },
+      "Environment – Climate Change": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Higher Education – Open Universities": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Teaching Aptitude – Learning Theories": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Environment – International Agreements": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Environment – Environmental Education": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Communication – Mass Communication Theories": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "ICT – Emerging Technologies": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Research Aptitude – IoT in Research": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "ICT – Cache Memory": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "ICT – Cyber Safety": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Logical Reasoning – Syllogism (Fallacies)": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Logical Reasoning – Fallacies": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Logical Reasoning – Square of Opposition": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Communication – Models": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Research Aptitude – Reliability": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Research Aptitude – Hypothesis Testing": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Research Aptitude – Tools": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Research Aptitude – Referencing": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Research Aptitude – Statistics": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "ICT – SWAYAM": {
+       "correct": 2,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 2
+      },
+      "ICT – Web Technologies": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Reading Comprehension": {
+       "correct": 5,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 5
+      },
+      "Software Engineering – Software Architecture": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Digital Logic – K-Map": {
+       "correct": 2,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 2
+      },
+      "Compiler Design – Lexical Analysis": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Discrete Mathematics – Propositional Logic": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Graphics – Projections": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – CMM Levels": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Artificial Intelligence – Agents & Environments": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Graph Theory": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 2,
+       "total": 3
+      },
+      "Soft Computing – Fuzzy Sets (α-cut)": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Artificial Intelligence – Planning": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Graphics – Perspective Projection": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – Normalization (BCNF)": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Theory of Computation – Countability": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Cryptography": {
+       "correct": 1,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 2
+      },
+      "Software Engineering – Configuration Management": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Algorithms – Minimum Spanning Tree": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 2,
+       "total": 2
+      },
+      "Computer Organization – Cache Mapping": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Artificial Intelligence – Planning (STRIPS)": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – Memory Allocation": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – Basic Concepts": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Algorithms – Recurrences (Extended Master Theorem)": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Data Structures – BST Traversals": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Sets & Numbers": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Artificial Intelligence – Heuristics": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Theory of Computation – Context-Free Languages": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Graphics – Colour CRT": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Relations": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – Deadlock": {
+       "correct": 2,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 2
+      },
+      "DBMS – Indexing": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Ethernet": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Algorithms – Huffman Coding": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – Paging": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Probability": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Theory of Computation – Closure Properties": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Discrete Mathematics – Rules of Inference": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Artificial Intelligence – Knowledge & Inference": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Compiler Design – Parsing & Tools": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – Conflict Serializability": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Organization – Addressing Modes": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Discrete Mathematics – Predicate Logic": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "DBMS – Serializability": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – B+ Trees": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – Virtual Memory": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Agile": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Network Devices": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Artificial Intelligence – Knowledge Representation": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – Page Replacement (LRU)": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Soft Computing – Fuzzy Relations (Max–Min Composition)": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Digital Logic – 2's Complement": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Coupling": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Theory of Computation – Grammars": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – SQL (Cartesian Product)": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Artificial Intelligence – Minimax": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 2
+      },
+      "Artificial Intelligence – Search": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Discrete Mathematics – Group Theory": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Soft Computing – Fuzzy Sets": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Compiler Design – Parsing": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – Unix (vi editor)": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Data Structures – Heap Insertion": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – Preemptive Priority Scheduling": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Maintenance": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Algorithms – Recurrences (Master Theorem)": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Optimization – Linear Programming": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Data Structures – Binary Trees": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Machine Learning – Learning Paradigms": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Spanning Trees": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Organization – Cache": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Graph Connectivity": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Data Structures – Hashing (Chaining)": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Graphics – 2D Transformations": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Networks – Subnetting": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – Process Synchronization": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Theory of Computation – Chomsky Normal Form": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Software Engineering – Estimation": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Algorithms – Dynamic Programming (LCS)": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "DBMS – Keys": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Digital Logic – Multiplexer": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Organization – RISC vs CISC": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Theory of Computation – Pushdown Automata": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Organization – Pipeline Hazards": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Organization – Pipelining": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Compiler Design – Conflict Resolution in YACC": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Programming in C++ – Constructors": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Theory of Computation – Regular Expressions": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Data Structures – Stack & Queue": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Networks – IP Fragmentation": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Artificial Intelligence – Environment Types": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Cleanroom": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – Normal Forms": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "System Software – Linker": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Quality Attributes": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Programming in C – Pointers & Arrays": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Software Engineering – Testing": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      }
+     },
+     "id": "mw82gp05hhloi",
+     "date": "2026-11-08T16:48:32.405Z"
+    }
+   ]
   }
- }
+ },
+ "inProgress": {}
 }
