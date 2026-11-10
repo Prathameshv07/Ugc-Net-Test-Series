@@ -279,3 +279,7 @@ table{ display:block; overflow-x:auto; width:auto; max-width:100%; }
 .handoff-receive summary{ cursor:pointer; color:var(--accent); }
 .timer-bar{ flex-wrap:wrap; }
 @media (max-width:760px){ .handoff-btn{ width:100%; } }
+
+/* ---- time per question ---- */
+.time-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(120px, 1fr)); gap:10px; }
+.time-line{ font-size:12px; color:var(--muted); margin-top:8px; overflow-wrap:anywhere; }

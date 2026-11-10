@@ -30,6 +30,10 @@ Each test is one Markdown file: `## Qn` (question), `## Qn - Options`, then `## 
 - **Submit** asks for confirmation and tells you how many questions are unanswered or marked.
 - After the test, the review has an **All / Wrong / Skipped / Marked** filter; marked questions are tagged ★.
 
+## Time per question
+
+Every question's visits are logged with start and end time (time away from the tab isn't counted). After a test you get average time for correct / wrong / skipped questions, the five slowest questions, a **Slowest first** review filter, and on each question: `⏱ 1m 20s · 2 visits: #1 10:02–10:03 (50s) · #2 10:41–10:41 (30s)`. Saved in progress.json under each attempt's `qtime`.
+
 ## Switching devices
 
 - **📱 Hand off (mid-test):** press it in the timer bar to get a QR code and link. Scan it with the other device's camera (or send yourself the link) and press **Resume** there. The link itself carries the attempt — one character per question (answered / marked / visited), the current question and the time left — after a `#`, which browsers never send to the server. Press **Stop here** on the first device.

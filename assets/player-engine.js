@@ -133,6 +133,7 @@
   let userAnswers = {};
   let visited = {};
   let flagged = {};
+  let qtime = {};
   let endsAt = null, timerHandle = null, submitted = false;
 
   fetch(cfg.file)
@@ -330,13 +331,30 @@
     userAnswers = resume ? Object.assign({}, resume.answers) : {};
     visited = resume ? Object.assign({}, resume.visited) : { [qids[0]]: true };
     flagged = resume ? Object.assign({}, resume.marked || {}) : {};
+    // per-question time log: qid -> [[startEpochSec, endEpochSec], ...]; visit n = index + 1
+    qtime = resume && resume.qtime ? JSON.parse(JSON.stringify(resume.qtime)) : {};
+    let segQid = null, segStart = 0;
+    function openSeg() { if (submitted) return; segQid = qids[current]; segStart = Date.now(); }
+    function closeSeg() {
+      if (!segQid) return;
+      const now = Date.now();
+      if (now - segStart >= 1000) (qtime[segQid] = qtime[segQid] || []).push([Math.round(segStart / 1000), Math.round(now / 1000)]);
+      segQid = null;
+    }
+    function switchSeg() { if (segQid !== qids[current]) { closeSeg(); openSeg(); } }
     const totalMs = cfg.minutes * 60 * 1000;
     function saveState() {
       if (submitted || !endsAt) return;
-      Progress.setInProgress(slug, { answers: userAnswers, visited, marked: flagged, current, remainingMs: Math.max(0, endsAt - Date.now()) });
+      // include the still-running visit in the saved copy without splitting it
+      const snap = JSON.parse(JSON.stringify(qtime));
+      if (segQid && Date.now() - segStart >= 1000) (snap[segQid] = snap[segQid] || []).push([Math.round(segStart / 1000), Math.round(Date.now() / 1000)]);
+      Progress.setInProgress(slug, { answers: userAnswers, visited, marked: flagged, qtime: snap, current, remainingMs: Math.max(0, endsAt - Date.now()) });
     }
     window.onpagehide = saveState;
-    document.onvisibilitychange = () => { if (document.hidden) saveState(); };
+    document.onvisibilitychange = () => {
+      if (document.hidden) { saveState(); closeSeg(); }        // time away from the tab isn't counted
+      else if (!submitted && endsAt) openSeg();
+    };
     root.innerHTML = '';
 
     const timerBar = document.createElement('div');
@@ -389,6 +407,7 @@
     root.appendChild(navRow);
 
     function renderQuestion() {
+      switchSeg();
       const qid = qids[current];
       const q = questions[qid];
       qCard.innerHTML = `<div class="q-index">Question ${current + 1} of ${qids.length} · ${qid}</div>
@@ -516,6 +535,7 @@
 
     function finish() {
       if (submitted) return;
+      closeSeg();
       submitted = true;
       clearInterval(timerHandle);
 
@@ -535,7 +555,7 @@
           topicStats[topic][outcome]++;
           topicStats[topic].total++;
         }
-        return { qid, given, correct, accepted, topic, outcome, explanation: q.explanation, marked: !!flagged[qid] };
+        return { qid, given, correct, accepted, topic, outcome, explanation: q.explanation, marked: !!flagged[qid], visits: qtime[qid] || [] };
       });
       const marks = correctCount * cfg.marksPerQuestion - wrongCount * (cfg.negativeMarking || 0);
       const answersGiven = {};
@@ -544,7 +564,7 @@
         correct: correctCount, wrong: wrongCount, skipped, total: qids.length, marks,
         maxMarks: qids.length * cfg.marksPerQuestion,
         timeTakenSec: Math.round((totalMs - Math.max(0, endsAt - Date.now())) / 1000),
-        answers: answersGiven, marked: Object.keys(flagged), topics: topicStats
+        answers: answersGiven, marked: Object.keys(flagged), topics: topicStats, qtime
       });
       window.onpagehide = null; document.onvisibilitychange = null; document.onkeydown = null;
       renderResults(detail, correctCount, wrongCount, skipped, marks, topicStats);
@@ -599,6 +619,30 @@
     return wrap;
   }
 
+  // ---------------- time per question ----------------
+  const secOf = v => (v || []).reduce((t, [a, b]) => t + (b - a), 0);
+  function fmtSec(t) { t = Math.round(t); return t >= 60 ? `${Math.floor(t / 60)}m ${String(t % 60).padStart(2, '0')}s` : `${t}s`; }
+  function fmtClock(sec) { const d = new Date(sec * 1000); return d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }); }
+
+  function renderTimeSummary(detail) {
+    const timed = detail.filter(d => d.visits && d.visits.length);
+    if (!timed.length) return null;
+    const avg = o => { const xs = timed.filter(d => d.outcome === o); return xs.length ? fmtSec(xs.reduce((t, d) => t + secOf(d.visits), 0) / xs.length) : '—'; };
+    const slow = timed.slice().sort((a, b) => secOf(b.visits) - secOf(a.visits)).slice(0, 5);
+    const box = document.createElement('div');
+    box.className = 'q-card'; box.style.marginBottom = '20px';
+    box.innerHTML = `<div style="font-weight:600;margin-bottom:8px">Time per question</div>
+      <div class="time-grid">
+        <div><div class="timer-label">Avg · correct</div><b>${avg('correct')}</b></div>
+        <div><div class="timer-label">Avg · wrong</div><b>${avg('wrong')}</b></div>
+        <div><div class="timer-label">Avg · skipped</div><b>${avg('skipped')}</b></div>
+        <div><div class="timer-label">Revisited</div><b>${timed.filter(d => d.visits.length > 1).length} questions</b></div>
+      </div>
+      <div class="timer-label" style="margin-top:12px">Slowest five</div>
+      <div>${slow.map(d => `<span class="tag ${d.outcome === 'correct' ? 'correct' : d.outcome === 'wrong' ? 'wrong' : 'skipped'}">${d.qid} · ${fmtSec(secOf(d.visits))}</span>`).join(' ')}</div>`;
+    return box;
+  }
+
   function renderResults(detail, correctCount, wrongCount, skipped, marks, topicStats) {
     root.innerHTML = '';
     const hero = document.createElement('div');
@@ -618,6 +662,8 @@
       chartCard.append(h, bars);
     }
     root.appendChild(chartCard);
+    const timeCard = renderTimeSummary(detail);
+    if (timeCard) root.appendChild(timeCard);
 
     let filter = 'all';
     const filterRow = document.createElement('div'); filterRow.className = 'review-filter';
@@ -626,7 +672,7 @@
 
     function draw() {
       filterRow.innerHTML = '';
-      [['all', 'All'], ['wrong', 'Wrong only'], ['skipped', 'Skipped only'], ['marked', 'Marked']].forEach(([key, label]) => {
+      [['all', 'All'], ['wrong', 'Wrong only'], ['skipped', 'Skipped only'], ['marked', 'Marked'], ['slow', 'Slowest first']].forEach(([key, label]) => {
         const b = document.createElement('button');
         b.className = 'btn' + (filter === key ? ' btn-primary' : '');
         b.textContent = label;
@@ -634,13 +680,17 @@
         filterRow.appendChild(b);
       });
       listWrap.innerHTML = '';
-      detail.filter(d => filter === 'all' || (filter === 'marked' ? d.marked : d.outcome === filter)).forEach(d => {
+      const shown = filter === 'slow' ? detail.slice().sort((a, b) => secOf(b.visits) - secOf(a.visits))
+        : detail.filter(d => filter === 'all' || (filter === 'marked' ? d.marked : d.outcome === filter));
+      shown.forEach(d => {
         const q = questions[d.qid];
         const item = document.createElement('div');
         item.className = 'review-item';
         const tagClass = d.outcome === 'correct' ? 'correct' : d.outcome === 'wrong' ? 'wrong' : 'skipped';
         const tagLabel = d.outcome === 'correct' ? 'Correct' : d.outcome === 'wrong' ? 'Wrong' : 'Skipped';
-        item.innerHTML = `<span class="tag ${tagClass}">${tagLabel}</span>` + (d.marked ? ' <span class="tag marked">★ Marked</span>' : '') + (d.topic ? ` <span class="tag skipped">${escapeHtml(d.topic)}</span>` : '');
+        item.innerHTML = `<span class="tag ${tagClass}">${tagLabel}</span>` + (d.marked ? ' <span class="tag marked">★ Marked</span>' : '') + (d.topic ? ` <span class="tag skipped">${escapeHtml(d.topic)}</span>` : '') +
+          (d.visits && d.visits.length ? `<div class="time-line">⏱ ${fmtSec(secOf(d.visits))} · ${d.visits.length} visit${d.visits.length > 1 ? 's' : ''}: ` +
+            d.visits.map(([a, b], i) => `#${i + 1} ${fmtClock(a)}–${fmtClock(b)} (${fmtSec(b - a)})`).join(' · ') + '</div>' : '');
         const qDiv = document.createElement('div');
         qDiv.className = 'q-text'; qDiv.style.marginTop = '10px';
         qDiv.innerHTML = renderMd(q.stem);
@@ -690,7 +740,7 @@
         const ts = topicStats[q.topic] = topicStats[q.topic] || { correct: 0, wrong: 0, skipped: 0, total: 0 };
         ts[outcome]++; ts.total++;
       }
-      return { qid, given, correct: q.correct, accepted: q.correctAll, topic: q.topic, outcome, explanation: q.explanation, marked: (a.marked || []).includes(qid) };
+      return { qid, given, correct: q.correct, accepted: q.correctAll, topic: q.topic, outcome, explanation: q.explanation, marked: (a.marked || []).includes(qid), visits: (a.qtime || {})[qid] || [] };
     });
     renderResults(detail, c, w, sk, c * cfg.marksPerQuestion - w * (cfg.negativeMarking || 0), topicStats);
   }

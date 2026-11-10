@@ -1,7 +1,7 @@
 {
  "app": "ugc-net-combo",
  "version": 1,
- "updated": "2026-11-09T12:30:44.762Z",
+ "updated": "2026-11-10T12:02:55.405Z",
  "tests": {
   "combo-01-full": {
    "attempts": [
@@ -2995,6 +2995,2031 @@
      "date": "2026-11-09T10:54:27.012Z"
     }
    ]
+  },
+  "combo-04-full": {
+   "attempts": [
+    {
+     "correct": 66,
+     "wrong": 38,
+     "skipped": 46,
+     "total": 150,
+     "marks": 132,
+     "maxMarks": 300,
+     "timeTakenSec": 9928,
+     "answers": {
+      "Q1": "B",
+      "Q2": "C",
+      "Q3": "A",
+      "Q4": "B",
+      "Q5": "B",
+      "Q6": "C",
+      "Q7": "C",
+      "Q8": "A",
+      "Q9": "B",
+      "Q10": "A",
+      "Q11": "A",
+      "Q13": "A",
+      "Q15": "B",
+      "Q16": "B",
+      "Q17": "A",
+      "Q18": "A",
+      "Q19": "A",
+      "Q20": "A",
+      "Q21": "A",
+      "Q22": "A",
+      "Q23": "A",
+      "Q24": "C",
+      "Q25": "A",
+      "Q26": "A",
+      "Q27": "A",
+      "Q28": "C",
+      "Q29": "C",
+      "Q30": "C",
+      "Q31": "B",
+      "Q33": "A",
+      "Q35": "A",
+      "Q37": "C",
+      "Q38": "A",
+      "Q39": "A",
+      "Q41": "B",
+      "Q42": "B",
+      "Q43": "D",
+      "Q44": "B",
+      "Q45": "C",
+      "Q46": "B",
+      "Q47": "C",
+      "Q48": "B",
+      "Q49": "B",
+      "Q50": "A",
+      "Q52": "A",
+      "Q53": "A",
+      "Q54": "A",
+      "Q56": "B",
+      "Q58": "D",
+      "Q60": "C",
+      "Q61": "C",
+      "Q62": "B",
+      "Q66": "B",
+      "Q67": "C",
+      "Q68": "A",
+      "Q69": "B",
+      "Q70": "D",
+      "Q71": "D",
+      "Q73": "D",
+      "Q75": "B",
+      "Q76": "D",
+      "Q77": "A",
+      "Q78": "A",
+      "Q79": "C",
+      "Q80": "C",
+      "Q81": "B",
+      "Q86": "A",
+      "Q87": "A",
+      "Q89": "B",
+      "Q90": "B",
+      "Q93": "B",
+      "Q97": "B",
+      "Q98": "D",
+      "Q100": "D",
+      "Q101": "B",
+      "Q103": "B",
+      "Q104": "D",
+      "Q106": "A",
+      "Q108": "D",
+      "Q110": "C",
+      "Q111": "A",
+      "Q112": "D",
+      "Q116": "D",
+      "Q117": "B",
+      "Q118": "D",
+      "Q122": "B",
+      "Q123": "C",
+      "Q124": "C",
+      "Q126": "D",
+      "Q127": "B",
+      "Q130": "B",
+      "Q131": "A",
+      "Q132": "B",
+      "Q134": "A",
+      "Q135": "B",
+      "Q136": "B",
+      "Q137": "C",
+      "Q138": "C",
+      "Q139": "C",
+      "Q140": "A",
+      "Q142": "C",
+      "Q147": "A",
+      "Q149": "C",
+      "Q150": "C"
+     },
+     "marked": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q14",
+      "Q17",
+      "Q18",
+      "Q21",
+      "Q24",
+      "Q27",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q37",
+      "Q38",
+      "Q41",
+      "Q45",
+      "Q52",
+      "Q54",
+      "Q55",
+      "Q58",
+      "Q60",
+      "Q61",
+      "Q62",
+      "Q65",
+      "Q66",
+      "Q67",
+      "Q68",
+      "Q69",
+      "Q70",
+      "Q73",
+      "Q74",
+      "Q75",
+      "Q77",
+      "Q78",
+      "Q79",
+      "Q80",
+      "Q81",
+      "Q82",
+      "Q83",
+      "Q86",
+      "Q87",
+      "Q89",
+      "Q93",
+      "Q95",
+      "Q97",
+      "Q98",
+      "Q100",
+      "Q102",
+      "Q104",
+      "Q106",
+      "Q108",
+      "Q110",
+      "Q114",
+      "Q117",
+      "Q118",
+      "Q121",
+      "Q122",
+      "Q123",
+      "Q124",
+      "Q125",
+      "Q126",
+      "Q129",
+      "Q131",
+      "Q132",
+      "Q134",
+      "Q140",
+      "Q149",
+      "Q150"
+     ],
+     "topics": {
+      "Data Interpretation": {
+       "correct": 5,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 5
+      },
+      "Teaching Aptitude – Reflective Teaching": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Teaching Aptitude – Bloom's Domains": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Teaching Aptitude – Evaluation": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Mathematical Reasoning – Number Series": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Logical Reasoning – Blood Relations": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Mathematical Reasoning – Percentages": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Mathematical Reasoning – Boats & Streams": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Mathematical Reasoning – HCF": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Logical Reasoning – Coding–Decoding": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Environment – Sustainable Development": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Research Aptitude – Research Proposal": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Research Aptitude – Research Paradigms": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Environment – International Agreements": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "ICT – GPS": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "ICT – Memory Hierarchy": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "ICT – Transmission Modes": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "ICT – Internet Protocols": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "ICT – Operating Systems & Software": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "ICT – Emerging Technologies": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "ICT – Output Devices": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Research Aptitude – Basic Concepts": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Research Aptitude – Validity": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Higher Education – Regulatory Bodies": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Higher Education – History": {
+       "correct": 0,
+       "wrong": 2,
+       "skipped": 0,
+       "total": 2
+      },
+      "Higher Education – Commissions": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Logical Reasoning – Square of Opposition": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 2,
+       "total": 2
+      },
+      "Logical Reasoning – Fallacies": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Communication – Process": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Logical Reasoning – Informal Fallacies": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Communication – Models": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Communication – Redundancy": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Communication – Non-verbal": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Communication – Media History": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 1,
+       "total": 2
+      },
+      "Research Aptitude – Research Report": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Environment – Environmental Education": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Higher Education – Reforms": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Higher Education – NEP 2020": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Reading Comprehension": {
+       "correct": 5,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 5
+      },
+      "Computer Networks – CIDR": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – Page Replacement (LRU)": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Malware": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – SRS Characteristics": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – RSA": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – Processes": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Token Ring": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – Disk Scheduling (SSTF)": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Data Structures – BST Search Path": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Networks – Symmetric Keys": {
+       "correct": 0,
+       "wrong": 2,
+       "skipped": 0,
+       "total": 2
+      },
+      "Operating Systems – Round Robin": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Artificial Intelligence – Minimax": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Signals": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Algorithms – Recurrences (Change of Variable)": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Theory of Computation – DFA Construction": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Networks – Flow Control": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – Relational Concepts": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – Conflict Serializability": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Theory of Computation – Machine Equivalence": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – TCP & UDP": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – Weak Entities": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Compiler Design – Parsing": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Theory of Computation – Context-Free Grammars": {
+       "correct": 0,
+       "wrong": 2,
+       "skipped": 0,
+       "total": 2
+      },
+      "Discrete Mathematics – Recurrence (Fibonacci)": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Software Engineering – Testing": {
+       "correct": 1,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 2
+      },
+      "Theory of Computation – Finite Automata": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Programming in C – Pointers & Arrays": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Ethernet & PPPoE": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Compiler Design – Compilers": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Data Structures – Stack & Queue": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – B+ Tree Order": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Networks – Asynchronous Transmission": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Organization – 8085 Programming": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Networks – Frame Relay": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Networks – TCP Timers": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – Decomposition": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Graph Theory": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Software Engineering – Extreme Programming": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – IPv4 Header": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Subnetting": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Compiler Design – Syntax-Directed Translation": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Algorithms – Huffman Coding": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Discrete Mathematics – Valid Arguments": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Networks – CSMA/CD": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Networks – Switching": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Quality Metrics": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – File Systems (inode)": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – Threads": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – Relocation": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Hamming Distance": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – OS Types": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – Belady's Anomaly": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Sliding Window": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Machine Learning – Neural Networks": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Trees & Forests": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "System Software – Linker": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Organization – Microprogramming": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Digital Logic – Logic Minimisation": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Testing Levels": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Process Models": {
+       "correct": 2,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 2
+      },
+      "Digital Logic – Number Systems": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Digital Logic – Boolean Algebra": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Discrete Mathematics – Equivalence Relations": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Theory of Computation – Regular Expressions": {
+       "correct": 2,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 2
+      },
+      "Operating Systems – RAID": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Theory of Computation – Decidability": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Probability (Markov Chain)": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Programming in C – Structures & Pointers": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Networks – Slotted ALOHA": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Artificial Intelligence – Uninformed Search": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – Deadlock": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Protocol Layers": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Digital Logic – K-Map": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Discrete Mathematics – Trees": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Function Points": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – TLB": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Software Engineering – Quality Attributes": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Data Structures – Postfix Evaluation": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Partitions": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Algorithms – Sorting": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Software Engineering – CMM": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Metrics": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Data Warehousing – BI": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Re-engineering": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Architecture": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Image Processing – Restoration": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Graphics – Line Clipping": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Graphics – Projections": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Graphics – Bresenham's Algorithm": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Data Structures – Linked Lists": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – Linux Paging": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Artificial Intelligence – Environments": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Artificial Intelligence – Propositional Logic": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Artificial Intelligence – First-Order Logic": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Machine Learning – Perceptron": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      }
+     },
+     "id": "mwad9c5190m5u",
+     "date": "2026-11-10T07:26:17.269Z"
+    }
+   ]
+  },
+  "combo-05-full": {
+   "attempts": [
+    {
+     "correct": 69,
+     "wrong": 34,
+     "skipped": 47,
+     "total": 150,
+     "marks": 138,
+     "maxMarks": 300,
+     "timeTakenSec": 10270,
+     "answers": {
+      "Q1": "A",
+      "Q2": "A",
+      "Q3": "A",
+      "Q6": "A",
+      "Q7": "C",
+      "Q8": "A",
+      "Q10": "B",
+      "Q11": "C",
+      "Q12": "B",
+      "Q13": "D",
+      "Q14": "C",
+      "Q15": "C",
+      "Q16": "A",
+      "Q17": "B",
+      "Q18": "D",
+      "Q19": "A",
+      "Q20": "A",
+      "Q21": "A",
+      "Q22": "B",
+      "Q23": "B",
+      "Q24": "C",
+      "Q25": "A",
+      "Q26": "C",
+      "Q27": "B",
+      "Q30": "A",
+      "Q31": "B",
+      "Q34": "A",
+      "Q35": "B",
+      "Q36": "B",
+      "Q37": "B",
+      "Q38": "B",
+      "Q42": "B",
+      "Q44": "B",
+      "Q46": "C",
+      "Q47": "C",
+      "Q48": "D",
+      "Q49": "A",
+      "Q50": "C",
+      "Q51": "C",
+      "Q52": "D",
+      "Q55": "D",
+      "Q56": "A",
+      "Q57": "B",
+      "Q58": "A",
+      "Q59": "D",
+      "Q60": "A",
+      "Q61": "C",
+      "Q63": "B",
+      "Q64": "B",
+      "Q65": "B",
+      "Q67": "B",
+      "Q69": "C",
+      "Q70": "B",
+      "Q71": "D",
+      "Q73": "D",
+      "Q74": "B",
+      "Q75": "C",
+      "Q76": "B",
+      "Q78": "B",
+      "Q80": "C",
+      "Q81": "D",
+      "Q83": "C",
+      "Q85": "B",
+      "Q86": "C",
+      "Q88": "C",
+      "Q93": "D",
+      "Q96": "B",
+      "Q98": "C",
+      "Q101": "A",
+      "Q102": "A",
+      "Q103": "B",
+      "Q104": "C",
+      "Q105": "A",
+      "Q106": "A",
+      "Q108": "A",
+      "Q109": "B",
+      "Q110": "A",
+      "Q111": "C",
+      "Q113": "C",
+      "Q114": "B",
+      "Q115": "C",
+      "Q116": "C",
+      "Q117": "B",
+      "Q120": "B",
+      "Q121": "D",
+      "Q122": "A",
+      "Q124": "D",
+      "Q125": "A",
+      "Q127": "B",
+      "Q129": "D",
+      "Q130": "B",
+      "Q131": "B",
+      "Q134": "D",
+      "Q135": "A",
+      "Q136": "C",
+      "Q137": "C",
+      "Q141": "D",
+      "Q142": "C",
+      "Q143": "D",
+      "Q144": "B",
+      "Q148": "A",
+      "Q149": "A",
+      "Q150": "B"
+     },
+     "marked": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q22",
+      "Q24",
+      "Q31",
+      "Q34",
+      "Q35",
+      "Q37",
+      "Q38",
+      "Q43",
+      "Q45",
+      "Q46",
+      "Q47",
+      "Q48",
+      "Q49",
+      "Q50",
+      "Q51",
+      "Q52",
+      "Q55",
+      "Q57",
+      "Q58",
+      "Q59",
+      "Q61",
+      "Q62",
+      "Q63",
+      "Q65",
+      "Q69",
+      "Q71",
+      "Q72",
+      "Q74",
+      "Q75",
+      "Q76",
+      "Q81",
+      "Q86",
+      "Q88",
+      "Q91",
+      "Q93",
+      "Q96",
+      "Q103",
+      "Q104",
+      "Q106",
+      "Q108",
+      "Q109",
+      "Q110",
+      "Q111",
+      "Q112",
+      "Q115",
+      "Q116",
+      "Q117",
+      "Q120",
+      "Q121",
+      "Q122",
+      "Q124",
+      "Q125",
+      "Q129",
+      "Q130",
+      "Q131",
+      "Q134",
+      "Q141",
+      "Q143",
+      "Q146",
+      "Q150"
+     ],
+     "topics": {
+      "Data Interpretation – Ratio": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Data Interpretation – Profit & Loss": {
+       "correct": 2,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 3
+      },
+      "Data Interpretation – Successive Percentages": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "ICT – Recognition Systems": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "ICT – Internet (URL)": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "ICT – Computer Basics": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Mathematical Reasoning – Number Systems": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "ICT – Computer Components": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Logical Reasoning – Blood Relations": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Mathematical Reasoning – Number Series": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Logical Reasoning – Coding–Decoding": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Mathematical Reasoning – Distance": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Mathematical Reasoning – Percentages": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Mathematical Reasoning – Boats & Streams": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Teaching Aptitude – Adolescence": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Teaching Aptitude – Classroom Management": {
+       "correct": 1,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 2
+      },
+      "Teaching Aptitude – Assessment": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Teaching Aptitude – Collaborative Learning": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Teaching Aptitude – Levels of Teaching": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Teaching Aptitude – Conflict Management": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Communication – Gandhian Method": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Communication – Elements": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Communication – Intercultural": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Environment – Disaster Management": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Environment – Geography": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Environment – Ecology": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Environment – Ozone": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Research Aptitude – Hypothesis Testing": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 1,
+       "total": 2
+      },
+      "Environment – NAPCC Missions": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Environment – Constitution": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Higher Education – Constitutional Provisions": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "General Awareness – Scientists": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Higher Education – Autonomy": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Higher Education – Regulators": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Logical Reasoning – Fallacies": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Logical Reasoning – Nyāya Syllogism": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Logical Reasoning – Pramāṇas": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Logical Reasoning – Indian Logic": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Research Aptitude – Sampling": {
+       "correct": 2,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 2
+      },
+      "Research Aptitude – Measurement Scales": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Reading Comprehension": {
+       "correct": 4,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 5
+      },
+      "Operating Systems – Semaphores & Scheduling": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – Relational Algebra": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – CSMA/CD": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Discrete Mathematics – Graph Theory": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Digital Logic – K-Map": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Process Models": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Algorithms – Growth of Functions": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Hamming Code": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – Semaphores": {
+       "correct": 0,
+       "wrong": 2,
+       "skipped": 0,
+       "total": 2
+      },
+      "Artificial Intelligence – Applications": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – Normal Forms": {
+       "correct": 1,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 2
+      },
+      "Algorithms – Sorting": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – Page Replacement": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – Paging": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – Banker's Algorithm": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – Candidate Keys": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Artificial Intelligence – Informed Search": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – IPv4 Header": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 2,
+       "total": 2
+      },
+      "Artificial Intelligence – First-Order Logic": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – Data Types": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "System Software – Assembler": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Digital Logic – Counters": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Theory of Computation – Complement": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – Serializability": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – Security": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Organization – I/O & Registers": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – SQL Semantics": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – CPU Scheduling": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Organization – Structure Alignment": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "DBMS – Weak Entities": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Error Correction": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Maintenance": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Spanning Trees": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Artificial Intelligence – Game Playing": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Theory of Computation – Context-Free Grammars": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Negation": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – Disk Scheduling": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Organization – Assembly (8086)": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Organization – Amdahl's Law": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Organization – Data Forwarding": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Artificial Intelligence – Logic": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Networks – Devices": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Subnetting": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Data Structures – B/B+ Trees": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Programming Languages – Type Systems": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Graphics – Scaling about a Fixed Point": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Software Engineering – Software Characteristics": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Organization – Cache Size": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Algorithms – Complexities": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 2,
+       "total": 2
+      },
+      "Operating Systems – Readers–Writers": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Theory of Computation – Finite Automata": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Multiple Access": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Theory of Computation – DFA Minimisation": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – System Calls": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Programming in C++ – Friend Functions": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Organization – Addressing Modes": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Software Engineering – V&V": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Propositional Logic": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – SQL (DROP vs DELETE)": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Testing & Reliability": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Algorithms – Merge Sort (Passes)": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Operating Systems – Concepts": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "DBMS – Keys": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – E-mail Protocols": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Algorithms – Asymptotic Growth": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Web Technologies – XML": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Theory of Computation – Regular Languages": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Graphics – Shading": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Theory of Computation – Automata": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Artificial Intelligence – NLP": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – Memory Allocation": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Data Structures – m-ary Trees": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Organization – Instruction Cycle": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Compiler Design – Lexical vs Syntax Analysis": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Orderings": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Networks – TCP/IP Model": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Artificial Intelligence – Search": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Theory of Computation – Kleene Star": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – IPv4 Addressing": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Computer Networks – Routing": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Image Processing – JPEG": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Discrete Mathematics – Lattices": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Theory of Computation – Regular Expressions": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – Scheduling Types": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Software Engineering – Testing": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operating Systems – Distributed Systems": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Data Structures – Hashing": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Soft Computing – Genetic Algorithms": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Computer Networks – Multiplexing": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Discrete Mathematics – Inclusion–Exclusion": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      },
+      "Artificial Intelligence – CSP": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Digital Logic – Flip-Flops": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Software Engineering – Effort Estimation": {
+       "correct": 0,
+       "wrong": 0,
+       "skipped": 1,
+       "total": 1
+      },
+      "Theory of Computation – Chomsky Hierarchy": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Operations Research – Assignment Problem": {
+       "correct": 0,
+       "wrong": 1,
+       "skipped": 0,
+       "total": 1
+      },
+      "Compiler Design – Code Optimization": {
+       "correct": 1,
+       "wrong": 0,
+       "skipped": 0,
+       "total": 1
+      }
+     },
+     "id": "mwan53cdjmo7d",
+     "date": "2026-11-10T12:02:55.405Z"
+    }
+   ]
   }
- }
+ },
+ "inProgress": {}
 }
